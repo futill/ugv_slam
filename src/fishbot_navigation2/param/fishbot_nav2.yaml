@@ -1,0 +1,127 @@
+# AMCL（自适应蒙特卡洛定位）参数
+amcl:
+  ros__parameters:
+    use_sim_time: true               # 使用仿真时间（例如 Gazebo）
+    alpha1: 0.2                      # 平移噪声参数（旋转后）
+    alpha2: 0.2                      # 旋转噪声参数（平移后）
+    alpha3: 0.2                      # 平移噪声参数（平移后）
+    alpha4: 0.2                      # 旋转噪声参数（旋转后）
+    alpha5: 0.2                      # 平移旋转混合误差
+    base_frame_id: "base_link"      # 机器人的基准坐标系
+    beam_skip_distance: 0.5         # 跳过与其他较近射线重叠的最小距离
+    do_beamskip: true               # 启用射线跳过功能以加速激光匹配
+    global_frame_id: "map"          # 全局坐标系
+    laser_max_range: 12.0           # 激光最大测量距离
+    max_beams: 60                   # 使用的激光束数量
+    min_particles: 500              # 粒子滤波器中最小粒子数
+    max_particles: 2000             # 最大粒子数
+    odom_frame_id: "base_link"           # 里程计坐标系
+    pf_err: 0.05                    # 粒子滤波器误差容忍度
+    pf_z: 0.99                      # 粒子滤波器更新频率
+    resample_interval: 1           # 重采样频率
+    robot_model_type: "diff"       # 机器人类型（差速驱动）
+    save_pose_rate: 0.5            # 保存位姿的频率（Hz）
+    scan_topic: "scan"             # 激光话题
+    transform_tolerance: 1.0       # 坐标变换的容差（秒）
+    update_min_a: 0.2              # 最小旋转更新阈值（弧度）
+    update_min_d: 0.25             # 最小平移更新阈值（米）
+
+# 地图服务器参数（静态地图加载）
+map_server:
+  ros__parameters:
+    use_sim_time: true
+    yaml_filename: "map/fishbot_map.yaml"   # 地图配置文件路径
+
+# 地图保存服务
+map_saver:
+  ros__parameters:
+    use_sim_time: true
+    save_map_timeout: 5.0           # 保存地图的超时时间
+    free_thresh_default: 0.25       # 空闲区域阈值
+    occupied_thresh_default: 0.65   # 占用区域阈值
+    map_subscribe_transient_local: true
+    save_map_topic: "map"           # 地图话题名
+
+# 全局路径规划器（planner_server）
+planner_server:
+  ros__parameters:
+    expected_planner_frequency: 20.0        # 规划器频率（Hz）
+    use_sim_time: true
+    planner_plugins: ["GridBased"]          # 使用的规划器插件列表
+    GridBased:
+      plugin: "nav2_navfn_planner/NavfnPlanner"  # 插件类型（Dijkstra）
+      tolerance: 0.5                        # 到达目标点的容差（米）
+      use_astar: false                      # 是否使用 A* 算法（false = Dijkstra）
+      allow_unknown: true                   # 允许在未知区域中规划路径
+
+# 控制器服务器（用于本地轨迹跟踪）
+controller_server:
+  ros__parameters:
+    use_sim_time: true
+    controller_frequency: 20.0              # 控制器运行频率（Hz）
+    min_x_velocity_threshold: 0.001         # 最小 X 方向速度阈值
+    min_y_velocity_threshold: 0.001         # 最小 Y 方向速度阈值
+    controller_plugins: ["FollowPath"]      # 使用的控制器插件
+    FollowPath:
+      plugin: "nav2_regulated_pure_pursuit_controller/RegulatedPurePursuitController"  # 控制器插件名
+      desired_linear_vel: 0.5               # 期望线速度
+      lookahead_dist: 0.6                   # 纯跟踪法中的前视距离
+      max_angular_vel: 1.0                  # 最大角速度
+      use_velocity_scaled_lookahead_dist: true
+      transform_tolerance: 0.2
+
+# 回避恢复行为插件（行为树使用）
+behavior_server:
+  ros__parameters:
+    use_sim_time: true
+    behavior_plugins: ["Spin", "BackUp", "Wait"]
+    Spin:
+      plugin: "nav2_behaviors/Spin"
+    BackUp:
+      plugin: "nav2_behaviors/BackUp"
+    Wait:
+      plugin: "nav2_behaviors/Wait"
+
+# 控制器恢复行为（例如机器人在障碍物中时）
+recovery_server:
+  ros__parameters:
+    use_sim_time: true
+    recovery_plugins: ["spin", "backup", "wait"]
+    spin:
+      plugin: "nav2_recoveries/Spin"
+    backup:
+      plugin: "nav2_recoveries/BackUp"
+    wait:
+      plugin: "nav2_recoveries/Wait"
+
+# 生命周期管理器
+lifecycle_manager:
+  ros__parameters:
+    use_sim_time: true
+    autostart: true
+    node_names:
+      - map_server
+      - amcl
+      - planner_server
+      - controller_server
+      - recovery_server
+      - behavior_server
+#全局地图  
+local_costmap:
+  local_costmap:
+    ros__parameters:
+      robot_radius: 0.12
+#代价地图    
+global_costmap:
+  global_costmap:
+    ros__parameters:
+      robot_radius: 0.12
+
+global_costmap:
+  global_costmap:
+    ros__parameters:
+      plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
+      inflation_layer:
+        plugin: "nav2_costmap_2d::InflationLayer"
+        cost_scaling_factor: 3.0
+        inflation_radius: 0.55

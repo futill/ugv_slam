@@ -1,0 +1,37 @@
+[0.040s] Invoking command in '/home/orangepi/uvg_car/build/fishbot_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/uvg_car/install/wit_ros2_imu:/home/orangepi/car_ros2/install/rknn_yolo:/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/fishbot_cartographer -- -j8 -l8
+[0.183s] [35m[1mConsolidate compiler generated dependencies of target CartoTransferPose_main[0m
+[0.246s] [ 50%] [32mBuilding CXX object CMakeFiles/CartoTransferPose_main.dir/src/CartoTransferPose_main.cc.o[0m
+[8.545s] [100%] [32m[1mLinking CXX executable CartoTransferPose_main[0m
+[9.091s] [100%] Built target CartoTransferPose_main
+[9.114s] Invoked command in '/home/orangepi/uvg_car/build/fishbot_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/uvg_car/install/wit_ros2_imu:/home/orangepi/car_ros2/install/rknn_yolo:/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/fishbot_cartographer -- -j8 -l8
+[9.119s] Invoking command in '/home/orangepi/uvg_car/build/fishbot_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/uvg_car/install/wit_ros2_imu:/home/orangepi/car_ros2/install/rknn_yolo:/opt/ros/humble /usr/bin/cmake --install /home/orangepi/uvg_car/build/fishbot_cartographer
+[9.153s] -- Install configuration: ""
+[9.154s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/config
+[9.154s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/config/fishbot_2d.lua
+[9.155s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/launch
+[9.156s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/launch/cartographer.launch.py
+[9.156s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/rviz
+[9.157s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/rviz/fishbot_cartographer.rviz
+[9.157s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/urdf
+[9.157s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/urdf/fishot_2d.urdf
+[9.158s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/map
+[9.158s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/map/fishbot_map.pgm
+[9.158s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/map/fishbot_map.yaml
+[9.161s] -- Installing: /home/orangepi/uvg_car/install/fishbot_cartographer/lib/fishbot_cartographer/CartoTransferPose_main
+[9.162s] -- Set runtime path of "/home/orangepi/uvg_car/install/fishbot_cartographer/lib/fishbot_cartographer/CartoTransferPose_main" to ""
+[9.162s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/ament_index/resource_index/package_run_dependencies/fishbot_cartographer
+[9.163s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/ament_index/resource_index/parent_prefix_path/fishbot_cartographer
+[9.163s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/environment/ament_prefix_path.sh
+[9.164s] -- Installing: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/environment/ament_prefix_path.dsv
+[9.164s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/environment/path.sh
+[9.165s] -- Installing: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/environment/path.dsv
+[9.165s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/local_setup.bash
+[9.166s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/local_setup.sh
+[9.166s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/local_setup.zsh
+[9.166s] -- Installing: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/local_setup.dsv
+[9.167s] -- Installing: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/package.dsv
+[9.167s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/ament_index/resource_index/packages/fishbot_cartographer
+[9.167s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/cmake/fishbot_cartographerConfig.cmake
+[9.167s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/cmake/fishbot_cartographerConfig-version.cmake
+[9.167s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/package.xml
+[9.168s] Invoked command in '/home/orangepi/uvg_car/build/fishbot_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/uvg_car/install/wit_ros2_imu:/home/orangepi/car_ros2/install/rknn_yolo:/opt/ros/humble /usr/bin/cmake --install /home/orangepi/uvg_car/build/fishbot_cartographer

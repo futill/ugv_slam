@@ -1,0 +1,39 @@
+[0.037s] Invoking command in '/home/orangepi/uvg_car/build/fishbot_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/uvg_car/install/wit_ros2_imu:/home/orangepi/car_ros2/install/rknn_yolo:/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/fishbot_cartographer -- -j8 -l8
+[0.105s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.392s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.445s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.449s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.458s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.469s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.489s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.540s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.541s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.718s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.805s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[0.814s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.945s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.970s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.972s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.972s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.978s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.104s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.105s] -- Configured cppcheck include dirs: 
+[1.106s] -- Configured cppcheck exclude dirs and/or files: 
+[1.106s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.107s] -- Added test 'lint_cmake' to check CMake code style
+[1.107s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.107s] -- Added test 'uncrustify' to check C / C++ code style
+[1.108s] -- Configured uncrustify additional arguments: 
+[1.108s] -- Added test 'xmllint' to check XML markup files
+[1.109s] -- Configuring done
+[1.124s] -- Generating done
+[1.131s] -- Build files have been written to: /home/orangepi/uvg_car/build/fishbot_cartographer
+[1.227s] [ 50%] [32mBuilding CXX object CMakeFiles/CartoTransferPose_main.dir/src/CartoTransferPose_main.cc.o[0m
+[6.178s] [01m[K/home/orangepi/uvg_car/src/fishbot_cartographer/src/CartoTransferPose_main.cc:[m[K In member function ‘[01m[Kvoid TfPosePublisher::timer_callback()[m[K’:
+[6.179s] [01m[K/home/orangepi/uvg_car/src/fishbot_cartographer/src/CartoTransferPose_main.cc:53:23:[m[K [01;31m[Kerror: [m[K‘[01m[KgetYaw[m[K’ is not a member of ‘[01m[Ktf2[m[K’
+[6.180s]    53 |     double yaw = tf2::[01;31m[KgetYaw[m[K(q);
+[6.181s]       |                       [01;31m[K^~~~~~[m[K
+[7.893s] gmake[2]: *** [CMakeFiles/CartoTransferPose_main.dir/build.make:76: CMakeFiles/CartoTransferPose_main.dir/src/CartoTransferPose_main.cc.o] Error 1
+[7.894s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/CartoTransferPose_main.dir/all] Error 2
+[7.894s] gmake: *** [Makefile:146: all] Error 2
+[7.902s] Invoked command in '/home/orangepi/uvg_car/build/fishbot_cartographer' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/uvg_car/install/wit_ros2_imu:/home/orangepi/car_ros2/install/rknn_yolo:/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/fishbot_cartographer -- -j8 -l8

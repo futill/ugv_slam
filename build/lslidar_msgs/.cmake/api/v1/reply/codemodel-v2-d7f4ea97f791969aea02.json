@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-467e58ab9aceaab337cb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "lslidar_msgs__py",
+					"jsonFile" : "directory-lslidar_msgs__py-f20247403c71d3025ee4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/orangepi/uvg_car/build/lslidar_msgs/lslidar_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "lslidar_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_lslidar_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_lslidar_msgs_egg-27220affbac572a31c1f.json",
+					"name" : "ament_cmake_python_build_lslidar_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_lslidar_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_lslidar_msgs-58e3dd1b6c0f7b3e1d12.json",
+					"name" : "ament_cmake_python_copy_lslidar_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lslidar_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lslidar_msgs-b354d053b3a9fc4a8fa7.json",
+					"name" : "lslidar_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lslidar_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lslidar_msgs__cpp-254c55ce172acc3a8403.json",
+					"name" : "lslidar_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "lslidar_msgs__py::@72bead4393364f72d265",
+					"jsonFile" : "target-lslidar_msgs__py-9d74577162cf9963608f.json",
+					"name" : "lslidar_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lslidar_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lslidar_msgs__rosidl_generator_c-34539af39f5a266a91ab.json",
+					"name" : "lslidar_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lslidar_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lslidar_msgs__rosidl_generator_py-2da5a5f178ac811ae227.json",
+					"name" : "lslidar_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lslidar_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lslidar_msgs__rosidl_typesupport_c-49b1c551075da8484108.json",
+					"name" : "lslidar_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lslidar_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lslidar_msgs__rosidl_typesupport_c__pyext-a6f2ec93ca7260083209.json",
+					"name" : "lslidar_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lslidar_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lslidar_msgs__rosidl_typesupport_cpp-ed9a36d005c10ffd3046.json",
+					"name" : "lslidar_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lslidar_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lslidar_msgs__rosidl_typesupport_fastrtps_c-7d4ef1221f0805d8ec76.json",
+					"name" : "lslidar_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lslidar_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lslidar_msgs__rosidl_typesupport_fastrtps_c__pyext-5ecc440f3dea10c40fa9.json",
+					"name" : "lslidar_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lslidar_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lslidar_msgs__rosidl_typesupport_fastrtps_cpp-24bdc8e14e45a843fde5.json",
+					"name" : "lslidar_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lslidar_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lslidar_msgs__rosidl_typesupport_introspection_c-155ee9cba479e332bbcd.json",
+					"name" : "lslidar_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lslidar_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lslidar_msgs__rosidl_typesupport_introspection_c__pyext-e7049bdb222847f59ada.json",
+					"name" : "lslidar_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lslidar_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lslidar_msgs__rosidl_typesupport_introspection_cpp-05b0f874e599a358deb9.json",
+					"name" : "lslidar_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lslidar_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lslidar_msgs_uninstall-102a00228e156894ef4c.json",
+					"name" : "lslidar_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-f569553140f2c1d94fb3.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/orangepi/uvg_car/build/lslidar_msgs",
+		"source" : "/home/orangepi/uvg_car/src/LSLIDAR_X_ROS2-20240228/src/lslidar_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

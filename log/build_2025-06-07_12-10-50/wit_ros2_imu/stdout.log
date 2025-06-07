@@ -1,0 +1,20 @@
+running egg_info
+writing ../../build/wit_ros2_imu/wit_ros2_imu.egg-info/PKG-INFO
+writing dependency_links to ../../build/wit_ros2_imu/wit_ros2_imu.egg-info/dependency_links.txt
+writing entry points to ../../build/wit_ros2_imu/wit_ros2_imu.egg-info/entry_points.txt
+writing requirements to ../../build/wit_ros2_imu/wit_ros2_imu.egg-info/requires.txt
+writing top-level names to ../../build/wit_ros2_imu/wit_ros2_imu.egg-info/top_level.txt
+reading manifest file '../../build/wit_ros2_imu/wit_ros2_imu.egg-info/SOURCES.txt'
+writing manifest file '../../build/wit_ros2_imu/wit_ros2_imu.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying launch/rviz_and_imu.launch.py -> /home/orangepi/uvg_car/install/wit_ros2_imu/share/wit_ros2_imu
+running install_egg_info
+removing '/home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages/wit_ros2_imu-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/wit_ros2_imu/wit_ros2_imu.egg-info to /home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages/wit_ros2_imu-0.0.0-py3.10.egg-info
+running install_scripts
+Installing wit_ros2_imu script to /home/orangepi/uvg_car/install/wit_ros2_imu/lib/wit_ros2_imu
+writing list of installed files to '/home/orangepi/uvg_car/build/wit_ros2_imu/install.log'
