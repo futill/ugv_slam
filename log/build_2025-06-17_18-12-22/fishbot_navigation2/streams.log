@@ -1,0 +1,30 @@
+[0.041s] Invoking command in '/home/orangepi/uvg_car/build/fishbot_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/fishbot_navigation2 -- -j8 -l8
+[0.513s] Invoked command in '/home/orangepi/uvg_car/build/fishbot_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/fishbot_navigation2 -- -j8 -l8
+[0.517s] Invoking command in '/home/orangepi/uvg_car/build/fishbot_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/orangepi/uvg_car/build/fishbot_navigation2
+[0.536s] -- Install configuration: ""
+[0.537s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/launch
+[0.537s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/launch/fishbot_navigation2.launch.py
+[0.537s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/param
+[0.538s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/param/fishbot_nav2.yaml
+[0.545s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/param/ekf.yaml
+[0.545s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/maps
+[0.545s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/maps/fishbot_map.pgm
+[0.550s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/maps/fishbot_map.yaml
+[0.552s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/urdf
+[0.554s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/urdf/fishot_2d.urdf
+[0.554s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/ament_index/resource_index/package_run_dependencies/fishbot_navigation2
+[0.554s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/ament_index/resource_index/parent_prefix_path/fishbot_navigation2
+[0.555s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/environment/ament_prefix_path.sh
+[0.555s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/environment/ament_prefix_path.dsv
+[0.555s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/environment/path.sh
+[0.555s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/environment/path.dsv
+[0.555s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/local_setup.bash
+[0.555s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/local_setup.sh
+[0.555s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/local_setup.zsh
+[0.555s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/local_setup.dsv
+[0.555s] -- Installing: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/package.dsv
+[0.555s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/ament_index/resource_index/packages/fishbot_navigation2
+[0.555s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/cmake/fishbot_navigation2Config.cmake
+[0.555s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/cmake/fishbot_navigation2Config-version.cmake
+[0.555s] -- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/package.xml
+[0.621s] Invoked command in '/home/orangepi/uvg_car/build/fishbot_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/orangepi/uvg_car/build/fishbot_navigation2

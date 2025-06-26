@@ -1,0 +1,65 @@
+[0.057s] Invoking command in '/home/orangepi/uvg_car/build/oakchina_vio_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/oakchina_vio_package -- -j8 -l8
+[0.123s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.365s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.419s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.423s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.432s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.445s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.463s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.511s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.512s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.667s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.744s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.796s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.796s] -- Found OpenCV: /home/orangepi/opencv-4.2.0/build (found version "4.2.0") 
+[0.797s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.871s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.959s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.964s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.965s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.142s] -- Configuring done
+[1.169s] -- Generating done
+[1.179s] -- Build files have been written to: /home/orangepi/uvg_car/build/oakchina_vio_package
+[1.332s] [35m[1mConsolidate compiler generated dependencies of target oakchina_vio_package_node[0m
+[1.367s] [ 50%] [32mBuilding CXX object CMakeFiles/oakchina_vio_package_node.dir/src/main.cpp.o[0m
+[13.060s] [100%] [32m[1mLinking CXX executable oakchina_vio_package_node[0m
+[14.022s] /usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.4.2
+[14.023s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.4.2
+[14.894s] [100%] Built target oakchina_vio_package_node
+[14.924s] Invoked command in '/home/orangepi/uvg_car/build/oakchina_vio_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/oakchina_vio_package -- -j8 -l8
+[14.930s] Invoking command in '/home/orangepi/uvg_car/build/oakchina_vio_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/orangepi/uvg_car/build/oakchina_vio_package
+[14.958s] -- Install configuration: ""
+[14.959s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/oakchina_vio_package/oakchina_vio_package_node
+[14.965s] -- Set runtime path of "/home/orangepi/uvg_car/install/oakchina_vio_package/lib/oakchina_vio_package/oakchina_vio_package_node" to ""
+[14.966s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libcarina_client.so
+[14.966s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libcarina_vio.so
+[15.030s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libcarina_vio_client.so
+[15.045s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/launch
+[15.045s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/launch/oakchina_vio.launch.py
+[15.046s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/launch/oakchina_vio.launch
+[15.046s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/config
+[15.047s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/config/database.bin
+[15.156s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/config/custom_config.yaml
+[15.157s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/rviz
+[15.158s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/rviz/oakchina_vio.rviz
+[15.158s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/environment/library_path.sh
+[15.159s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/environment/library_path.dsv
+[15.159s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/ament_index/resource_index/package_run_dependencies/oakchina_vio_package
+[15.160s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/ament_index/resource_index/parent_prefix_path/oakchina_vio_package
+[15.160s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/environment/ament_prefix_path.sh
+[15.161s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/environment/ament_prefix_path.dsv
+[15.161s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/environment/path.sh
+[15.162s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/environment/path.dsv
+[15.164s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/local_setup.bash
+[15.164s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/local_setup.sh
+[15.165s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/local_setup.zsh
+[15.165s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/local_setup.dsv
+[15.166s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/package.dsv
+[15.166s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/ament_index/resource_index/packages/oakchina_vio_package
+[15.167s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.167s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/cmake/ament_cmake_export_include_directories-extras.cmake
+[15.168s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/cmake/ament_cmake_export_libraries-extras.cmake
+[15.169s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/cmake/oakchina_vio_packageConfig.cmake
+[15.170s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/cmake/oakchina_vio_packageConfig-version.cmake
+[15.171s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/package.xml
+[15.172s] Invoked command in '/home/orangepi/uvg_car/build/oakchina_vio_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/orangepi/uvg_car/build/oakchina_vio_package

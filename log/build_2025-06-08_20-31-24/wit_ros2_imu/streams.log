@@ -1,0 +1,23 @@
+[1.060s] Invoking command in '/home/orangepi/uvg_car/src/wit_ros2_imu': PYTHONPATH=/home/orangepi/uvg_car/build/wit_ros2_imu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/wit_ros2_imu build --build-base /home/orangepi/uvg_car/build/wit_ros2_imu/build install --record /home/orangepi/uvg_car/build/wit_ros2_imu/install.log --install-scripts $base/lib/wit_ros2_imu --single-version-externally-managed install_data
+[1.379s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[1.380s]   warnings.warn(
+[1.395s] running egg_info
+[1.396s] writing ../../build/wit_ros2_imu/wit_ros2_imu.egg-info/PKG-INFO
+[1.397s] writing dependency_links to ../../build/wit_ros2_imu/wit_ros2_imu.egg-info/dependency_links.txt
+[1.397s] writing entry points to ../../build/wit_ros2_imu/wit_ros2_imu.egg-info/entry_points.txt
+[1.398s] writing requirements to ../../build/wit_ros2_imu/wit_ros2_imu.egg-info/requires.txt
+[1.398s] writing top-level names to ../../build/wit_ros2_imu/wit_ros2_imu.egg-info/top_level.txt
+[1.400s] reading manifest file '../../build/wit_ros2_imu/wit_ros2_imu.egg-info/SOURCES.txt'
+[1.401s] writing manifest file '../../build/wit_ros2_imu/wit_ros2_imu.egg-info/SOURCES.txt'
+[1.402s] running build
+[1.403s] running build_py
+[1.403s] running install
+[1.403s] running install_lib
+[1.405s] running install_data
+[1.406s] running install_egg_info
+[1.410s] removing '/home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages/wit_ros2_imu-0.0.0-py3.10.egg-info' (and everything under it)
+[1.411s] Copying ../../build/wit_ros2_imu/wit_ros2_imu.egg-info to /home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages/wit_ros2_imu-0.0.0-py3.10.egg-info
+[1.412s] running install_scripts
+[1.455s] Installing wit_ros2_imu script to /home/orangepi/uvg_car/install/wit_ros2_imu/lib/wit_ros2_imu
+[1.456s] writing list of installed files to '/home/orangepi/uvg_car/build/wit_ros2_imu/install.log'
+[1.531s] Invoked command in '/home/orangepi/uvg_car/src/wit_ros2_imu' returned '0': PYTHONPATH=/home/orangepi/uvg_car/build/wit_ros2_imu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/wit_ros2_imu build --build-base /home/orangepi/uvg_car/build/wit_ros2_imu/build install --record /home/orangepi/uvg_car/build/wit_ros2_imu/install.log --install-scripts $base/lib/wit_ros2_imu --single-version-externally-managed install_data

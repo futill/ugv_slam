@@ -1,0 +1,12 @@
+/usr/bin/ld: cannot find -lcarina_vio: No such file or directory
+/usr/bin/ld: cannot find -lcarina_vio_client: No such file or directory
+/usr/bin/ld: cannot find -lcarina_client: No such file or directory
+/usr/bin/ld: cannot find -lclahe: No such file or directory
+/usr/bin/ld: cannot find -lDBoW2: No such file or directory
+/usr/bin/ld: cannot find -lg2o: No such file or directory
+/usr/bin/ld: cannot find -llk: No such file or directory
+/usr/bin/ld: cannot find -ltracker: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/oakchina_vio_package_node.dir/build.make:269: oakchina_vio_package_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/oakchina_vio_package_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

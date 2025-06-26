@@ -1,0 +1,772 @@
+[0.000000] (-) TimerEvent: {}
+[0.001595] (fishbot_cartographer) JobQueued: {'identifier': 'fishbot_cartographer', 'dependencies': OrderedDict()}
+[0.001809] (fishbot_navigation2) JobQueued: {'identifier': 'fishbot_navigation2', 'dependencies': OrderedDict()}
+[0.001931] (lslidar_msgs) JobQueued: {'identifier': 'lslidar_msgs', 'dependencies': OrderedDict()}
+[0.002039] (oakchina_vio_package) JobQueued: {'identifier': 'oakchina_vio_package', 'dependencies': OrderedDict()}
+[0.002167] (wit_ros2_imu) JobQueued: {'identifier': 'wit_ros2_imu', 'dependencies': OrderedDict()}
+[0.002292] (lslidar_driver) JobQueued: {'identifier': 'lslidar_driver', 'dependencies': OrderedDict([('lslidar_msgs', '/home/orangepi/uvg_car/install/lslidar_msgs')])}
+[0.002410] (lslidar_msgs) JobStarted: {'identifier': 'lslidar_msgs'}
+[0.012751] (fishbot_cartographer) JobStarted: {'identifier': 'fishbot_cartographer'}
+[0.019247] (fishbot_navigation2) JobStarted: {'identifier': 'fishbot_navigation2'}
+[0.025958] (oakchina_vio_package) JobStarted: {'identifier': 'oakchina_vio_package'}
+[0.035318] (wit_ros2_imu) JobStarted: {'identifier': 'wit_ros2_imu'}
+[0.055664] (lslidar_msgs) JobProgress: {'identifier': 'lslidar_msgs', 'progress': 'cmake'}
+[0.058232] (lslidar_msgs) JobProgress: {'identifier': 'lslidar_msgs', 'progress': 'build'}
+[0.061264] (lslidar_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/orangepi/uvg_car/build/lslidar_msgs', '--', '-j8', '-l8'], 'cwd': '/home/orangepi/uvg_car/build/lslidar_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('UMS_MOUNTPOINT', '/mnt/ums'), ('GST_V4L2_PREFERRED_FOURCC', 'NV12:YU12:NV16:YUY2'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'orangepi'), ('SSH_CLIENT', '10.220.24.151 50703 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('USB_FUNCS', 'adb'), ('LD_LIBRARY_PATH', '/home/orangepi/uvg_car/install/oakchina_vio_package/lib:/home/orangepi/uvg_car/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/orangepi'), ('OLDPWD', '/home/orangepi'), ('TERM_PROGRAM_VERSION', '1.101.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-dba5ccbd-d692-4d6e-9fc9-61e8a2c18378.sock'), ('GST_INSPECT_NO_COLORS', '1'), ('GST_MPP_NO_RGA', '1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/orangepi/uvg_car/install'), ('GST_V4L2SRC_MAX_RESOLUTION', '3840x2160'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'orangepi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', '31'), ('GST_VIDEO_CONVERT_PREFERRED_FORMAT', 'NV12:NV16:I420:YUY2'), ('GST_V4L2SRC_RK_DEVICES', '_mainpath:_selfpath:_bypass:_scale'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/remote-cli:/home/orangepi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/scripts/noConfigScripts:/home/orangepi/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GST_GL_PLATFORM', 'egl'), ('GST_DEBUG_NO_COLOR', '1'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('GST_V4L2SRC_DEFAULT_DEVICE', '/dev/video-camera0'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/.noConfigDebugAdapterEndpoints/endpoint-eafc9373665f109e.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-307fec4b80.sock'), ('TERM_PROGRAM', 'vscode'), ('GST_V4L2_USE_LIBV4L2', '1'), ('UMS_SIZE', '256M'), ('AMENT_PREFIX_PATH', '/home/orangepi/uvg_car/install/wit_ros2_imu:/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/opt/ros/humble'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('UMS_RO', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UMS_FSTYPE', 'vfat'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/orangepi/uvg_car/build/lslidar_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.220.24.151 50703 10.220.24.61 22'), ('PYTHONPATH', '/home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages:/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('UMS_MOUNT', '0'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/home/orangepi/uvg_car/install/wit_ros2_imu:/opt/ros/humble'), ('UMS_FILE', '/userdata/ums_shared.img')]), 'shell': False}
+[0.068708] (fishbot_cartographer) JobProgress: {'identifier': 'fishbot_cartographer', 'progress': 'cmake'}
+[0.069810] (fishbot_cartographer) JobProgress: {'identifier': 'fishbot_cartographer', 'progress': 'build'}
+[0.070263] (fishbot_cartographer) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/orangepi/uvg_car/build/fishbot_cartographer', '--', '-j8', '-l8'], 'cwd': '/home/orangepi/uvg_car/build/fishbot_cartographer', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('UMS_MOUNTPOINT', '/mnt/ums'), ('GST_V4L2_PREFERRED_FOURCC', 'NV12:YU12:NV16:YUY2'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'orangepi'), ('SSH_CLIENT', '10.220.24.151 50703 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('USB_FUNCS', 'adb'), ('LD_LIBRARY_PATH', '/home/orangepi/uvg_car/install/oakchina_vio_package/lib:/home/orangepi/uvg_car/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/orangepi'), ('OLDPWD', '/home/orangepi'), ('TERM_PROGRAM_VERSION', '1.101.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-dba5ccbd-d692-4d6e-9fc9-61e8a2c18378.sock'), ('GST_INSPECT_NO_COLORS', '1'), ('GST_MPP_NO_RGA', '1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/orangepi/uvg_car/install'), ('GST_V4L2SRC_MAX_RESOLUTION', '3840x2160'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'orangepi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', '31'), ('GST_VIDEO_CONVERT_PREFERRED_FORMAT', 'NV12:NV16:I420:YUY2'), ('GST_V4L2SRC_RK_DEVICES', '_mainpath:_selfpath:_bypass:_scale'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/remote-cli:/home/orangepi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/scripts/noConfigScripts:/home/orangepi/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GST_GL_PLATFORM', 'egl'), ('GST_DEBUG_NO_COLOR', '1'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('GST_V4L2SRC_DEFAULT_DEVICE', '/dev/video-camera0'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/.noConfigDebugAdapterEndpoints/endpoint-eafc9373665f109e.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-307fec4b80.sock'), ('TERM_PROGRAM', 'vscode'), ('GST_V4L2_USE_LIBV4L2', '1'), ('UMS_SIZE', '256M'), ('AMENT_PREFIX_PATH', '/home/orangepi/uvg_car/install/wit_ros2_imu:/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/opt/ros/humble'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('UMS_RO', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UMS_FSTYPE', 'vfat'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/orangepi/uvg_car/build/fishbot_cartographer'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.220.24.151 50703 10.220.24.61 22'), ('PYTHONPATH', '/home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages:/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('UMS_MOUNT', '0'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/home/orangepi/uvg_car/install/wit_ros2_imu:/opt/ros/humble'), ('UMS_FILE', '/userdata/ums_shared.img')]), 'shell': False}
+[0.073424] (fishbot_navigation2) JobProgress: {'identifier': 'fishbot_navigation2', 'progress': 'cmake'}
+[0.074283] (fishbot_navigation2) JobProgress: {'identifier': 'fishbot_navigation2', 'progress': 'build'}
+[0.074648] (fishbot_navigation2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/orangepi/uvg_car/build/fishbot_navigation2', '--', '-j8', '-l8'], 'cwd': '/home/orangepi/uvg_car/build/fishbot_navigation2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('UMS_MOUNTPOINT', '/mnt/ums'), ('GST_V4L2_PREFERRED_FOURCC', 'NV12:YU12:NV16:YUY2'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'orangepi'), ('SSH_CLIENT', '10.220.24.151 50703 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('USB_FUNCS', 'adb'), ('LD_LIBRARY_PATH', '/home/orangepi/uvg_car/install/oakchina_vio_package/lib:/home/orangepi/uvg_car/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/orangepi'), ('OLDPWD', '/home/orangepi'), ('TERM_PROGRAM_VERSION', '1.101.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-dba5ccbd-d692-4d6e-9fc9-61e8a2c18378.sock'), ('GST_INSPECT_NO_COLORS', '1'), ('GST_MPP_NO_RGA', '1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/orangepi/uvg_car/install'), ('GST_V4L2SRC_MAX_RESOLUTION', '3840x2160'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'orangepi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', '31'), ('GST_VIDEO_CONVERT_PREFERRED_FORMAT', 'NV12:NV16:I420:YUY2'), ('GST_V4L2SRC_RK_DEVICES', '_mainpath:_selfpath:_bypass:_scale'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/remote-cli:/home/orangepi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/scripts/noConfigScripts:/home/orangepi/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GST_GL_PLATFORM', 'egl'), ('GST_DEBUG_NO_COLOR', '1'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('GST_V4L2SRC_DEFAULT_DEVICE', '/dev/video-camera0'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/.noConfigDebugAdapterEndpoints/endpoint-eafc9373665f109e.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-307fec4b80.sock'), ('TERM_PROGRAM', 'vscode'), ('GST_V4L2_USE_LIBV4L2', '1'), ('UMS_SIZE', '256M'), ('AMENT_PREFIX_PATH', '/home/orangepi/uvg_car/install/wit_ros2_imu:/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/opt/ros/humble'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('UMS_RO', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UMS_FSTYPE', 'vfat'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/orangepi/uvg_car/build/fishbot_navigation2'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.220.24.151 50703 10.220.24.61 22'), ('PYTHONPATH', '/home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages:/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('UMS_MOUNT', '0'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/home/orangepi/uvg_car/install/wit_ros2_imu:/opt/ros/humble'), ('UMS_FILE', '/userdata/ums_shared.img')]), 'shell': False}
+[0.080879] (oakchina_vio_package) JobProgress: {'identifier': 'oakchina_vio_package', 'progress': 'cmake'}
+[0.081164] (oakchina_vio_package) JobProgress: {'identifier': 'oakchina_vio_package', 'progress': 'build'}
+[0.081992] (oakchina_vio_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/orangepi/uvg_car/build/oakchina_vio_package', '--', '-j8', '-l8'], 'cwd': '/home/orangepi/uvg_car/build/oakchina_vio_package', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('UMS_MOUNTPOINT', '/mnt/ums'), ('GST_V4L2_PREFERRED_FOURCC', 'NV12:YU12:NV16:YUY2'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'orangepi'), ('SSH_CLIENT', '10.220.24.151 50703 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('USB_FUNCS', 'adb'), ('LD_LIBRARY_PATH', '/home/orangepi/uvg_car/install/oakchina_vio_package/lib:/home/orangepi/uvg_car/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/orangepi'), ('OLDPWD', '/home/orangepi'), ('TERM_PROGRAM_VERSION', '1.101.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-dba5ccbd-d692-4d6e-9fc9-61e8a2c18378.sock'), ('GST_INSPECT_NO_COLORS', '1'), ('GST_MPP_NO_RGA', '1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/orangepi/uvg_car/install'), ('GST_V4L2SRC_MAX_RESOLUTION', '3840x2160'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'orangepi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', '31'), ('GST_VIDEO_CONVERT_PREFERRED_FORMAT', 'NV12:NV16:I420:YUY2'), ('GST_V4L2SRC_RK_DEVICES', '_mainpath:_selfpath:_bypass:_scale'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/remote-cli:/home/orangepi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/scripts/noConfigScripts:/home/orangepi/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GST_GL_PLATFORM', 'egl'), ('GST_DEBUG_NO_COLOR', '1'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('GST_V4L2SRC_DEFAULT_DEVICE', '/dev/video-camera0'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/.noConfigDebugAdapterEndpoints/endpoint-eafc9373665f109e.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-307fec4b80.sock'), ('TERM_PROGRAM', 'vscode'), ('GST_V4L2_USE_LIBV4L2', '1'), ('UMS_SIZE', '256M'), ('AMENT_PREFIX_PATH', '/home/orangepi/uvg_car/install/wit_ros2_imu:/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/opt/ros/humble'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('UMS_RO', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UMS_FSTYPE', 'vfat'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/orangepi/uvg_car/build/oakchina_vio_package'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.220.24.151 50703 10.220.24.61 22'), ('PYTHONPATH', '/home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages:/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('UMS_MOUNT', '0'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/home/orangepi/uvg_car/install/wit_ros2_imu:/opt/ros/humble'), ('UMS_FILE', '/userdata/ums_shared.img')]), 'shell': False}
+[0.099386] (-) TimerEvent: {}
+[0.193393] (fishbot_cartographer) StdoutLine: {'line': b'[100%] Built target CartoTransferPose_main\n'}
+[0.199541] (-) TimerEvent: {}
+[0.202919] (lslidar_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_copy_lslidar_msgs\n'}
+[0.204220] (lslidar_msgs) StdoutLine: {'line': b'[ 11%] Built target lslidar_msgs__rosidl_generator_c\n'}
+[0.223022] (oakchina_vio_package) StdoutLine: {'line': b'[100%] Built target oakchina_vio_package_node\n'}
+[0.223911] (lslidar_msgs) StdoutLine: {'line': b'[ 12%] Built target lslidar_msgs__cpp\n'}
+[0.254693] (lslidar_msgs) StdoutLine: {'line': b'[ 23%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.259449] (lslidar_msgs) StdoutLine: {'line': b'[ 34%] Built target lslidar_msgs__rosidl_typesupport_c\n'}
+[0.260770] (lslidar_msgs) StdoutLine: {'line': b'[ 46%] Built target lslidar_msgs__rosidl_typesupport_introspection_c\n'}
+[0.288610] (lslidar_msgs) StdoutLine: {'line': b'[ 57%] Built target lslidar_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.294154] (lslidar_msgs) StdoutLine: {'line': b'[ 68%] Built target lslidar_msgs__rosidl_typesupport_cpp\n'}
+[0.299590] (-) TimerEvent: {}
+[0.314593] (lslidar_msgs) StdoutLine: {'line': b'[ 79%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.363210] (lslidar_msgs) StdoutLine: {'line': b'[ 79%] Built target lslidar_msgs\n'}
+[0.399774] (-) TimerEvent: {}
+[0.436238] (lslidar_msgs) StdoutLine: {'line': b'[ 80%] Built target lslidar_msgs__py\n'}
+[0.500189] (-) TimerEvent: {}
+[0.513661] (lslidar_msgs) StdoutLine: {'line': b'[ 90%] Built target lslidar_msgs__rosidl_generator_py\n'}
+[0.534082] (lslidar_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.536625] (lslidar_msgs) StdoutLine: {'line': b'writing lslidar_msgs.egg-info/PKG-INFO\n'}
+[0.537563] (lslidar_msgs) StdoutLine: {'line': b'writing dependency_links to lslidar_msgs.egg-info/dependency_links.txt\n'}
+[0.538214] (lslidar_msgs) StdoutLine: {'line': b'writing top-level names to lslidar_msgs.egg-info/top_level.txt\n'}
+[0.543015] (lslidar_msgs) StdoutLine: {'line': b"reading manifest file 'lslidar_msgs.egg-info/SOURCES.txt'\n"}
+[0.544331] (lslidar_msgs) StdoutLine: {'line': b"writing manifest file 'lslidar_msgs.egg-info/SOURCES.txt'\n"}
+[0.573330] (fishbot_navigation2) CommandEnded: {'returncode': 0}
+[0.575886] (lslidar_msgs) StdoutLine: {'line': b'[ 93%] Built target lslidar_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.577129] (fishbot_navigation2) JobProgress: {'identifier': 'fishbot_navigation2', 'progress': 'install'}
+[0.580954] (lslidar_msgs) StdoutLine: {'line': b'[ 96%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.588588] (fishbot_navigation2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/orangepi/uvg_car/build/fishbot_navigation2'], 'cwd': '/home/orangepi/uvg_car/build/fishbot_navigation2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('UMS_MOUNTPOINT', '/mnt/ums'), ('GST_V4L2_PREFERRED_FOURCC', 'NV12:YU12:NV16:YUY2'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'orangepi'), ('SSH_CLIENT', '10.220.24.151 50703 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('USB_FUNCS', 'adb'), ('LD_LIBRARY_PATH', '/home/orangepi/uvg_car/install/oakchina_vio_package/lib:/home/orangepi/uvg_car/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/orangepi'), ('OLDPWD', '/home/orangepi'), ('TERM_PROGRAM_VERSION', '1.101.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-dba5ccbd-d692-4d6e-9fc9-61e8a2c18378.sock'), ('GST_INSPECT_NO_COLORS', '1'), ('GST_MPP_NO_RGA', '1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/orangepi/uvg_car/install'), ('GST_V4L2SRC_MAX_RESOLUTION', '3840x2160'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'orangepi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', '31'), ('GST_VIDEO_CONVERT_PREFERRED_FORMAT', 'NV12:NV16:I420:YUY2'), ('GST_V4L2SRC_RK_DEVICES', '_mainpath:_selfpath:_bypass:_scale'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/remote-cli:/home/orangepi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/scripts/noConfigScripts:/home/orangepi/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GST_GL_PLATFORM', 'egl'), ('GST_DEBUG_NO_COLOR', '1'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('GST_V4L2SRC_DEFAULT_DEVICE', '/dev/video-camera0'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/.noConfigDebugAdapterEndpoints/endpoint-eafc9373665f109e.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-307fec4b80.sock'), ('TERM_PROGRAM', 'vscode'), ('GST_V4L2_USE_LIBV4L2', '1'), ('UMS_SIZE', '256M'), ('AMENT_PREFIX_PATH', '/home/orangepi/uvg_car/install/wit_ros2_imu:/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/opt/ros/humble'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('UMS_RO', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UMS_FSTYPE', 'vfat'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/orangepi/uvg_car/build/fishbot_navigation2'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.220.24.151 50703 10.220.24.61 22'), ('PYTHONPATH', '/home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages:/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('UMS_MOUNT', '0'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/home/orangepi/uvg_car/install/wit_ros2_imu:/opt/ros/humble'), ('UMS_FILE', '/userdata/ums_shared.img')]), 'shell': False}
+[0.591651] (fishbot_cartographer) CommandEnded: {'returncode': 0}
+[0.593872] (fishbot_cartographer) JobProgress: {'identifier': 'fishbot_cartographer', 'progress': 'install'}
+[0.594651] (fishbot_cartographer) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/orangepi/uvg_car/build/fishbot_cartographer'], 'cwd': '/home/orangepi/uvg_car/build/fishbot_cartographer', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('UMS_MOUNTPOINT', '/mnt/ums'), ('GST_V4L2_PREFERRED_FOURCC', 'NV12:YU12:NV16:YUY2'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'orangepi'), ('SSH_CLIENT', '10.220.24.151 50703 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('USB_FUNCS', 'adb'), ('LD_LIBRARY_PATH', '/home/orangepi/uvg_car/install/oakchina_vio_package/lib:/home/orangepi/uvg_car/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/orangepi'), ('OLDPWD', '/home/orangepi'), ('TERM_PROGRAM_VERSION', '1.101.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-dba5ccbd-d692-4d6e-9fc9-61e8a2c18378.sock'), ('GST_INSPECT_NO_COLORS', '1'), ('GST_MPP_NO_RGA', '1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/orangepi/uvg_car/install'), ('GST_V4L2SRC_MAX_RESOLUTION', '3840x2160'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'orangepi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', '31'), ('GST_VIDEO_CONVERT_PREFERRED_FORMAT', 'NV12:NV16:I420:YUY2'), ('GST_V4L2SRC_RK_DEVICES', '_mainpath:_selfpath:_bypass:_scale'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/remote-cli:/home/orangepi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/scripts/noConfigScripts:/home/orangepi/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GST_GL_PLATFORM', 'egl'), ('GST_DEBUG_NO_COLOR', '1'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('GST_V4L2SRC_DEFAULT_DEVICE', '/dev/video-camera0'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/.noConfigDebugAdapterEndpoints/endpoint-eafc9373665f109e.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-307fec4b80.sock'), ('TERM_PROGRAM', 'vscode'), ('GST_V4L2_USE_LIBV4L2', '1'), ('UMS_SIZE', '256M'), ('AMENT_PREFIX_PATH', '/home/orangepi/uvg_car/install/wit_ros2_imu:/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/opt/ros/humble'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('UMS_RO', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UMS_FSTYPE', 'vfat'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/orangepi/uvg_car/build/fishbot_cartographer'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.220.24.151 50703 10.220.24.61 22'), ('PYTHONPATH', '/home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages:/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('UMS_MOUNT', '0'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/home/orangepi/uvg_car/install/wit_ros2_imu:/opt/ros/humble'), ('UMS_FILE', '/userdata/ums_shared.img')]), 'shell': False}
+[0.597654] (lslidar_msgs) StdoutLine: {'line': b'[100%] Built target lslidar_msgs__rosidl_typesupport_c__pyext\n'}
+[0.598682] (oakchina_vio_package) CommandEnded: {'returncode': 0}
+[0.602730] (-) TimerEvent: {}
+[0.603657] (oakchina_vio_package) JobProgress: {'identifier': 'oakchina_vio_package', 'progress': 'install'}
+[0.603825] (oakchina_vio_package) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/orangepi/uvg_car/build/oakchina_vio_package'], 'cwd': '/home/orangepi/uvg_car/build/oakchina_vio_package', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('UMS_MOUNTPOINT', '/mnt/ums'), ('GST_V4L2_PREFERRED_FOURCC', 'NV12:YU12:NV16:YUY2'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'orangepi'), ('SSH_CLIENT', '10.220.24.151 50703 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('USB_FUNCS', 'adb'), ('LD_LIBRARY_PATH', '/home/orangepi/uvg_car/install/oakchina_vio_package/lib:/home/orangepi/uvg_car/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/orangepi'), ('OLDPWD', '/home/orangepi'), ('TERM_PROGRAM_VERSION', '1.101.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-dba5ccbd-d692-4d6e-9fc9-61e8a2c18378.sock'), ('GST_INSPECT_NO_COLORS', '1'), ('GST_MPP_NO_RGA', '1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/orangepi/uvg_car/install'), ('GST_V4L2SRC_MAX_RESOLUTION', '3840x2160'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'orangepi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', '31'), ('GST_VIDEO_CONVERT_PREFERRED_FORMAT', 'NV12:NV16:I420:YUY2'), ('GST_V4L2SRC_RK_DEVICES', '_mainpath:_selfpath:_bypass:_scale'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/remote-cli:/home/orangepi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/scripts/noConfigScripts:/home/orangepi/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GST_GL_PLATFORM', 'egl'), ('GST_DEBUG_NO_COLOR', '1'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('GST_V4L2SRC_DEFAULT_DEVICE', '/dev/video-camera0'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/.noConfigDebugAdapterEndpoints/endpoint-eafc9373665f109e.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-307fec4b80.sock'), ('TERM_PROGRAM', 'vscode'), ('GST_V4L2_USE_LIBV4L2', '1'), ('UMS_SIZE', '256M'), ('AMENT_PREFIX_PATH', '/home/orangepi/uvg_car/install/wit_ros2_imu:/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/opt/ros/humble'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('UMS_RO', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UMS_FSTYPE', 'vfat'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/orangepi/uvg_car/build/oakchina_vio_package'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.220.24.151 50703 10.220.24.61 22'), ('PYTHONPATH', '/home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages:/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('UMS_MOUNT', '0'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/home/orangepi/uvg_car/install/wit_ros2_imu:/opt/ros/humble'), ('UMS_FILE', '/userdata/ums_shared.img')]), 'shell': False}
+[0.605453] (fishbot_navigation2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.606518] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/launch\n'}
+[0.607017] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/launch/fishbot_navigation2.launch.py\n'}
+[0.609025] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/param\n'}
+[0.609424] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/param/fishbot_nav2.yaml\n'}
+[0.610484] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/param/ekf.yaml\n'}
+[0.610598] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/maps\n'}
+[0.610684] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/maps/fishbot_map.pgm\n'}
+[0.610766] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/maps/fishbot_map.yaml\n'}
+[0.610845] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/urdf\n'}
+[0.611010] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/urdf/fishot_2d.urdf\n'}
+[0.611295] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/ament_index/resource_index/package_run_dependencies/fishbot_navigation2\n'}
+[0.611617] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/ament_index/resource_index/parent_prefix_path/fishbot_navigation2\n'}
+[0.612618] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/environment/ament_prefix_path.sh\n'}
+[0.613050] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/environment/ament_prefix_path.dsv\n'}
+[0.613262] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/environment/path.sh\n'}
+[0.613494] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/environment/path.dsv\n'}
+[0.613674] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/local_setup.bash\n'}
+[0.614002] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/local_setup.sh\n'}
+[0.614200] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/local_setup.zsh\n'}
+[0.614527] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/local_setup.dsv\n'}
+[0.614694] (fishbot_navigation2) StdoutLine: {'line': b'-- Installing: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/package.dsv\n'}
+[0.614891] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/ament_index/resource_index/packages/fishbot_navigation2\n'}
+[0.615083] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/cmake/fishbot_navigation2Config.cmake\n'}
+[0.615259] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/cmake/fishbot_navigation2Config-version.cmake\n'}
+[0.615393] (fishbot_navigation2) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/package.xml\n'}
+[0.615528] (fishbot_cartographer) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.615830] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/config\n'}
+[0.615986] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/config/fishbot_2d.lua\n'}
+[0.616157] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/launch\n'}
+[0.616319] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/launch/ugv.launch.py\n'}
+[0.616494] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/launch/cartographer.launch.py\n'}
+[0.616612] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/rviz\n'}
+[0.616791] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/rviz/fishbot_cartographer.rviz\n'}
+[0.616904] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/urdf\n'}
+[0.617047] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/urdf/fishot_2d.urdf\n'}
+[0.617350] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/map\n'}
+[0.617526] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/map/fishbot_map.pgm\n'}
+[0.617851] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/map/fishbot_map.yaml\n'}
+[0.618540] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/param\n'}
+[0.618888] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/param/fishbot_nav2.yaml\n'}
+[0.618987] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/param/ekf.yaml\n'}
+[0.619065] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/lib/fishbot_cartographer/CartoTransferPose_main\n'}
+[0.619141] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/ament_index/resource_index/package_run_dependencies/fishbot_cartographer\n'}
+[0.619215] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/ament_index/resource_index/parent_prefix_path/fishbot_cartographer\n'}
+[0.619286] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/environment/ament_prefix_path.sh\n'}
+[0.619357] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/environment/ament_prefix_path.dsv\n'}
+[0.619578] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/environment/path.sh\n'}
+[0.619669] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/environment/path.dsv\n'}
+[0.619744] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/local_setup.bash\n'}
+[0.619853] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/local_setup.sh\n'}
+[0.619991] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/local_setup.zsh\n'}
+[0.620139] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/local_setup.dsv\n'}
+[0.620328] (fishbot_cartographer) StdoutLine: {'line': b'-- Installing: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/package.dsv\n'}
+[0.620595] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/ament_index/resource_index/packages/fishbot_cartographer\n'}
+[0.620750] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/cmake/fishbot_cartographerConfig.cmake\n'}
+[0.620851] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/cmake/fishbot_cartographerConfig-version.cmake\n'}
+[0.620959] (fishbot_cartographer) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/package.xml\n'}
+[0.621057] (fishbot_navigation2) CommandEnded: {'returncode': 0}
+[0.622364] (lslidar_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_lslidar_msgs_egg\n'}
+[0.623559] (oakchina_vio_package) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.624370] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/oakchina_vio_package/oakchina_vio_package_node\n'}
+[0.625168] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libcarina_client.so\n'}
+[0.625417] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libcarina_vio.so\n'}
+[0.626326] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libcarina_vio_client.so\n'}
+[0.627008] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libopencv_calib3d.so.4.2\n'}
+[0.628286] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libopencv_core.so.4.2\n'}
+[0.628554] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libopencv_imgcodecs.so.4.2\n'}
+[0.628712] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/launch\n'}
+[0.629076] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/launch/oakchina_vio.launch.py\n'}
+[0.630218] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/launch/oakchina_vio.launch\n'}
+[0.630390] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/config\n'}
+[0.630707] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/config/database.bin\n'}
+[0.630961] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/config/custom_config.yaml\n'}
+[0.631891] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/rviz\n'}
+[0.632023] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/rviz/oakchina_vio.rviz\n'}
+[0.632361] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/environment/library_path.sh\n'}
+[0.632495] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/environment/library_path.dsv\n'}
+[0.633472] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/ament_index/resource_index/package_run_dependencies/oakchina_vio_package\n'}
+[0.633912] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/ament_index/resource_index/parent_prefix_path/oakchina_vio_package\n'}
+[0.634152] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/environment/ament_prefix_path.sh\n'}
+[0.634961] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/environment/ament_prefix_path.dsv\n'}
+[0.635058] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/environment/path.sh\n'}
+[0.635143] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/environment/path.dsv\n'}
+[0.635225] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/local_setup.bash\n'}
+[0.635307] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/local_setup.sh\n'}
+[0.635389] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/local_setup.zsh\n'}
+[0.635472] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/local_setup.dsv\n'}
+[0.635571] (oakchina_vio_package) StdoutLine: {'line': b'-- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/package.dsv\n'}
+[0.635659] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/ament_index/resource_index/packages/oakchina_vio_package\n'}
+[0.635742] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.635825] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.635908] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.635989] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/cmake/oakchina_vio_packageConfig.cmake\n'}
+[0.636071] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/cmake/oakchina_vio_packageConfig-version.cmake\n'}
+[0.636161] (oakchina_vio_package) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/package.xml\n'}
+[0.646077] (fishbot_navigation2) JobEnded: {'identifier': 'fishbot_navigation2', 'rc': 0}
+[0.647509] (fishbot_cartographer) CommandEnded: {'returncode': 0}
+[0.663375] (fishbot_cartographer) JobEnded: {'identifier': 'fishbot_cartographer', 'rc': 0}
+[0.666087] (oakchina_vio_package) CommandEnded: {'returncode': 0}
+[0.685232] (oakchina_vio_package) JobEnded: {'identifier': 'oakchina_vio_package', 'rc': 0}
+[0.689091] (lslidar_msgs) CommandEnded: {'returncode': 0}
+[0.690932] (lslidar_msgs) JobProgress: {'identifier': 'lslidar_msgs', 'progress': 'install'}
+[0.691075] (lslidar_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/orangepi/uvg_car/build/lslidar_msgs'], 'cwd': '/home/orangepi/uvg_car/build/lslidar_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('UMS_MOUNTPOINT', '/mnt/ums'), ('GST_V4L2_PREFERRED_FOURCC', 'NV12:YU12:NV16:YUY2'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'orangepi'), ('SSH_CLIENT', '10.220.24.151 50703 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('USB_FUNCS', 'adb'), ('LD_LIBRARY_PATH', '/home/orangepi/uvg_car/install/oakchina_vio_package/lib:/home/orangepi/uvg_car/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/orangepi'), ('OLDPWD', '/home/orangepi'), ('TERM_PROGRAM_VERSION', '1.101.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-dba5ccbd-d692-4d6e-9fc9-61e8a2c18378.sock'), ('GST_INSPECT_NO_COLORS', '1'), ('GST_MPP_NO_RGA', '1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/orangepi/uvg_car/install'), ('GST_V4L2SRC_MAX_RESOLUTION', '3840x2160'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'orangepi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', '31'), ('GST_VIDEO_CONVERT_PREFERRED_FORMAT', 'NV12:NV16:I420:YUY2'), ('GST_V4L2SRC_RK_DEVICES', '_mainpath:_selfpath:_bypass:_scale'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/remote-cli:/home/orangepi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/scripts/noConfigScripts:/home/orangepi/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GST_GL_PLATFORM', 'egl'), ('GST_DEBUG_NO_COLOR', '1'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('GST_V4L2SRC_DEFAULT_DEVICE', '/dev/video-camera0'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/.noConfigDebugAdapterEndpoints/endpoint-eafc9373665f109e.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-307fec4b80.sock'), ('TERM_PROGRAM', 'vscode'), ('GST_V4L2_USE_LIBV4L2', '1'), ('UMS_SIZE', '256M'), ('AMENT_PREFIX_PATH', '/home/orangepi/uvg_car/install/wit_ros2_imu:/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/opt/ros/humble'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('UMS_RO', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UMS_FSTYPE', 'vfat'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/orangepi/uvg_car/build/lslidar_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.220.24.151 50703 10.220.24.61 22'), ('PYTHONPATH', '/home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages:/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('UMS_MOUNT', '0'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/home/orangepi/uvg_car/install/wit_ros2_imu:/opt/ros/humble'), ('UMS_FILE', '/userdata/ums_shared.img')]), 'shell': False}
+[0.702946] (-) TimerEvent: {}
+[0.712839] (lslidar_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.714387] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/ament_index/resource_index/rosidl_interfaces/lslidar_msgs\n'}
+[0.715771] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[0.716562] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[0.717279] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[0.718093] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__functions.h\n'}
+[0.718697] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__functions.h\n'}
+[0.719074] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__type_support.h\n'}
+[0.719423] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__type_support.h\n'}
+[0.719769] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__struct.h\n'}
+[0.720113] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__struct.h\n'}
+[0.720480] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__struct.h\n'}
+[0.720837] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__functions.h\n'}
+[0.721184] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__functions.c\n'}
+[0.721534] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__functions.c\n'}
+[0.721877] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__functions.h\n'}
+[0.722257] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__functions.h\n'}
+[0.722604] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__type_support.h\n'}
+[0.722947] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__functions.c\n'}
+[0.723292] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__type_support.h\n'}
+[0.723635] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__struct.h\n'}
+[0.724014] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__struct.h\n'}
+[0.724366] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__functions.c\n'}
+[0.724709] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__type_support.h\n'}
+[0.725100] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__functions.c\n'}
+[0.725445] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_point.h\n'}
+[0.725789] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_packet.h\n'}
+[0.726130] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_difop.h\n'}
+[0.726471] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_sweep.h\n'}
+[0.726812] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_scan.h\n'}
+[0.727202] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.727556] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/environment/library_path.sh\n'}
+[0.727899] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/environment/library_path.dsv\n'}
+[0.728241] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_generator_c.so\n'}
+[0.728581] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[0.728923] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[0.729268] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[0.729612] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_fastrtps_c.h\n'}
+[0.729964] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_fastrtps_c.h\n'}
+[0.730314] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_fastrtps_c.h\n'}
+[0.730697] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_fastrtps_c.h\n'}
+[0.731045] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_fastrtps_c.h\n'}
+[0.731388] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.731733] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.732076] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[0.732418] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[0.732767] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_point.hpp\n'}
+[0.733144] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_packet.hpp\n'}
+[0.733488] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[0.733847] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__type_support.hpp\n'}
+[0.734202] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__struct.hpp\n'}
+[0.734546] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__type_support.hpp\n'}
+[0.734889] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__builder.hpp\n'}
+[0.735258] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__builder.hpp\n'}
+[0.735603] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__type_support.hpp\n'}
+[0.735946] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__builder.hpp\n'}
+[0.736290] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__traits.hpp\n'}
+[0.736667] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__struct.hpp\n'}
+[0.737010] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__traits.hpp\n'}
+[0.737380] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__traits.hpp\n'}
+[0.737727] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__builder.hpp\n'}
+[0.738070] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__type_support.hpp\n'}
+[0.738415] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__struct.hpp\n'}
+[0.738757] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__struct.hpp\n'}
+[0.739099] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__builder.hpp\n'}
+[0.739440] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__type_support.hpp\n'}
+[0.739781] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__struct.hpp\n'}
+[0.740122] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__traits.hpp\n'}
+[0.740482] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__traits.hpp\n'}
+[0.740834] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_sweep.hpp\n'}
+[0.741230] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.741577] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_scan.hpp\n'}
+[0.741921] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_difop.hpp\n'}
+[0.742264] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[0.742609] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[0.742952] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[0.743332] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.743709] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.744101] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.744455] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.744803] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.745153] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/dds_fastrtps\n'}
+[0.745501] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.745852] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.746198] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[0.746544] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[0.746889] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[0.747273] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__type_support.c\n'}
+[0.747631] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_introspection_c.h\n'}
+[0.748046] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__type_support.c\n'}
+[0.748401] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__type_support.c\n'}
+[0.748752] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__type_support.c\n'}
+[0.749102] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_introspection_c.h\n'}
+[0.749453] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__type_support.c\n'}
+[0.749802] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_introspection_c.h\n'}
+[0.750154] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_introspection_c.h\n'}
+[0.750533] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_introspection_c.h\n'}
+[0.750933] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.751285] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.751634] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_c.so\n'}
+[0.751984] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[0.752335] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[0.752684] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[0.753033] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__type_support.cpp\n'}
+[0.753386] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__type_support.cpp\n'}
+[0.753788] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__type_support.cpp\n'}
+[0.754070] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__type_support.cpp\n'}
+[0.754159] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__type_support.cpp\n'}
+[0.754239] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.754319] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.754392] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.754460] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.754529] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.754597] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.754668] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_cpp.so\n'}
+[0.754737] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/environment/pythonpath.sh\n'}
+[0.754810] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/environment/pythonpath.dsv\n'}
+[0.754882] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs-1.2.0-py3.10.egg-info\n'}
+[0.754953] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs-1.2.0-py3.10.egg-info/top_level.txt\n'}
+[0.755028] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs-1.2.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.755136] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs-1.2.0-py3.10.egg-info/PKG-INFO\n'}
+[0.755205] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs-1.2.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.755275] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs\n'}
+[0.755342] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/liblslidar_msgs__rosidl_generator_py.so\n'}
+[0.755409] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.755476] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.755544] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/__init__.py\n'}
+[0.755613] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[0.755687] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[0.755761] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg\n'}
+[0.755830] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_difop_s.c\n'}
+[0.755897] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_scan.py\n'}
+[0.755967] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_difop.py\n'}
+[0.756036] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_packet_s.c\n'}
+[0.756116] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/__init__.py\n'}
+[0.756189] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_scan_s.c\n'}
+[0.756259] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_packet.py\n'}
+[0.756327] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_sweep_s.c\n'}
+[0.756396] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_point.py\n'}
+[0.756464] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_sweep.py\n'}
+[0.756532] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_point_s.c\n'}
+[0.756606] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.756675] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[0.787507] (lslidar_msgs) StdoutLine: {'line': b"Listing '/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs'...\n"}
+[0.788114] (lslidar_msgs) StdoutLine: {'line': b"Listing '/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg'...\n"}
+[0.804422] (-) TimerEvent: {}
+[0.814964] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[0.816536] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[0.817644] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[0.818746] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_generator_py.so\n'}
+[0.819478] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarDifop.idl\n'}
+[0.819996] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPacket.idl\n'}
+[0.820477] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPoint.idl\n'}
+[0.820899] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarScan.idl\n'}
+[0.821290] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarSweep.idl\n'}
+[0.821670] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarDifop.msg\n'}
+[0.822038] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPacket.msg\n'}
+[0.822984] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPoint.msg\n'}
+[0.824872] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarScan.msg\n'}
+[0.825514] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarSweep.msg\n'}
+[0.826057] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/ament_index/resource_index/package_run_dependencies/lslidar_msgs\n'}
+[0.826536] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/ament_index/resource_index/parent_prefix_path/lslidar_msgs\n'}
+[0.826975] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/environment/ament_prefix_path.sh\n'}
+[0.827394] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/environment/ament_prefix_path.dsv\n'}
+[0.827952] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/environment/path.sh\n'}
+[0.828418] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/environment/path.dsv\n'}
+[0.829032] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/local_setup.bash\n'}
+[0.830775] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/local_setup.sh\n'}
+[0.831704] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/local_setup.zsh\n'}
+[0.832632] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/local_setup.dsv\n'}
+[0.833338] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/package.dsv\n'}
+[0.833946] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/ament_index/resource_index/packages/lslidar_msgs\n'}
+[0.835448] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_cExport.cmake\n'}
+[0.836320] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.837313] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.837739] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.838432] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.840894] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.841551] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.842358] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.843319] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.844163] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.845009] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.845998] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.846676] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.847286] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.847969] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.850132] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_pyExport.cmake\n'}
+[0.850791] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.851191] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.851652] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.852092] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.852609] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.853050] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.853456] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.853979] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.855570] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgsConfig.cmake\n'}
+[0.856442] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgsConfig-version.cmake\n'}
+[0.857300] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/package.xml\n'}
+[0.858027] (lslidar_msgs) CommandEnded: {'returncode': 0}
+[0.867568] (lslidar_msgs) JobEnded: {'identifier': 'lslidar_msgs', 'rc': 0}
+[0.870481] (lslidar_driver) JobStarted: {'identifier': 'lslidar_driver'}
+[0.887881] (lslidar_driver) JobProgress: {'identifier': 'lslidar_driver', 'progress': 'cmake'}
+[0.889803] (lslidar_driver) JobProgress: {'identifier': 'lslidar_driver', 'progress': 'build'}
+[0.890720] (lslidar_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/orangepi/uvg_car/build/lslidar_driver', '--', '-j8', '-l8'], 'cwd': '/home/orangepi/uvg_car/build/lslidar_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('UMS_MOUNTPOINT', '/mnt/ums'), ('GST_V4L2_PREFERRED_FOURCC', 'NV12:YU12:NV16:YUY2'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'orangepi'), ('SSH_CLIENT', '10.220.24.151 50703 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('USB_FUNCS', 'adb'), ('LD_LIBRARY_PATH', '/home/orangepi/uvg_car/install/lslidar_msgs/lib:/home/orangepi/uvg_car/install/oakchina_vio_package/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/orangepi'), ('OLDPWD', '/home/orangepi'), ('TERM_PROGRAM_VERSION', '1.101.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-dba5ccbd-d692-4d6e-9fc9-61e8a2c18378.sock'), ('GST_INSPECT_NO_COLORS', '1'), ('GST_MPP_NO_RGA', '1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/orangepi/uvg_car/install'), ('GST_V4L2SRC_MAX_RESOLUTION', '3840x2160'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'orangepi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', '31'), ('GST_VIDEO_CONVERT_PREFERRED_FORMAT', 'NV12:NV16:I420:YUY2'), ('GST_V4L2SRC_RK_DEVICES', '_mainpath:_selfpath:_bypass:_scale'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/remote-cli:/home/orangepi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/scripts/noConfigScripts:/home/orangepi/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GST_GL_PLATFORM', 'egl'), ('GST_DEBUG_NO_COLOR', '1'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('GST_V4L2SRC_DEFAULT_DEVICE', '/dev/video-camera0'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/.noConfigDebugAdapterEndpoints/endpoint-eafc9373665f109e.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-307fec4b80.sock'), ('TERM_PROGRAM', 'vscode'), ('GST_V4L2_USE_LIBV4L2', '1'), ('UMS_SIZE', '256M'), ('AMENT_PREFIX_PATH', '/home/orangepi/uvg_car/install/wit_ros2_imu:/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/opt/ros/humble'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('UMS_RO', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UMS_FSTYPE', 'vfat'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/orangepi/uvg_car/build/lslidar_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.220.24.151 50703 10.220.24.61 22'), ('PYTHONPATH', '/home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages:/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('UMS_MOUNT', '0'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/home/orangepi/uvg_car/install/wit_ros2_imu:/opt/ros/humble'), ('UMS_FILE', '/userdata/ums_shared.img')]), 'shell': False}
+[0.904423] (-) TimerEvent: {}
+[1.006491] (-) TimerEvent: {}
+[1.107550] (-) TimerEvent: {}
+[1.146880] (lslidar_driver) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_driver_node.dir/src/lslidar_driver.cc.o\x1b[0m\n'}
+[1.207788] (-) TimerEvent: {}
+[1.221993] (wit_ros2_imu) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/wit_ros2_imu', 'build', '--build-base', '/home/orangepi/uvg_car/build/wit_ros2_imu/build', 'install', '--record', '/home/orangepi/uvg_car/build/wit_ros2_imu/install.log', '--install-scripts', '$base/lib/wit_ros2_imu', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/orangepi/uvg_car/src/wit_ros2_imu', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'UMS_MOUNTPOINT': '/mnt/ums', 'GST_V4L2_PREFERRED_FOURCC': 'NV12:YU12:NV16:YUY2', 'LANGUAGE': 'en_US.UTF-8', 'USER': 'orangepi', 'SSH_CLIENT': '10.220.24.151 50703 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'USB_FUNCS': 'adb', 'LD_LIBRARY_PATH': '/home/orangepi/uvg_car/install/oakchina_vio_package/lib:/home/orangepi/uvg_car/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/orangepi', 'OLDPWD': '/home/orangepi', 'TERM_PROGRAM_VERSION': '1.101.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-dba5ccbd-d692-4d6e-9fc9-61e8a2c18378.sock', 'GST_INSPECT_NO_COLORS': '1', 'GST_MPP_NO_RGA': '1', 'ROS_PYTHON_VERSION': '3', 'COGL_DRIVER': 'gles2', 'VSCODE_GIT_ASKPASS_MAIN': '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/orangepi/uvg_car/install', 'GST_V4L2SRC_MAX_RESOLUTION': '3840x2160', 'ROS_DISTRO': 'humble', 'LOGNAME': 'orangepi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'GST_GL_API': 'gles2', 'XDG_SESSION_ID': '31', 'GST_VIDEO_CONVERT_PREFERRED_FORMAT': 'NV12:NV16:I420:YUY2', 'GST_V4L2SRC_RK_DEVICES': '_mainpath:_selfpath:_bypass:_scale', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/remote-cli:/home/orangepi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/scripts/noConfigScripts:/home/orangepi/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GST_GL_PLATFORM': 'egl', 'GST_DEBUG_NO_COLOR': '1', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'GST_V4L2SRC_DEFAULT_DEVICE': '/dev/video-camera0', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/.noConfigDebugAdapterEndpoints/endpoint-eafc9373665f109e.txt', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-307fec4b80.sock', 'TERM_PROGRAM': 'vscode', 'GST_V4L2_USE_LIBV4L2': '1', 'UMS_SIZE': '256M', 'AMENT_PREFIX_PATH': '/home/orangepi/uvg_car/install/wit_ros2_imu:/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/opt/ros/humble', 'LC_MESSAGES': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'UMS_RO': '0', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'UMS_FSTYPE': 'vfat', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/orangepi/uvg_car/build/wit_ros2_imu', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.220.24.151 50703 10.220.24.61 22', 'PYTHONPATH': '/home/orangepi/uvg_car/build/wit_ros2_imu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages:/home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages:/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'UMS_MOUNT': '0', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer', 'UMS_FILE': '/userdata/ums_shared.img'}, 'shell': False}
+[1.308029] (-) TimerEvent: {}
+[1.409012] (-) TimerEvent: {}
+[1.510066] (-) TimerEvent: {}
+[1.564157] (wit_ros2_imu) StderrLine: {'line': b"/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[1.564633] (wit_ros2_imu) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.579466] (wit_ros2_imu) StdoutLine: {'line': b'running egg_info\n'}
+[1.580881] (wit_ros2_imu) StdoutLine: {'line': b'writing ../../build/wit_ros2_imu/wit_ros2_imu.egg-info/PKG-INFO\n'}
+[1.581242] (wit_ros2_imu) StdoutLine: {'line': b'writing dependency_links to ../../build/wit_ros2_imu/wit_ros2_imu.egg-info/dependency_links.txt\n'}
+[1.581580] (wit_ros2_imu) StdoutLine: {'line': b'writing entry points to ../../build/wit_ros2_imu/wit_ros2_imu.egg-info/entry_points.txt\n'}
+[1.581757] (wit_ros2_imu) StdoutLine: {'line': b'writing requirements to ../../build/wit_ros2_imu/wit_ros2_imu.egg-info/requires.txt\n'}
+[1.581854] (wit_ros2_imu) StdoutLine: {'line': b'writing top-level names to ../../build/wit_ros2_imu/wit_ros2_imu.egg-info/top_level.txt\n'}
+[1.584900] (wit_ros2_imu) StdoutLine: {'line': b"reading manifest file '../../build/wit_ros2_imu/wit_ros2_imu.egg-info/SOURCES.txt'\n"}
+[1.586288] (wit_ros2_imu) StdoutLine: {'line': b"writing manifest file '../../build/wit_ros2_imu/wit_ros2_imu.egg-info/SOURCES.txt'\n"}
+[1.586489] (wit_ros2_imu) StdoutLine: {'line': b'running build\n'}
+[1.586590] (wit_ros2_imu) StdoutLine: {'line': b'running build_py\n'}
+[1.586769] (wit_ros2_imu) StdoutLine: {'line': b'running install\n'}
+[1.587453] (wit_ros2_imu) StdoutLine: {'line': b'running install_lib\n'}
+[1.589355] (wit_ros2_imu) StdoutLine: {'line': b'running install_data\n'}
+[1.589767] (wit_ros2_imu) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.592585] (wit_ros2_imu) StdoutLine: {'line': b"removing '/home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages/wit_ros2_imu-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.593018] (wit_ros2_imu) StdoutLine: {'line': b'Copying ../../build/wit_ros2_imu/wit_ros2_imu.egg-info to /home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages/wit_ros2_imu-0.0.0-py3.10.egg-info\n'}
+[1.593801] (wit_ros2_imu) StdoutLine: {'line': b'running install_scripts\n'}
+[1.610357] (-) TimerEvent: {}
+[1.632675] (wit_ros2_imu) StdoutLine: {'line': b'Installing wit_ros2_imu script to /home/orangepi/uvg_car/install/wit_ros2_imu/lib/wit_ros2_imu\n'}
+[1.633466] (wit_ros2_imu) StdoutLine: {'line': b"writing list of installed files to '/home/orangepi/uvg_car/build/wit_ros2_imu/install.log'\n"}
+[1.710605] (-) TimerEvent: {}
+[1.728270] (wit_ros2_imu) CommandEnded: {'returncode': 0}
+[1.736433] (wit_ros2_imu) JobEnded: {'identifier': 'wit_ros2_imu', 'rc': 0}
+[1.810825] (-) TimerEvent: {}
+[1.911789] (-) TimerEvent: {}
+[2.013202] (-) TimerEvent: {}
+[2.115071] (-) TimerEvent: {}
+[2.216295] (-) TimerEvent: {}
+[2.317630] (-) TimerEvent: {}
+[2.418865] (-) TimerEvent: {}
+[2.520244] (-) TimerEvent: {}
+[2.621534] (-) TimerEvent: {}
+[2.722963] (-) TimerEvent: {}
+[2.824426] (-) TimerEvent: {}
+[2.925651] (-) TimerEvent: {}
+[3.027077] (-) TimerEvent: {}
+[3.128382] (-) TimerEvent: {}
+[3.229741] (-) TimerEvent: {}
+[3.331135] (-) TimerEvent: {}
+[3.432689] (-) TimerEvent: {}
+[3.534123] (-) TimerEvent: {}
+[3.636001] (-) TimerEvent: {}
+[3.737353] (-) TimerEvent: {}
+[3.838582] (-) TimerEvent: {}
+[3.939863] (-) TimerEvent: {}
+[4.041189] (-) TimerEvent: {}
+[4.142470] (-) TimerEvent: {}
+[4.243819] (-) TimerEvent: {}
+[4.345054] (-) TimerEvent: {}
+[4.446325] (-) TimerEvent: {}
+[4.547610] (-) TimerEvent: {}
+[4.648920] (-) TimerEvent: {}
+[4.750233] (-) TimerEvent: {}
+[4.851508] (-) TimerEvent: {}
+[4.952776] (-) TimerEvent: {}
+[5.054122] (-) TimerEvent: {}
+[5.155399] (-) TimerEvent: {}
+[5.256602] (-) TimerEvent: {}
+[5.357840] (-) TimerEvent: {}
+[5.459099] (-) TimerEvent: {}
+[5.560384] (-) TimerEvent: {}
+[5.661667] (-) TimerEvent: {}
+[5.762951] (-) TimerEvent: {}
+[5.864277] (-) TimerEvent: {}
+[5.965661] (-) TimerEvent: {}
+[6.066886] (-) TimerEvent: {}
+[6.168237] (-) TimerEvent: {}
+[6.269552] (-) TimerEvent: {}
+[6.370922] (-) TimerEvent: {}
+[6.472328] (-) TimerEvent: {}
+[6.573624] (-) TimerEvent: {}
+[6.674882] (-) TimerEvent: {}
+[6.776169] (-) TimerEvent: {}
+[6.877456] (-) TimerEvent: {}
+[6.978746] (-) TimerEvent: {}
+[7.080728] (-) TimerEvent: {}
+[7.183651] (-) TimerEvent: {}
+[7.284966] (-) TimerEvent: {}
+[7.386282] (-) TimerEvent: {}
+[7.487675] (-) TimerEvent: {}
+[7.589045] (-) TimerEvent: {}
+[7.690372] (-) TimerEvent: {}
+[7.791619] (-) TimerEvent: {}
+[7.892913] (-) TimerEvent: {}
+[7.994206] (-) TimerEvent: {}
+[8.095499] (-) TimerEvent: {}
+[8.196808] (-) TimerEvent: {}
+[8.298123] (-) TimerEvent: {}
+[8.399323] (-) TimerEvent: {}
+[8.500640] (-) TimerEvent: {}
+[8.601904] (-) TimerEvent: {}
+[8.703195] (-) TimerEvent: {}
+[8.804512] (-) TimerEvent: {}
+[8.905824] (-) TimerEvent: {}
+[9.007171] (-) TimerEvent: {}
+[9.108475] (-) TimerEvent: {}
+[9.210010] (-) TimerEvent: {}
+[9.311453] (-) TimerEvent: {}
+[9.412814] (-) TimerEvent: {}
+[9.514215] (-) TimerEvent: {}
+[9.615534] (-) TimerEvent: {}
+[9.717049] (-) TimerEvent: {}
+[9.818415] (-) TimerEvent: {}
+[9.919789] (-) TimerEvent: {}
+[10.021196] (-) TimerEvent: {}
+[10.122559] (-) TimerEvent: {}
+[10.223980] (-) TimerEvent: {}
+[10.324997] (-) TimerEvent: {}
+[10.426365] (-) TimerEvent: {}
+[10.527680] (-) TimerEvent: {}
+[10.629050] (-) TimerEvent: {}
+[10.730402] (-) TimerEvent: {}
+[10.831711] (-) TimerEvent: {}
+[10.933078] (-) TimerEvent: {}
+[11.034505] (-) TimerEvent: {}
+[11.135955] (-) TimerEvent: {}
+[11.237356] (-) TimerEvent: {}
+[11.338644] (-) TimerEvent: {}
+[11.440058] (-) TimerEvent: {}
+[11.541505] (-) TimerEvent: {}
+[11.642974] (-) TimerEvent: {}
+[11.744321] (-) TimerEvent: {}
+[11.845638] (-) TimerEvent: {}
+[11.947053] (-) TimerEvent: {}
+[12.049626] (-) TimerEvent: {}
+[12.151275] (-) TimerEvent: {}
+[12.252665] (-) TimerEvent: {}
+[12.354066] (-) TimerEvent: {}
+[12.455436] (-) TimerEvent: {}
+[12.556812] (-) TimerEvent: {}
+[12.658219] (-) TimerEvent: {}
+[12.759592] (-) TimerEvent: {}
+[12.860994] (-) TimerEvent: {}
+[12.962411] (-) TimerEvent: {}
+[13.063822] (-) TimerEvent: {}
+[13.165210] (-) TimerEvent: {}
+[13.266648] (-) TimerEvent: {}
+[13.368089] (-) TimerEvent: {}
+[13.469565] (-) TimerEvent: {}
+[13.570981] (-) TimerEvent: {}
+[13.672322] (-) TimerEvent: {}
+[13.773594] (-) TimerEvent: {}
+[13.874754] (-) TimerEvent: {}
+[13.975400] (-) TimerEvent: {}
+[14.076053] (-) TimerEvent: {}
+[14.176703] (-) TimerEvent: {}
+[14.277361] (-) TimerEvent: {}
+[14.377983] (-) TimerEvent: {}
+[14.478620] (-) TimerEvent: {}
+[14.579257] (-) TimerEvent: {}
+[14.679876] (-) TimerEvent: {}
+[14.780517] (-) TimerEvent: {}
+[14.881169] (-) TimerEvent: {}
+[14.981831] (-) TimerEvent: {}
+[15.082466] (-) TimerEvent: {}
+[15.183109] (-) TimerEvent: {}
+[15.283734] (-) TimerEvent: {}
+[15.384384] (-) TimerEvent: {}
+[15.485024] (-) TimerEvent: {}
+[15.585675] (-) TimerEvent: {}
+[15.686301] (-) TimerEvent: {}
+[15.786938] (-) TimerEvent: {}
+[15.887585] (-) TimerEvent: {}
+[15.988230] (-) TimerEvent: {}
+[16.088874] (-) TimerEvent: {}
+[16.189530] (-) TimerEvent: {}
+[16.290195] (-) TimerEvent: {}
+[16.390896] (-) TimerEvent: {}
+[16.491508] (-) TimerEvent: {}
+[16.592179] (-) TimerEvent: {}
+[16.692901] (-) TimerEvent: {}
+[16.793564] (-) TimerEvent: {}
+[16.894234] (-) TimerEvent: {}
+[16.994917] (-) TimerEvent: {}
+[17.095557] (-) TimerEvent: {}
+[17.196226] (-) TimerEvent: {}
+[17.296870] (-) TimerEvent: {}
+[17.397563] (-) TimerEvent: {}
+[17.498213] (-) TimerEvent: {}
+[17.598900] (-) TimerEvent: {}
+[17.699554] (-) TimerEvent: {}
+[17.800204] (-) TimerEvent: {}
+[17.900884] (-) TimerEvent: {}
+[18.001574] (-) TimerEvent: {}
+[18.102210] (-) TimerEvent: {}
+[18.202854] (-) TimerEvent: {}
+[18.303484] (-) TimerEvent: {}
+[18.404142] (-) TimerEvent: {}
+[18.504790] (-) TimerEvent: {}
+[18.605444] (-) TimerEvent: {}
+[18.706110] (-) TimerEvent: {}
+[18.806755] (-) TimerEvent: {}
+[18.907428] (-) TimerEvent: {}
+[19.008103] (-) TimerEvent: {}
+[19.108752] (-) TimerEvent: {}
+[19.209401] (-) TimerEvent: {}
+[19.310060] (-) TimerEvent: {}
+[19.410779] (-) TimerEvent: {}
+[19.511479] (-) TimerEvent: {}
+[19.612148] (-) TimerEvent: {}
+[19.712790] (-) TimerEvent: {}
+[19.813439] (-) TimerEvent: {}
+[19.914097] (-) TimerEvent: {}
+[20.014751] (-) TimerEvent: {}
+[20.115386] (-) TimerEvent: {}
+[20.216055] (-) TimerEvent: {}
+[20.316713] (-) TimerEvent: {}
+[20.417462] (-) TimerEvent: {}
+[20.518116] (-) TimerEvent: {}
+[20.618751] (-) TimerEvent: {}
+[20.719389] (-) TimerEvent: {}
+[20.820038] (-) TimerEvent: {}
+[20.920711] (-) TimerEvent: {}
+[21.021352] (-) TimerEvent: {}
+[21.122032] (-) TimerEvent: {}
+[21.222705] (-) TimerEvent: {}
+[21.323362] (-) TimerEvent: {}
+[21.424038] (-) TimerEvent: {}
+[21.524633] (-) TimerEvent: {}
+[21.625013] (-) TimerEvent: {}
+[21.725514] (-) TimerEvent: {}
+[21.826154] (-) TimerEvent: {}
+[21.926845] (-) TimerEvent: {}
+[22.027595] (-) TimerEvent: {}
+[22.128295] (-) TimerEvent: {}
+[22.228729] (-) TimerEvent: {}
+[22.329227] (-) TimerEvent: {}
+[22.429790] (-) TimerEvent: {}
+[22.530547] (-) TimerEvent: {}
+[22.631236] (-) TimerEvent: {}
+[22.731991] (-) TimerEvent: {}
+[22.832664] (-) TimerEvent: {}
+[22.933326] (-) TimerEvent: {}
+[23.033998] (-) TimerEvent: {}
+[23.134652] (-) TimerEvent: {}
+[23.235321] (-) TimerEvent: {}
+[23.335978] (-) TimerEvent: {}
+[23.436624] (-) TimerEvent: {}
+[23.537234] (-) TimerEvent: {}
+[23.637887] (-) TimerEvent: {}
+[23.738812] (-) TimerEvent: {}
+[23.839978] (-) TimerEvent: {}
+[23.940990] (-) TimerEvent: {}
+[24.042007] (-) TimerEvent: {}
+[24.143120] (-) TimerEvent: {}
+[24.244157] (-) TimerEvent: {}
+[24.345222] (-) TimerEvent: {}
+[24.446322] (-) TimerEvent: {}
+[24.547301] (-) TimerEvent: {}
+[24.648195] (-) TimerEvent: {}
+[24.749057] (-) TimerEvent: {}
+[24.849733] (-) TimerEvent: {}
+[24.950405] (-) TimerEvent: {}
+[25.051144] (-) TimerEvent: {}
+[25.151792] (-) TimerEvent: {}
+[25.252410] (-) TimerEvent: {}
+[25.353044] (-) TimerEvent: {}
+[25.453689] (-) TimerEvent: {}
+[25.554353] (-) TimerEvent: {}
+[25.654995] (-) TimerEvent: {}
+[25.755677] (-) TimerEvent: {}
+[25.856301] (-) TimerEvent: {}
+[25.956946] (-) TimerEvent: {}
+[26.057580] (-) TimerEvent: {}
+[26.158601] (-) TimerEvent: {}
+[26.259244] (-) TimerEvent: {}
+[26.361184] (-) TimerEvent: {}
+[26.462420] (-) TimerEvent: {}
+[26.564379] (-) TimerEvent: {}
+[26.665008] (-) TimerEvent: {}
+[26.765655] (-) TimerEvent: {}
+[26.866320] (-) TimerEvent: {}
+[26.966984] (-) TimerEvent: {}
+[27.068266] (-) TimerEvent: {}
+[27.170332] (-) TimerEvent: {}
+[27.271359] (-) TimerEvent: {}
+[27.372544] (-) TimerEvent: {}
+[27.473683] (-) TimerEvent: {}
+[27.574865] (-) TimerEvent: {}
+[27.675949] (-) TimerEvent: {}
+[27.776874] (-) TimerEvent: {}
+[27.877963] (-) TimerEvent: {}
+[27.979093] (-) TimerEvent: {}
+[28.080228] (-) TimerEvent: {}
+[28.181276] (-) TimerEvent: {}
+[28.282418] (-) TimerEvent: {}
+[28.383533] (-) TimerEvent: {}
+[28.484629] (-) TimerEvent: {}
+[28.585580] (-) TimerEvent: {}
+[28.686384] (-) TimerEvent: {}
+[28.787559] (-) TimerEvent: {}
+[28.888556] (-) TimerEvent: {}
+[28.989360] (-) TimerEvent: {}
+[29.090334] (-) TimerEvent: {}
+[29.191417] (-) TimerEvent: {}
+[29.292367] (-) TimerEvent: {}
+[29.390658] (lslidar_driver) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX executable lslidar_driver_node\x1b[0m\n'}
+[29.392463] (-) TimerEvent: {}
+[29.493291] (-) TimerEvent: {}
+[29.594630] (-) TimerEvent: {}
+[29.695844] (-) TimerEvent: {}
+[29.796706] (-) TimerEvent: {}
+[29.897516] (-) TimerEvent: {}
+[29.998382] (-) TimerEvent: {}
+[30.099288] (-) TimerEvent: {}
+[30.200174] (-) TimerEvent: {}
+[30.301141] (-) TimerEvent: {}
+[30.402037] (-) TimerEvent: {}
+[30.503026] (-) TimerEvent: {}
+[30.603723] (-) TimerEvent: {}
+[30.704636] (-) TimerEvent: {}
+[30.805337] (-) TimerEvent: {}
+[30.906128] (-) TimerEvent: {}
+[31.006895] (-) TimerEvent: {}
+[31.107902] (-) TimerEvent: {}
+[31.208713] (-) TimerEvent: {}
+[31.309691] (-) TimerEvent: {}
+[31.410571] (-) TimerEvent: {}
+[31.511114] (-) TimerEvent: {}
+[31.612025] (-) TimerEvent: {}
+[31.712993] (-) TimerEvent: {}
+[31.814153] (-) TimerEvent: {}
+[31.915583] (-) TimerEvent: {}
+[32.016686] (-) TimerEvent: {}
+[32.117295] (-) TimerEvent: {}
+[32.218117] (-) TimerEvent: {}
+[32.318996] (-) TimerEvent: {}
+[32.419776] (-) TimerEvent: {}
+[32.520760] (-) TimerEvent: {}
+[32.621625] (-) TimerEvent: {}
+[32.722739] (-) TimerEvent: {}
+[32.823800] (-) TimerEvent: {}
+[32.924961] (-) TimerEvent: {}
+[33.026109] (-) TimerEvent: {}
+[33.127285] (-) TimerEvent: {}
+[33.227981] (-) TimerEvent: {}
+[33.307711] (lslidar_driver) StdoutLine: {'line': b'[100%] Built target lslidar_driver_node\n'}
+[33.328139] (-) TimerEvent: {}
+[33.331650] (lslidar_driver) CommandEnded: {'returncode': 0}
+[33.333314] (lslidar_driver) JobProgress: {'identifier': 'lslidar_driver', 'progress': 'install'}
+[33.334601] (lslidar_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/orangepi/uvg_car/build/lslidar_driver'], 'cwd': '/home/orangepi/uvg_car/build/lslidar_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('UMS_MOUNTPOINT', '/mnt/ums'), ('GST_V4L2_PREFERRED_FOURCC', 'NV12:YU12:NV16:YUY2'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'orangepi'), ('SSH_CLIENT', '10.220.24.151 50703 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('USB_FUNCS', 'adb'), ('LD_LIBRARY_PATH', '/home/orangepi/uvg_car/install/lslidar_msgs/lib:/home/orangepi/uvg_car/install/oakchina_vio_package/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/orangepi'), ('OLDPWD', '/home/orangepi'), ('TERM_PROGRAM_VERSION', '1.101.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-dba5ccbd-d692-4d6e-9fc9-61e8a2c18378.sock'), ('GST_INSPECT_NO_COLORS', '1'), ('GST_MPP_NO_RGA', '1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/orangepi/uvg_car/install'), ('GST_V4L2SRC_MAX_RESOLUTION', '3840x2160'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'orangepi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', '31'), ('GST_VIDEO_CONVERT_PREFERRED_FORMAT', 'NV12:NV16:I420:YUY2'), ('GST_V4L2SRC_RK_DEVICES', '_mainpath:_selfpath:_bypass:_scale'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/orangepi/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/bin/remote-cli:/home/orangepi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/scripts/noConfigScripts:/home/orangepi/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GST_GL_PLATFORM', 'egl'), ('GST_DEBUG_NO_COLOR', '1'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('GST_V4L2SRC_DEFAULT_DEVICE', '/dev/video-camera0'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/orangepi/.vscode-server/extensions/ms-python.debugpy-2025.8.0/.noConfigDebugAdapterEndpoints/endpoint-eafc9373665f109e.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-307fec4b80.sock'), ('TERM_PROGRAM', 'vscode'), ('GST_V4L2_USE_LIBV4L2', '1'), ('UMS_SIZE', '256M'), ('AMENT_PREFIX_PATH', '/home/orangepi/uvg_car/install/wit_ros2_imu:/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/opt/ros/humble'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('UMS_RO', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UMS_FSTYPE', 'vfat'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/orangepi/uvg_car/build/lslidar_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.220.24.151 50703 10.220.24.61 22'), ('PYTHONPATH', '/home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages:/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('UMS_MOUNT', '0'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/orangepi/uvg_car/install/lslidar_msgs:/home/orangepi/uvg_car/install/oakchina_vio_package:/home/orangepi/uvg_car/install/lslidar_driver:/home/orangepi/uvg_car/install/fishbot_navigation2:/home/orangepi/uvg_car/install/fishbot_cartographer:/home/orangepi/uvg_car/install/wit_ros2_imu:/opt/ros/humble'), ('UMS_FILE', '/userdata/ums_shared.img')]), 'shell': False}
+[33.352443] (lslidar_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[33.353383] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/launch\n'}
+[33.353860] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/launch/lsm10p_net_launch.py\n'}
+[33.354275] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/launch/demo.launch.py\n'}
+[33.354650] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/launch/lslidar_double_launch.py\n'}
+[33.355021] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/launch/lsm10_net_launch.py\n'}
+[33.355390] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/launch/lsm10p_uart_launch.py\n'}
+[33.355753] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/launch/lsm10_uart_launch.py\n'}
+[33.356115] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/launch/lsn10_net_launch.py\n'}
+[33.356481] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/launch/lsn10p_launch.py\n'}
+[33.356843] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/launch/viewer_scan_launch.py\n'}
+[33.357229] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/launch/lsn10_launch.py\n'}
+[33.357603] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/launch/lsn10p_net_launch.py\n'}
+[33.357969] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/params\n'}
+[33.358376] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/params/lidar_net_ros2\n'}
+[33.358740] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/params/lidar_net_ros2/lsm10p_net.yaml\n'}
+[33.359134] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/params/lidar_net_ros2/lsn10p_net.yaml\n'}
+[33.359501] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/params/lidar_net_ros2/lsn10_net.yaml\n'}
+[33.359869] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/params/lidar_net_ros2/lsm10_net.yaml\n'}
+[33.360232] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/params/lidar_uart_ros2\n'}
+[33.360642] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/params/lidar_uart_ros2/lsn10p.yaml\n'}
+[33.361017] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/params/lidar_uart_ros2/lsm10_p.yaml\n'}
+[33.361382] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/params/lidar_uart_ros2/lsm10.yaml\n'}
+[33.361745] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/params/lidar_uart_ros2/lsn10.yaml\n'}
+[33.362111] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/rviz\n'}
+[33.362471] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/rviz/lslidar.rviz\n'}
+[33.363287] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/orangepi/uvg_car/install/lslidar_driver/lib/lslidar_driver/lslidar_driver_node\n'}
+[33.363894] (lslidar_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/orangepi/uvg_car/install/lslidar_driver/lib/lslidar_driver/lslidar_driver_node" to ""\n'}
+[33.364325] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/ament_index/resource_index/package_run_dependencies/lslidar_driver\n'}
+[33.364710] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/ament_index/resource_index/parent_prefix_path/lslidar_driver\n'}
+[33.365082] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/environment/ament_prefix_path.sh\n'}
+[33.365449] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/environment/ament_prefix_path.dsv\n'}
+[33.365815] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/environment/path.sh\n'}
+[33.366943] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/environment/path.dsv\n'}
+[33.369682] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/local_setup.bash\n'}
+[33.370402] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/local_setup.sh\n'}
+[33.370858] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/local_setup.zsh\n'}
+[33.371301] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/local_setup.dsv\n'}
+[33.371734] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/package.dsv\n'}
+[33.372131] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/ament_index/resource_index/packages/lslidar_driver\n'}
+[33.372736] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[33.373116] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[33.373498] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/cmake/lslidar_driverConfig.cmake\n'}
+[33.373887] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/cmake/lslidar_driverConfig-version.cmake\n'}
+[33.375422] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/package.xml\n'}
+[33.376060] (lslidar_driver) CommandEnded: {'returncode': 0}
+[33.396103] (lslidar_driver) JobEnded: {'identifier': 'lslidar_driver', 'rc': 0}
+[33.398283] (-) EventReactorShutdown: {}

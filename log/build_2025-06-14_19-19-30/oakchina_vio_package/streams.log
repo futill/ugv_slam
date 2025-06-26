@@ -1,0 +1,36 @@
+[0.051s] Invoking command in '/home/orangepi/uvg_car/build/oakchina_vio_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/oakchina_vio_package -- -j8 -l8
+[0.132s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.325s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.364s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.367s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.376s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.389s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.408s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.463s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.467s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.621s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.720s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.762s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.763s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.792s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.929s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.933s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.934s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.066s] -- Configuring done
+[1.094s] -- Generating done
+[1.101s] -- Build files have been written to: /home/orangepi/uvg_car/build/oakchina_vio_package
+[1.178s] [35m[1mConsolidate compiler generated dependencies of target oakchina_vio_package_node[0m
+[1.227s] [ 50%] [32m[1mLinking CXX executable oakchina_vio_package_node[0m
+[1.338s] /usr/bin/ld: cannot find -lcarina_vio: No such file or directory
+[1.338s] /usr/bin/ld: cannot find -lcarina_vio_client: No such file or directory
+[1.339s] /usr/bin/ld: cannot find -lcarina_client: No such file or directory
+[1.339s] /usr/bin/ld: cannot find -lclahe: No such file or directory
+[1.339s] /usr/bin/ld: cannot find -lDBoW2: No such file or directory
+[1.340s] /usr/bin/ld: cannot find -lg2o: No such file or directory
+[1.340s] /usr/bin/ld: cannot find -llk: No such file or directory
+[1.340s] /usr/bin/ld: cannot find -ltracker: No such file or directory
+[1.640s] collect2: error: ld returned 1 exit status
+[1.642s] gmake[2]: *** [CMakeFiles/oakchina_vio_package_node.dir/build.make:269: oakchina_vio_package_node] Error 1
+[1.643s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/oakchina_vio_package_node.dir/all] Error 2
+[1.643s] gmake: *** [Makefile:146: all] Error 2
+[1.647s] Invoked command in '/home/orangepi/uvg_car/build/oakchina_vio_package' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/oakchina_vio_package -- -j8 -l8

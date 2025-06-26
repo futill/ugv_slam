@@ -1,0 +1,24 @@
+/usr/bin/ld: skipping incompatible /home/orangepi/uvg_car/src/oakchina_vio_package_ros2/lib/libcarina_vio.so when searching for -lcarina_vio
+/usr/bin/ld: cannot find -lcarina_vio: No such file or directory
+/usr/bin/ld: skipping incompatible /home/orangepi/uvg_car/src/oakchina_vio_package_ros2/lib/libcarina_vio.so when searching for -lcarina_vio
+/usr/bin/ld: skipping incompatible /home/orangepi/uvg_car/src/oakchina_vio_package_ros2/lib/libcarina_vio_client.so when searching for -lcarina_vio_client
+/usr/bin/ld: cannot find -lcarina_vio_client: No such file or directory
+/usr/bin/ld: skipping incompatible /home/orangepi/uvg_car/src/oakchina_vio_package_ros2/lib/libcarina_vio_client.so when searching for -lcarina_vio_client
+/usr/bin/ld: skipping incompatible /home/orangepi/uvg_car/src/oakchina_vio_package_ros2/lib/libcarina_client.so when searching for -lcarina_client
+/usr/bin/ld: cannot find -lcarina_client: No such file or directory
+/usr/bin/ld: skipping incompatible /home/orangepi/uvg_car/src/oakchina_vio_package_ros2/lib/libcarina_client.so when searching for -lcarina_client
+/usr/bin/ld: skipping incompatible /home/orangepi/uvg_car/src/oakchina_vio_package_ros2/lib/libclahe.a when searching for -lclahe
+/usr/bin/ld: cannot find -lclahe: No such file or directory
+/usr/bin/ld: skipping incompatible /home/orangepi/uvg_car/src/oakchina_vio_package_ros2/lib/libDBoW2.a when searching for -lDBoW2
+/usr/bin/ld: cannot find -lDBoW2: No such file or directory
+/usr/bin/ld: skipping incompatible /home/orangepi/uvg_car/src/oakchina_vio_package_ros2/lib/libg2o.a when searching for -lg2o
+/usr/bin/ld: cannot find -lg2o: No such file or directory
+/usr/bin/ld: skipping incompatible /home/orangepi/uvg_car/src/oakchina_vio_package_ros2/lib/liblk.a when searching for -llk
+/usr/bin/ld: cannot find -llk: No such file or directory
+/usr/bin/ld: skipping incompatible /home/orangepi/uvg_car/src/oakchina_vio_package_ros2/lib/libtracker.a when searching for -ltracker
+/usr/bin/ld: cannot find -ltracker: No such file or directory
+/usr/bin/ld: skipping incompatible /home/orangepi/uvg_car/src/oakchina_vio_package_ros2/lib/libyaml-cpp.a when searching for -lyaml-cpp
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/oakchina_vio_package_node.dir/build.make:269: oakchina_vio_package_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/oakchina_vio_package_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

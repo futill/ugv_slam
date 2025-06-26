@@ -1,0 +1,10 @@
+/home/orangepi/uvg_car/build/oakchina_vio_package/CMakeFiles/uninstall.dir
+/home/orangepi/uvg_car/build/oakchina_vio_package/CMakeFiles/oakchina_vio_package_uninstall.dir
+/home/orangepi/uvg_car/build/oakchina_vio_package/CMakeFiles/oakchina_vio_package_node.dir
+/home/orangepi/uvg_car/build/oakchina_vio_package/CMakeFiles/test.dir
+/home/orangepi/uvg_car/build/oakchina_vio_package/CMakeFiles/edit_cache.dir
+/home/orangepi/uvg_car/build/oakchina_vio_package/CMakeFiles/rebuild_cache.dir
+/home/orangepi/uvg_car/build/oakchina_vio_package/CMakeFiles/list_install_components.dir
+/home/orangepi/uvg_car/build/oakchina_vio_package/CMakeFiles/install.dir
+/home/orangepi/uvg_car/build/oakchina_vio_package/CMakeFiles/install/local.dir
+/home/orangepi/uvg_car/build/oakchina_vio_package/CMakeFiles/install/strip.dir

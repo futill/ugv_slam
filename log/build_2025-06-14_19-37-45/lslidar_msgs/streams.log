@@ -1,0 +1,23 @@
+[0.046s] Invoking command in '/home/orangepi/uvg_car/build/lslidar_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/lslidar_msgs -- -j8 -l8
+[0.222s] [  0%] Built target ament_cmake_python_copy_lslidar_msgs
+[0.231s] [  1%] Built target lslidar_msgs__cpp
+[0.251s] [ 12%] Built target lslidar_msgs__rosidl_generator_c
+[0.278s] [ 26%] Built target lslidar_msgs__rosidl_typesupport_introspection_cpp
+[0.279s] [ 34%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_cpp
+[0.279s] [ 46%] Built target lslidar_msgs__rosidl_typesupport_c
+[0.290s] [ 57%] Built target lslidar_msgs__rosidl_typesupport_cpp
+[0.307s] [ 68%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_c
+[0.317s] [ 79%] Built target lslidar_msgs__rosidl_typesupport_introspection_c
+[0.376s] [ 79%] Built target lslidar_msgs
+[0.448s] [ 80%] Built target lslidar_msgs__py
+[0.537s] [ 90%] Built target lslidar_msgs__rosidl_generator_py
+[0.570s] running egg_info
+[0.576s] writing lslidar_msgs.egg-info/PKG-INFO
+[0.576s] writing dependency_links to lslidar_msgs.egg-info/dependency_links.txt
+[0.576s] writing top-level names to lslidar_msgs.egg-info/top_level.txt
+[0.578s] reading manifest file 'lslidar_msgs.egg-info/SOURCES.txt'
+[0.580s] writing manifest file 'lslidar_msgs.egg-info/SOURCES.txt'
+[0.587s] [ 93%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.599s] [ 96%] Built target lslidar_msgs__rosidl_typesupport_c__pyext
+[0.618s] [100%] Built target lslidar_msgs__rosidl_typesupport_introspection_c__pyext
+[0.669s] [100%] Built target ament_cmake_python_build_lslidar_msgs_egg

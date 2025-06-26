@@ -1,0 +1,23 @@
+[0.054s] Invoking command in '/home/orangepi/uvg_car/build/lslidar_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/lslidar_msgs -- -j8 -l8
+[0.213s] [  1%] Built target lslidar_msgs__cpp
+[0.230s] [ 12%] Built target lslidar_msgs__rosidl_generator_c
+[0.270s] [ 34%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_c
+[0.271s] [ 34%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_cpp
+[0.283s] [ 46%] Built target lslidar_msgs__rosidl_typesupport_introspection_cpp
+[0.284s] [ 57%] Built target lslidar_msgs__rosidl_typesupport_introspection_c
+[0.285s] [ 57%] Built target ament_cmake_python_copy_lslidar_msgs
+[0.307s] [ 68%] Built target lslidar_msgs__rosidl_typesupport_cpp
+[0.309s] [ 79%] Built target lslidar_msgs__rosidl_typesupport_c
+[0.360s] [ 79%] Built target lslidar_msgs
+[0.433s] [ 80%] Built target lslidar_msgs__py
+[0.503s] [ 90%] Built target lslidar_msgs__rosidl_generator_py
+[0.576s] [ 93%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.590s] [ 96%] Built target lslidar_msgs__rosidl_typesupport_c__pyext
+[0.610s] [100%] Built target lslidar_msgs__rosidl_typesupport_introspection_c__pyext
+[0.682s] running egg_info
+[0.682s] writing lslidar_msgs.egg-info/PKG-INFO
+[0.682s] writing dependency_links to lslidar_msgs.egg-info/dependency_links.txt
+[0.683s] writing top-level names to lslidar_msgs.egg-info/top_level.txt
+[0.685s] reading manifest file 'lslidar_msgs.egg-info/SOURCES.txt'
+[0.686s] writing manifest file 'lslidar_msgs.egg-info/SOURCES.txt'
+[0.757s] [100%] Built target ament_cmake_python_build_lslidar_msgs_egg

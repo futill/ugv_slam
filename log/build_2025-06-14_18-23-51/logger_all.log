@@ -1,0 +1,453 @@
+[0.254s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'build'][0m
+[0.255s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f7e4498a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f7e449390>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f7e449390>>)[0m
+[0.502s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[0.503s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[0.503s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[0.503s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[0.503s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[0.503s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[0.503s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/orangepi/uvg_car'
+[0.503s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.503s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[0.526s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[0.526s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[0.526s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[0.526s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[0.526s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[0.526s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.526s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[0.527s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[0.527s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.527s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[0.527s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[0.527s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.527s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[0.527s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[0.527s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.528s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore'
+[0.528s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore_ament_install'
+[0.528s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_pkg']
+[0.528s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_pkg'
+[0.528s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_meta']
+[0.528s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_meta'
+[0.528s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ros']
+[0.528s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ros'
+[0.528s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['cmake', 'python']
+[0.528s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'cmake'
+[0.528s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python'
+[0.528s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['python_setup_py']
+[0.528s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python_setup_py'
+[0.528s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228) by extensions ['ignore', 'ignore_ament_install']
+[0.529s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228) by extension 'ignore'
+[0.529s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228) by extension 'ignore_ament_install'
+[0.529s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228) by extensions ['colcon_pkg']
+[0.529s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228) by extension 'colcon_pkg'
+[0.529s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228) by extensions ['colcon_meta']
+[0.529s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228) by extension 'colcon_meta'
+[0.529s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228) by extensions ['ros']
+[0.529s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228) by extension 'ros'
+[0.529s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228) by extensions ['cmake', 'python']
+[0.529s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228) by extension 'cmake'
+[0.529s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228) by extension 'python'
+[0.529s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228) by extensions ['python_setup_py']
+[0.529s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228) by extension 'python_setup_py'
+[0.529s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src) by extensions ['ignore', 'ignore_ament_install']
+[0.530s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src) by extension 'ignore'
+[0.530s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src) by extension 'ignore_ament_install'
+[0.530s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src) by extensions ['colcon_pkg']
+[0.530s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src) by extension 'colcon_pkg'
+[0.530s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src) by extensions ['colcon_meta']
+[0.530s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src) by extension 'colcon_meta'
+[0.530s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src) by extensions ['ros']
+[0.530s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src) by extension 'ros'
+[0.530s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src) by extensions ['cmake', 'python']
+[0.530s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src) by extension 'cmake'
+[0.530s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src) by extension 'python'
+[0.530s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src) by extensions ['python_setup_py']
+[0.530s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src) by extension 'python_setup_py'
+[0.531s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src/lslidar_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.531s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src/lslidar_driver) by extension 'ignore'
+[0.531s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src/lslidar_driver) by extension 'ignore_ament_install'
+[0.531s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src/lslidar_driver) by extensions ['colcon_pkg']
+[0.531s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src/lslidar_driver) by extension 'colcon_pkg'
+[0.531s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src/lslidar_driver) by extensions ['colcon_meta']
+[0.531s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src/lslidar_driver) by extension 'colcon_meta'
+[0.531s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src/lslidar_driver) by extensions ['ros']
+[0.531s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src/lslidar_driver) by extension 'ros'
+[0.538s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/LSLIDAR_X_ROS2-20240228/src/lslidar_driver' with type 'ros.ament_cmake' and name 'lslidar_driver'[0m
+[0.538s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src/lslidar_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.538s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src/lslidar_msgs) by extension 'ignore'
+[0.538s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src/lslidar_msgs) by extension 'ignore_ament_install'
+[0.539s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src/lslidar_msgs) by extensions ['colcon_pkg']
+[0.539s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src/lslidar_msgs) by extension 'colcon_pkg'
+[0.539s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src/lslidar_msgs) by extensions ['colcon_meta']
+[0.539s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src/lslidar_msgs) by extension 'colcon_meta'
+[0.539s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src/lslidar_msgs) by extensions ['ros']
+[0.539s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/LSLIDAR_X_ROS2-20240228/src/lslidar_msgs) by extension 'ros'
+[0.540s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/LSLIDAR_X_ROS2-20240228/src/lslidar_msgs' with type 'ros.ament_cmake' and name 'lslidar_msgs'[0m
+[0.540s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/fishbot_cartographer) by extensions ['ignore', 'ignore_ament_install']
+[0.540s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/fishbot_cartographer) by extension 'ignore'
+[0.540s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/fishbot_cartographer) by extension 'ignore_ament_install'
+[0.540s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/fishbot_cartographer) by extensions ['colcon_pkg']
+[0.540s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/fishbot_cartographer) by extension 'colcon_pkg'
+[0.540s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/fishbot_cartographer) by extensions ['colcon_meta']
+[0.540s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/fishbot_cartographer) by extension 'colcon_meta'
+[0.541s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/fishbot_cartographer) by extensions ['ros']
+[0.541s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/fishbot_cartographer) by extension 'ros'
+[0.544s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/fishbot_cartographer' with type 'ros.ament_cmake' and name 'fishbot_cartographer'[0m
+[0.544s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/fishbot_navigation2) by extensions ['ignore', 'ignore_ament_install']
+[0.544s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/fishbot_navigation2) by extension 'ignore'
+[0.544s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/fishbot_navigation2) by extension 'ignore_ament_install'
+[0.544s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/fishbot_navigation2) by extensions ['colcon_pkg']
+[0.544s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/fishbot_navigation2) by extension 'colcon_pkg'
+[0.544s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/fishbot_navigation2) by extensions ['colcon_meta']
+[0.544s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/fishbot_navigation2) by extension 'colcon_meta'
+[0.544s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/fishbot_navigation2) by extensions ['ros']
+[0.544s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/fishbot_navigation2) by extension 'ros'
+[0.545s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/fishbot_navigation2' with type 'ros.ament_cmake' and name 'fishbot_navigation2'[0m
+[0.545s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/oakchina_vio_package_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.545s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/oakchina_vio_package_ros2) by extension 'ignore'
+[0.546s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/oakchina_vio_package_ros2) by extension 'ignore_ament_install'
+[0.546s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/oakchina_vio_package_ros2) by extensions ['colcon_pkg']
+[0.546s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/oakchina_vio_package_ros2) by extension 'colcon_pkg'
+[0.546s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/oakchina_vio_package_ros2) by extensions ['colcon_meta']
+[0.546s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/oakchina_vio_package_ros2) by extension 'colcon_meta'
+[0.546s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/oakchina_vio_package_ros2) by extensions ['ros']
+[0.546s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/oakchina_vio_package_ros2) by extension 'ros'
+[0.547s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/oakchina_vio_package_ros2' with type 'ros.ament_cmake' and name 'oakchina_vio_package'[0m
+[0.547s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/wit_ros2_imu) by extensions ['ignore', 'ignore_ament_install']
+[0.547s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/wit_ros2_imu) by extension 'ignore'
+[0.547s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/wit_ros2_imu) by extension 'ignore_ament_install'
+[0.547s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/wit_ros2_imu) by extensions ['colcon_pkg']
+[0.547s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/wit_ros2_imu) by extension 'colcon_pkg'
+[0.547s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/wit_ros2_imu) by extensions ['colcon_meta']
+[0.547s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/wit_ros2_imu) by extension 'colcon_meta'
+[0.548s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/wit_ros2_imu) by extensions ['ros']
+[0.548s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/wit_ros2_imu) by extension 'ros'
+[0.548s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/wit_ros2_imu' with type 'ros.ament_python' and name 'wit_ros2_imu'[0m
+[0.548s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[0.549s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[0.549s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[0.549s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[0.549s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[0.623s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fishbot_cartographer' build argument 'cmake_args' from command line to 'None'
+[0.623s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fishbot_cartographer' build argument 'cmake_target' from command line to 'None'
+[0.623s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fishbot_cartographer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.623s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fishbot_cartographer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.623s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fishbot_cartographer' build argument 'cmake_clean_first' from command line to 'False'
+[0.623s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fishbot_cartographer' build argument 'cmake_force_configure' from command line to 'False'
+[0.623s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fishbot_cartographer' build argument 'ament_cmake_args' from command line to 'None'
+[0.623s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fishbot_cartographer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.623s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fishbot_cartographer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.623s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'fishbot_cartographer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/orangepi/uvg_car/build/fishbot_cartographer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/orangepi/uvg_car/install/fishbot_cartographer', 'merge_install': False, 'path': '/home/orangepi/uvg_car/src/fishbot_cartographer', 'symlink_install': False, 'test_result_base': None}[0m
+[0.624s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fishbot_navigation2' build argument 'cmake_args' from command line to 'None'
+[0.624s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fishbot_navigation2' build argument 'cmake_target' from command line to 'None'
+[0.624s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fishbot_navigation2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.624s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fishbot_navigation2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.624s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fishbot_navigation2' build argument 'cmake_clean_first' from command line to 'False'
+[0.624s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fishbot_navigation2' build argument 'cmake_force_configure' from command line to 'False'
+[0.624s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fishbot_navigation2' build argument 'ament_cmake_args' from command line to 'None'
+[0.624s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fishbot_navigation2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.624s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'fishbot_navigation2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.624s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'fishbot_navigation2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/orangepi/uvg_car/build/fishbot_navigation2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/orangepi/uvg_car/install/fishbot_navigation2', 'merge_install': False, 'path': '/home/orangepi/uvg_car/src/fishbot_navigation2', 'symlink_install': False, 'test_result_base': None}[0m
+[0.624s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lslidar_msgs' build argument 'cmake_args' from command line to 'None'
+[0.624s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lslidar_msgs' build argument 'cmake_target' from command line to 'None'
+[0.624s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lslidar_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.624s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lslidar_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.624s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lslidar_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.625s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lslidar_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.625s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lslidar_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.625s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lslidar_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.625s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lslidar_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.625s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'lslidar_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/orangepi/uvg_car/build/lslidar_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/orangepi/uvg_car/install/lslidar_msgs', 'merge_install': False, 'path': '/home/orangepi/uvg_car/src/LSLIDAR_X_ROS2-20240228/src/lslidar_msgs', 'symlink_install': False, 'test_result_base': None}[0m
+[0.625s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'oakchina_vio_package' build argument 'cmake_args' from command line to 'None'
+[0.625s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'oakchina_vio_package' build argument 'cmake_target' from command line to 'None'
+[0.625s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'oakchina_vio_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.625s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'oakchina_vio_package' build argument 'cmake_clean_cache' from command line to 'False'
+[0.625s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'oakchina_vio_package' build argument 'cmake_clean_first' from command line to 'False'
+[0.625s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'oakchina_vio_package' build argument 'cmake_force_configure' from command line to 'False'
+[0.625s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'oakchina_vio_package' build argument 'ament_cmake_args' from command line to 'None'
+[0.625s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'oakchina_vio_package' build argument 'catkin_cmake_args' from command line to 'None'
+[0.625s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'oakchina_vio_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.625s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'oakchina_vio_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/orangepi/uvg_car/build/oakchina_vio_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/orangepi/uvg_car/install/oakchina_vio_package', 'merge_install': False, 'path': '/home/orangepi/uvg_car/src/oakchina_vio_package_ros2', 'symlink_install': False, 'test_result_base': None}[0m
+[0.626s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'wit_ros2_imu' build argument 'cmake_args' from command line to 'None'
+[0.626s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'wit_ros2_imu' build argument 'cmake_target' from command line to 'None'
+[0.626s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'wit_ros2_imu' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.626s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'wit_ros2_imu' build argument 'cmake_clean_cache' from command line to 'False'
+[0.626s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'wit_ros2_imu' build argument 'cmake_clean_first' from command line to 'False'
+[0.626s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'wit_ros2_imu' build argument 'cmake_force_configure' from command line to 'False'
+[0.626s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'wit_ros2_imu' build argument 'ament_cmake_args' from command line to 'None'
+[0.626s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'wit_ros2_imu' build argument 'catkin_cmake_args' from command line to 'None'
+[0.626s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'wit_ros2_imu' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.626s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'wit_ros2_imu' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/orangepi/uvg_car/build/wit_ros2_imu', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/orangepi/uvg_car/install/wit_ros2_imu', 'merge_install': False, 'path': '/home/orangepi/uvg_car/src/wit_ros2_imu', 'symlink_install': False, 'test_result_base': None}[0m
+[0.626s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lslidar_driver' build argument 'cmake_args' from command line to 'None'
+[0.626s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lslidar_driver' build argument 'cmake_target' from command line to 'None'
+[0.626s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lslidar_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.626s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lslidar_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.626s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lslidar_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.627s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lslidar_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.627s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lslidar_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.627s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lslidar_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.627s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lslidar_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.627s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'lslidar_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/orangepi/uvg_car/build/lslidar_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/orangepi/uvg_car/install/lslidar_driver', 'merge_install': False, 'path': '/home/orangepi/uvg_car/src/LSLIDAR_X_ROS2-20240228/src/lslidar_driver', 'symlink_install': False, 'test_result_base': None}[0m
+[0.627s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[0.629s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[0.629s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/orangepi/uvg_car/src/LSLIDAR_X_ROS2-20240228/src/lslidar_msgs' with build type 'ament_cmake'
+[0.629s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/orangepi/uvg_car/src/LSLIDAR_X_ROS2-20240228/src/lslidar_msgs'
+[0.636s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.636s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.636s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.643s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/orangepi/uvg_car/src/fishbot_cartographer' with build type 'ament_cmake'
+[0.644s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/orangepi/uvg_car/src/fishbot_cartographer'
+[0.644s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.645s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.655s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/orangepi/uvg_car/src/fishbot_navigation2' with build type 'ament_cmake'
+[0.656s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/orangepi/uvg_car/src/fishbot_navigation2'
+[0.657s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.657s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.664s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/orangepi/uvg_car/src/oakchina_vio_package_ros2' with build type 'ament_cmake'
+[0.665s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/orangepi/uvg_car/src/oakchina_vio_package_ros2'
+[0.665s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.666s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.671s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/orangepi/uvg_car/src/wit_ros2_imu' with build type 'ament_python'
+[0.671s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('wit_ros2_imu', 'ament_prefix_path')
+[0.672s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/wit_ros2_imu/share/wit_ros2_imu/hook/ament_prefix_path.ps1'
+[0.674s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/orangepi/uvg_car/install/wit_ros2_imu/share/wit_ros2_imu/hook/ament_prefix_path.dsv'
+[0.675s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/wit_ros2_imu/share/wit_ros2_imu/hook/ament_prefix_path.sh'
+[0.677s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.677s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.692s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/orangepi/uvg_car/build/lslidar_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/lslidar_msgs -- -j8 -l8[0m
+[0.700s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/orangepi/uvg_car/build/fishbot_cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/fishbot_cartographer -- -j8 -l8[0m
+[0.708s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/orangepi/uvg_car/build/fishbot_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/fishbot_navigation2 -- -j8 -l8[0m
+[0.715s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/orangepi/uvg_car/build/oakchina_vio_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/orangepi/uvg_car/src/oakchina_vio_package_ros2 -DCMAKE_INSTALL_PREFIX=/home/orangepi/uvg_car/install/oakchina_vio_package[0m
+[1.146s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/orangepi/uvg_car/src/wit_ros2_imu'
+[1.147s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.147s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.153s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/orangepi/uvg_car/build/fishbot_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/fishbot_navigation2 -- -j8 -l8[0m
+[1.186s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/orangepi/uvg_car/build/fishbot_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/orangepi/uvg_car/build/fishbot_navigation2[0m
+[1.189s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/orangepi/uvg_car/build/fishbot_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/fishbot_cartographer -- -j8 -l8[0m
+[1.199s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/orangepi/uvg_car/build/fishbot_cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/orangepi/uvg_car/build/fishbot_cartographer[0m
+[1.222s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(fishbot_navigation2)
+[1.224s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/orangepi/uvg_car/build/fishbot_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/orangepi/uvg_car/build/fishbot_navigation2[0m
+[1.246s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_navigation2' for CMake module files
+[1.249s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_navigation2' for CMake config files
+[1.251s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('fishbot_navigation2', 'cmake_prefix_path')
+[1.252s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/hook/cmake_prefix_path.ps1'
+[1.255s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/hook/cmake_prefix_path.dsv'
+[1.257s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/hook/cmake_prefix_path.sh'
+[1.261s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_navigation2/bin'
+[1.262s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_navigation2/lib/pkgconfig/fishbot_navigation2.pc'
+[1.263s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_navigation2/lib/python3.10/site-packages'
+[1.265s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_navigation2/bin'
+[1.267s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/package.ps1'
+[1.269s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/package.dsv'
+[1.270s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/package.sh'
+[1.271s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/package.bash'
+[1.273s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/package.zsh'
+[1.275s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/orangepi/uvg_car/install/fishbot_navigation2/share/colcon-core/packages/fishbot_navigation2)
+[1.276s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(fishbot_navigation2)
+[1.276s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_navigation2' for CMake module files
+[1.277s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_navigation2' for CMake config files
+[1.277s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('fishbot_navigation2', 'cmake_prefix_path')
+[1.277s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/hook/cmake_prefix_path.ps1'
+[1.278s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/hook/cmake_prefix_path.dsv'
+[1.278s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/hook/cmake_prefix_path.sh'
+[1.280s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_navigation2/bin'
+[1.280s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_navigation2/lib/pkgconfig/fishbot_navigation2.pc'
+[1.280s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_navigation2/lib/python3.10/site-packages'
+[1.281s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_navigation2/bin'
+[1.281s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/package.ps1'
+[1.282s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/package.dsv'
+[1.283s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/package.sh'
+[1.283s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/package.bash'
+[1.284s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/fishbot_navigation2/share/fishbot_navigation2/package.zsh'
+[1.284s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/orangepi/uvg_car/install/fishbot_navigation2/share/colcon-core/packages/fishbot_navigation2)
+[1.286s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(fishbot_cartographer)
+[1.287s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_cartographer' for CMake module files
+[1.288s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/orangepi/uvg_car/build/fishbot_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/orangepi/uvg_car/build/fishbot_cartographer[0m
+[1.288s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_cartographer' for CMake config files
+[1.288s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('fishbot_cartographer', 'cmake_prefix_path')
+[1.289s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/hook/cmake_prefix_path.ps1'
+[1.290s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/hook/cmake_prefix_path.dsv'
+[1.290s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/hook/cmake_prefix_path.sh'
+[1.291s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_cartographer/lib'
+[1.291s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_cartographer/bin'
+[1.292s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_cartographer/lib/pkgconfig/fishbot_cartographer.pc'
+[1.292s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_cartographer/lib/python3.10/site-packages'
+[1.292s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_cartographer/bin'
+[1.293s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/package.ps1'
+[1.294s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/package.dsv'
+[1.294s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/package.sh'
+[1.295s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/package.bash'
+[1.296s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/package.zsh'
+[1.296s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/orangepi/uvg_car/install/fishbot_cartographer/share/colcon-core/packages/fishbot_cartographer)
+[1.297s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(fishbot_cartographer)
+[1.298s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_cartographer' for CMake module files
+[1.298s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_cartographer' for CMake config files
+[1.299s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('fishbot_cartographer', 'cmake_prefix_path')
+[1.299s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/hook/cmake_prefix_path.ps1'
+[1.300s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/hook/cmake_prefix_path.dsv'
+[1.301s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/hook/cmake_prefix_path.sh'
+[1.302s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_cartographer/lib'
+[1.302s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_cartographer/bin'
+[1.302s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_cartographer/lib/pkgconfig/fishbot_cartographer.pc'
+[1.302s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_cartographer/lib/python3.10/site-packages'
+[1.303s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/fishbot_cartographer/bin'
+[1.303s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/package.ps1'
+[1.304s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/package.dsv'
+[1.305s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/package.sh'
+[1.306s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/package.bash'
+[1.307s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/fishbot_cartographer/share/fishbot_cartographer/package.zsh'
+[1.307s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/orangepi/uvg_car/install/fishbot_cartographer/share/colcon-core/packages/fishbot_cartographer)
+[1.312s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/orangepi/uvg_car/build/lslidar_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/lslidar_msgs -- -j8 -l8[0m
+[1.316s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/orangepi/uvg_car/build/lslidar_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/orangepi/uvg_car/build/lslidar_msgs[0m
+[1.448s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(lslidar_msgs)
+[1.448s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_msgs' for CMake module files
+[1.449s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/orangepi/uvg_car/build/lslidar_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/orangepi/uvg_car/build/lslidar_msgs[0m
+[1.450s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_msgs' for CMake config files
+[1.450s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('lslidar_msgs', 'cmake_prefix_path')
+[1.450s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/hook/cmake_prefix_path.ps1'
+[1.451s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/hook/cmake_prefix_path.dsv'
+[1.452s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/hook/cmake_prefix_path.sh'
+[1.452s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_msgs/lib'
+[1.452s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('lslidar_msgs', 'ld_library_path_lib')
+[1.453s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/hook/ld_library_path_lib.ps1'
+[1.453s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/hook/ld_library_path_lib.dsv'
+[1.454s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/hook/ld_library_path_lib.sh'
+[1.454s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_msgs/bin'
+[1.454s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_msgs/lib/pkgconfig/lslidar_msgs.pc'
+[1.455s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_msgs/lib/python3.10/site-packages'
+[1.455s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_msgs/bin'
+[1.455s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/package.ps1'
+[1.456s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/package.dsv'
+[1.456s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/package.sh'
+[1.457s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/package.bash'
+[1.457s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/package.zsh'
+[1.458s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/orangepi/uvg_car/install/lslidar_msgs/share/colcon-core/packages/lslidar_msgs)
+[1.459s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(lslidar_msgs)
+[1.459s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_msgs' for CMake module files
+[1.459s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_msgs' for CMake config files
+[1.460s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('lslidar_msgs', 'cmake_prefix_path')
+[1.460s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/hook/cmake_prefix_path.ps1'
+[1.460s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/hook/cmake_prefix_path.dsv'
+[1.461s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/hook/cmake_prefix_path.sh'
+[1.461s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_msgs/lib'
+[1.462s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('lslidar_msgs', 'ld_library_path_lib')
+[1.462s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/hook/ld_library_path_lib.ps1'
+[1.462s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/hook/ld_library_path_lib.dsv'
+[1.463s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/hook/ld_library_path_lib.sh'
+[1.463s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_msgs/bin'
+[1.463s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_msgs/lib/pkgconfig/lslidar_msgs.pc'
+[1.463s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_msgs/lib/python3.10/site-packages'
+[1.464s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_msgs/bin'
+[1.464s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/package.ps1'
+[1.465s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/package.dsv'
+[1.465s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/package.sh'
+[1.466s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/package.bash'
+[1.466s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/package.zsh'
+[1.467s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/orangepi/uvg_car/install/lslidar_msgs/share/colcon-core/packages/lslidar_msgs)
+[1.467s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/orangepi/uvg_car/src/LSLIDAR_X_ROS2-20240228/src/lslidar_driver' with build type 'ament_cmake'
+[1.467s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/orangepi/uvg_car/src/LSLIDAR_X_ROS2-20240228/src/lslidar_driver'
+[1.468s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.468s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.488s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/orangepi/uvg_car/build/lslidar_driver': AMENT_PREFIX_PATH=/home/orangepi/uvg_car/install/lslidar_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/uvg_car/install/lslidar_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/orangepi/uvg_car/install/lslidar_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/orangepi/uvg_car/build/lslidar_driver -- -j8 -l8[0m
+[1.814s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/orangepi/uvg_car/src/wit_ros2_imu': PYTHONPATH=/home/orangepi/uvg_car/build/wit_ros2_imu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/wit_ros2_imu build --build-base /home/orangepi/uvg_car/build/wit_ros2_imu/build install --record /home/orangepi/uvg_car/build/wit_ros2_imu/install.log --install-scripts $base/lib/wit_ros2_imu --single-version-externally-managed install_data[0m
+[1.822s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/orangepi/uvg_car/build/lslidar_driver' returned '0': AMENT_PREFIX_PATH=/home/orangepi/uvg_car/install/lslidar_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/uvg_car/install/lslidar_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/orangepi/uvg_car/install/lslidar_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/orangepi/uvg_car/build/lslidar_driver -- -j8 -l8[0m
+[1.828s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/orangepi/uvg_car/build/lslidar_driver': AMENT_PREFIX_PATH=/home/orangepi/uvg_car/install/lslidar_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/uvg_car/install/lslidar_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/orangepi/uvg_car/install/lslidar_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/orangepi/uvg_car/build/lslidar_driver[0m
+[1.863s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(lslidar_driver)
+[1.863s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_driver' for CMake module files
+[1.864s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/orangepi/uvg_car/build/lslidar_driver' returned '0': AMENT_PREFIX_PATH=/home/orangepi/uvg_car/install/lslidar_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/uvg_car/install/lslidar_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/orangepi/uvg_car/install/lslidar_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/orangepi/uvg_car/build/lslidar_driver[0m
+[1.865s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_driver' for CMake config files
+[1.865s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('lslidar_driver', 'cmake_prefix_path')
+[1.865s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/hook/cmake_prefix_path.ps1'
+[1.866s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/hook/cmake_prefix_path.dsv'
+[1.867s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/hook/cmake_prefix_path.sh'
+[1.868s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_driver/lib'
+[1.868s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_driver/bin'
+[1.868s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_driver/lib/pkgconfig/lslidar_driver.pc'
+[1.869s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_driver/lib/python3.10/site-packages'
+[1.869s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_driver/bin'
+[1.870s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/package.ps1'
+[1.871s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/package.dsv'
+[1.872s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/package.sh'
+[1.872s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/package.bash'
+[1.873s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/package.zsh'
+[1.874s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/orangepi/uvg_car/install/lslidar_driver/share/colcon-core/packages/lslidar_driver)
+[1.875s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(lslidar_driver)
+[1.875s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_driver' for CMake module files
+[1.876s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_driver' for CMake config files
+[1.876s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('lslidar_driver', 'cmake_prefix_path')
+[1.876s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/hook/cmake_prefix_path.ps1'
+[1.877s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/hook/cmake_prefix_path.dsv'
+[1.878s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/hook/cmake_prefix_path.sh'
+[1.879s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_driver/lib'
+[1.879s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_driver/bin'
+[1.879s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_driver/lib/pkgconfig/lslidar_driver.pc'
+[1.879s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_driver/lib/python3.10/site-packages'
+[1.880s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/lslidar_driver/bin'
+[1.880s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/package.ps1'
+[1.881s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/package.dsv'
+[1.882s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/package.sh'
+[1.883s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/package.bash'
+[1.884s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/lslidar_driver/share/lslidar_driver/package.zsh'
+[1.884s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/orangepi/uvg_car/install/lslidar_driver/share/colcon-core/packages/lslidar_driver)
+[2.249s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/wit_ros2_imu' for CMake module files
+[2.251s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/orangepi/uvg_car/src/wit_ros2_imu' returned '0': PYTHONPATH=/home/orangepi/uvg_car/build/wit_ros2_imu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/wit_ros2_imu build --build-base /home/orangepi/uvg_car/build/wit_ros2_imu/build install --record /home/orangepi/uvg_car/build/wit_ros2_imu/install.log --install-scripts $base/lib/wit_ros2_imu --single-version-externally-managed install_data[0m
+[2.252s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/wit_ros2_imu' for CMake config files
+[2.253s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/wit_ros2_imu/lib'
+[2.253s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/wit_ros2_imu/bin'
+[2.253s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/wit_ros2_imu/lib/pkgconfig/wit_ros2_imu.pc'
+[2.253s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/wit_ros2_imu/lib/python3.10/site-packages'
+[2.253s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('wit_ros2_imu', 'pythonpath')
+[2.254s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/wit_ros2_imu/share/wit_ros2_imu/hook/pythonpath.ps1'
+[2.254s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/orangepi/uvg_car/install/wit_ros2_imu/share/wit_ros2_imu/hook/pythonpath.dsv'
+[2.255s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/orangepi/uvg_car/install/wit_ros2_imu/share/wit_ros2_imu/hook/pythonpath.sh'
+[2.256s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/wit_ros2_imu/bin'
+[2.256s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(wit_ros2_imu)
+[2.256s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/wit_ros2_imu/share/wit_ros2_imu/package.ps1'
+[2.257s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/orangepi/uvg_car/install/wit_ros2_imu/share/wit_ros2_imu/package.dsv'
+[2.257s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/wit_ros2_imu/share/wit_ros2_imu/package.sh'
+[2.258s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/wit_ros2_imu/share/wit_ros2_imu/package.bash'
+[2.258s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/wit_ros2_imu/share/wit_ros2_imu/package.zsh'
+[2.259s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/orangepi/uvg_car/install/wit_ros2_imu/share/colcon-core/packages/wit_ros2_imu)
+[3.733s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/orangepi/uvg_car/build/oakchina_vio_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/orangepi/uvg_car/src/oakchina_vio_package_ros2 -DCMAKE_INSTALL_PREFIX=/home/orangepi/uvg_car/install/oakchina_vio_package[0m
+[3.737s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/orangepi/uvg_car/build/oakchina_vio_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/oakchina_vio_package -- -j8 -l8[0m
+[16.370s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/orangepi/uvg_car/build/oakchina_vio_package' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/oakchina_vio_package -- -j8 -l8[0m
+[16.373s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(oakchina_vio_package)
+[16.374s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/oakchina_vio_package' for CMake module files
+[16.375s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/oakchina_vio_package' for CMake config files
+[16.376s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/oakchina_vio_package/bin'
+[16.377s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/oakchina_vio_package/lib/pkgconfig/oakchina_vio_package.pc'
+[16.378s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/oakchina_vio_package/lib/python3.10/site-packages'
+[16.380s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/orangepi/uvg_car/install/oakchina_vio_package/bin'
+[16.383s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/package.ps1'
+[16.387s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/package.dsv'
+[16.389s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/package.sh'
+[16.390s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/package.bash'
+[16.392s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/package.zsh'
+[16.393s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/orangepi/uvg_car/install/oakchina_vio_package/share/colcon-core/packages/oakchina_vio_package)
+[16.405s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[16.405s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[16.406s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '2'[0m
+[16.406s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[16.431s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[16.432s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[16.432s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'notify2'
+[16.462s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[16.465s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/orangepi/uvg_car/install/local_setup.ps1'
+[16.471s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/orangepi/uvg_car/install/_local_setup_util_ps1.py'
+[16.479s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/orangepi/uvg_car/install/setup.ps1'
+[16.485s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/orangepi/uvg_car/install/local_setup.sh'
+[16.488s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/orangepi/uvg_car/install/_local_setup_util_sh.py'
+[16.491s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/orangepi/uvg_car/install/setup.sh'
+[16.495s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/orangepi/uvg_car/install/local_setup.bash'
+[16.498s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/orangepi/uvg_car/install/setup.bash'
+[16.502s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/orangepi/uvg_car/install/local_setup.zsh'
+[16.505s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/orangepi/uvg_car/install/setup.zsh'

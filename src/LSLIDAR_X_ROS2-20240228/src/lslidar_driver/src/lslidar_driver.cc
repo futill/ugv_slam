@@ -67,7 +67,7 @@ namespace lslidar_driver
 	{
 		pubscan_thread_ = new boost::thread(boost::bind(&LslidarDriver::pubScanThread, this));
 		interface_selection = std::string("net");
-		frame_id = std::string("laser_link");
+		frame_id = std::string("laser");
 		scan_topic = std::string("/scan");
 		lidar_name = std::string("M10");
 		pointcloud_topic = std::string("/lslidar_point_cloud");
@@ -82,7 +82,7 @@ namespace lslidar_driver
 		angle_disable_max = 0.0;
 
 		this->declare_parameter<std::string>("lidar_name", "M10");
-		this->declare_parameter<std::string>("frame_id", "laser_link");
+		this->declare_parameter<std::string>("frame_id", "laser");
 		this->declare_parameter<std::string>("scan_topic", "/scan");
 		this->declare_parameter<std::string>("pointcloud_topic", "/lslidar_point_cloud");
 		this->declare_parameter<double>("min_range", 0.3);

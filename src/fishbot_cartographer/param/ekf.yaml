@@ -7,16 +7,25 @@ ekf_filter_node:
     map_frame: map
     odom_frame: odom
     base_link_frame: base_link
-    world_frame: odom
+    world_frame: map
 
-    imu0: /imu
-    imu0_config: [false, false, false,
-                  true,  true,  true,
-                  false, false, false,
-                  false, false, false,
-                  true,  true,  true]
-    imu0_differential: false
-    imu0_remove_gravitational_acceleration: true
+    # imu0: /imu
+    # imu0_config: [false, false, false,
+    #               true,  true,  true,
+    #               false, false, false,
+    #               false, false, false,
+    #               true,  true,  true]
+    # imu0_differential: false
+    # imu0_remove_gravitational_acceleration: true
+
+    odom0: /odom
+    odom0_config: [true,  true,  false,
+                   false, false, false,
+                   true,  true,  false,
+                   false, false, false,
+                   false, false, false]
+    odom0_queue_size: 5
+    odom0_differential: false
 
     use_control: false
     publish_tf: true
