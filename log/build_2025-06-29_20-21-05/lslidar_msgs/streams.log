@@ -1,0 +1,348 @@
+[0.044s] Invoking command in '/home/orangepi/uvg_car/build/lslidar_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/uvg_car/install/wit_ros2_imu:/opt/ros/humble /usr/bin/cmake /home/orangepi/uvg_car/src/LSLIDAR_X_ROS2-20240228/src/lslidar_msgs -DCMAKE_INSTALL_PREFIX=/home/orangepi/uvg_car/install/lslidar_msgs
+[0.192s] -- The C compiler identification is GNU 11.4.0
+[0.357s] -- The CXX compiler identification is GNU 11.4.0
+[0.383s] -- Detecting C compiler ABI info
+[0.582s] -- Detecting C compiler ABI info - done
+[0.593s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.594s] -- Detecting C compile features
+[0.594s] -- Detecting C compile features - done
+[0.598s] -- Detecting CXX compiler ABI info
+[0.835s] -- Detecting CXX compiler ABI info - done
+[0.875s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.876s] -- Detecting CXX compile features
+[0.878s] -- Detecting CXX compile features - done
+[0.883s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.213s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.405s] -- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)
+[1.469s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.475s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.489s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.517s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.546s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.589s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.645s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.661s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.280s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.043s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.481s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.540s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.547s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.661s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.662s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.663s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.663s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[3.732s] -- Found PythonExtra: .so  
+[3.908s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.916s] -- Added test 'lint_cmake' to check CMake code style
+[3.921s] -- Added test 'xmllint' to check XML markup files
+[3.940s] -- Configuring done
+[3.997s] -- Generating done
+[4.016s] -- Build files have been written to: /home/orangepi/uvg_car/build/lslidar_msgs
+[4.042s] Invoked command in '/home/orangepi/uvg_car/build/lslidar_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/uvg_car/install/wit_ros2_imu:/opt/ros/humble /usr/bin/cmake /home/orangepi/uvg_car/src/LSLIDAR_X_ROS2-20240228/src/lslidar_msgs -DCMAKE_INSTALL_PREFIX=/home/orangepi/uvg_car/install/lslidar_msgs
+[4.050s] Invoking command in '/home/orangepi/uvg_car/build/lslidar_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/uvg_car/install/wit_ros2_imu:/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/lslidar_msgs -- -j8 -l8
+[4.194s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.218s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.257s] [  3%] Built target ament_cmake_python_copy_lslidar_msgs
+[4.697s] running egg_info
+[4.699s] creating lslidar_msgs.egg-info
+[4.699s] writing lslidar_msgs.egg-info/PKG-INFO
+[4.700s] writing dependency_links to lslidar_msgs.egg-info/dependency_links.txt
+[4.700s] writing top-level names to lslidar_msgs.egg-info/top_level.txt
+[4.701s] writing manifest file 'lslidar_msgs.egg-info/SOURCES.txt'
+[4.704s] reading manifest file 'lslidar_msgs.egg-info/SOURCES.txt'
+[4.705s] writing manifest file 'lslidar_msgs.egg-info/SOURCES.txt'
+[4.793s] [  3%] Built target ament_cmake_python_build_lslidar_msgs_egg
+[5.833s] [  4%] [32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lslidar_msgs/msg/detail/lslidar_difop__functions.c.o[0m
+[5.840s] [  6%] [32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lslidar_msgs/msg/detail/lslidar_point__functions.c.o[0m
+[5.843s] [  7%] [32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lslidar_msgs/msg/detail/lslidar_packet__functions.c.o[0m
+[5.845s] [  9%] [32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lslidar_msgs/msg/detail/lslidar_sweep__functions.c.o[0m
+[5.867s] [ 11%] [32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lslidar_msgs/msg/detail/lslidar_scan__functions.c.o[0m
+[6.099s] [ 12%] [32m[1mLinking C shared library liblslidar_msgs__rosidl_generator_c.so[0m
+[6.140s] [ 12%] Built target lslidar_msgs__cpp
+[6.173s] [ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[6.174s] [ 15%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[6.176s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[6.294s] [ 17%] Built target lslidar_msgs__rosidl_generator_c
+[6.340s] [ 19%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[6.343s] [ 20%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[6.356s] [ 22%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[7.163s] [ 23%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lslidar_msgs/msg/lslidar_packet__type_support.cpp.o[0m
+[7.178s] [ 26%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lslidar_msgs/msg/lslidar_point__type_support.cpp.o[0m
+[7.185s] [ 26%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lslidar_msgs/msg/lslidar_difop__type_support.cpp.o[0m
+[7.253s] [ 28%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lslidar_msgs/msg/lslidar_scan__type_support.cpp.o[0m
+[7.271s] [ 30%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lslidar_msgs/msg/lslidar_sweep__type_support.cpp.o[0m
+[7.462s] [ 31%] [32m[1mLinking CXX shared library liblslidar_msgs__rosidl_typesupport_c.so[0m
+[7.611s] [ 31%] Built target lslidar_msgs__rosidl_typesupport_c
+[7.690s] [ 33%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lslidar_msgs/msg/detail/lslidar_difop__type_support_c.cpp.o[0m
+[7.700s] [ 34%] [32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lslidar_msgs/msg/detail/lslidar_difop__type_support.c.o[0m
+[7.731s] [ 38%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lslidar_msgs/msg/detail/lslidar_point__type_support_c.cpp.o[0m
+[7.731s] [ 38%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lslidar_msgs/msg/detail/lslidar_scan__type_support_c.cpp.o[0m
+[7.739s] [ 39%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lslidar_msgs/msg/detail/lslidar_packet__type_support_c.cpp.o[0m
+[7.880s] [ 41%] [32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lslidar_msgs/msg/detail/lslidar_packet__type_support.c.o[0m
+[8.061s] [ 42%] [32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lslidar_msgs/msg/detail/lslidar_point__type_support.c.o[0m
+[8.167s] [ 44%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lslidar_msgs/msg/detail/dds_fastrtps/lslidar_difop__type_support.cpp.o[0m
+[8.215s] [ 46%] [32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lslidar_msgs/msg/detail/lslidar_scan__type_support.c.o[0m
+[8.361s] [ 47%] [32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lslidar_msgs/msg/detail/lslidar_sweep__type_support.c.o[0m
+[8.418s] [ 49%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lslidar_msgs/msg/detail/dds_fastrtps/lslidar_packet__type_support.cpp.o[0m
+[8.421s] [ 50%] [32m[1mLinking C shared library liblslidar_msgs__rosidl_typesupport_introspection_c.so[0m
+[8.567s] [ 50%] Built target lslidar_msgs__rosidl_typesupport_introspection_c
+[8.620s] [ 52%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lslidar_msgs/msg/detail/dds_fastrtps/lslidar_point__type_support.cpp.o[0m
+[8.636s] [ 53%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lslidar_msgs/msg/detail/dds_fastrtps/lslidar_scan__type_support.cpp.o[0m
+[8.775s] [ 55%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lslidar_msgs/msg/lslidar_difop__type_support.cpp.o[0m
+[8.861s] [ 57%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lslidar_msgs/msg/lslidar_packet__type_support.cpp.o[0m
+[9.031s] [ 58%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lslidar_msgs/msg/detail/lslidar_difop__type_support.cpp.o[0m
+[9.278s] [ 60%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lslidar_msgs/msg/detail/dds_fastrtps/lslidar_sweep__type_support.cpp.o[0m
+[9.308s] [ 61%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lslidar_msgs/msg/detail/lslidar_sweep__type_support_c.cpp.o[0m
+[9.381s] [ 63%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lslidar_msgs/msg/detail/lslidar_packet__type_support.cpp.o[0m
+[9.594s] [ 65%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lslidar_msgs/msg/lslidar_point__type_support.cpp.o[0m
+[9.627s] [ 66%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lslidar_msgs/msg/lslidar_scan__type_support.cpp.o[0m
+[10.044s] [ 68%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lslidar_msgs/msg/detail/lslidar_point__type_support.cpp.o[0m
+[10.197s] [ 69%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lslidar_msgs/msg/lslidar_sweep__type_support.cpp.o[0m
+[10.274s] [ 71%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lslidar_msgs/msg/detail/lslidar_scan__type_support.cpp.o[0m
+[10.294s] [ 73%] [32m[1mLinking CXX shared library liblslidar_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[10.351s] [ 74%] [32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lslidar_msgs/msg/detail/lslidar_sweep__type_support.cpp.o[0m
+[10.562s] [ 74%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_c
+[10.642s] [ 76%] [32m[1mLinking CXX shared library liblslidar_msgs__rosidl_typesupport_cpp.so[0m
+[10.772s] [ 76%] Built target lslidar_msgs__rosidl_typesupport_cpp
+[10.935s] [ 77%] [32m[1mLinking CXX shared library liblslidar_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[11.166s] [ 77%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_cpp
+[11.547s] [ 79%] [32m[1mLinking CXX shared library liblslidar_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[11.718s] [ 79%] Built target lslidar_msgs__rosidl_typesupport_introspection_cpp
+[11.766s] [ 79%] Built target lslidar_msgs
+[11.827s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[13.254s] [ 80%] Built target lslidar_msgs__py
+[13.331s] [ 82%] [32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/lslidar_msgs/msg/_lslidar_point_s.c.o[0m
+[13.340s] [ 85%] [32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/lslidar_msgs/msg/_lslidar_difop_s.c.o[0m
+[13.352s] [ 85%] [32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/lslidar_msgs/msg/_lslidar_packet_s.c.o[0m
+[13.353s] [ 87%] [32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/lslidar_msgs/msg/_lslidar_scan_s.c.o[0m
+[13.354s] [ 88%] [32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/lslidar_msgs/msg/_lslidar_sweep_s.c.o[0m
+[13.758s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/lslidar_msgs/liblslidar_msgs__rosidl_generator_py.so[0m
+[13.908s] [ 90%] Built target lslidar_msgs__rosidl_generator_py
+[13.983s] [ 93%] [32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[13.983s] [ 93%] [32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[13.984s] [ 95%] [32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[14.216s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[14.228s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[14.314s] [100%] [32m[1mLinking C shared library rosidl_generator_py/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[14.346s] [100%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_c__pyext
+[14.364s] [100%] Built target lslidar_msgs__rosidl_typesupport_c__pyext
+[14.445s] [100%] Built target lslidar_msgs__rosidl_typesupport_introspection_c__pyext
+[14.490s] Invoked command in '/home/orangepi/uvg_car/build/lslidar_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/uvg_car/install/wit_ros2_imu:/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/lslidar_msgs -- -j8 -l8
+[14.491s] Invoking command in '/home/orangepi/uvg_car/build/lslidar_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/uvg_car/install/wit_ros2_imu:/opt/ros/humble /usr/bin/cmake --install /home/orangepi/uvg_car/build/lslidar_msgs
+[14.517s] -- Install configuration: ""
+[14.517s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/ament_index/resource_index/rosidl_interfaces/lslidar_msgs
+[14.518s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs
+[14.518s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg
+[14.519s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail
+[14.520s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__functions.h
+[14.520s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__functions.h
+[14.521s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__type_support.h
+[14.521s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__type_support.h
+[14.521s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__struct.h
+[14.522s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__struct.h
+[14.523s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__struct.h
+[14.523s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__functions.h
+[14.523s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__functions.c
+[14.524s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__functions.c
+[14.524s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__functions.h
+[14.525s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__functions.h
+[14.525s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__type_support.h
+[14.526s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__functions.c
+[14.526s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__type_support.h
+[14.527s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__struct.h
+[14.527s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__struct.h
+[14.528s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__functions.c
+[14.528s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__type_support.h
+[14.528s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__functions.c
+[14.529s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_point.h
+[14.529s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_packet.h
+[14.530s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_difop.h
+[14.530s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_sweep.h
+[14.531s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_scan.h
+[14.531s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_generator_c__visibility_control.h
+[14.531s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/environment/library_path.sh
+[14.532s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/environment/library_path.dsv
+[14.532s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_generator_c.so
+[14.533s] -- Set runtime path of "/home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_generator_c.so" to ""
+[14.533s] -- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs
+[14.534s] -- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg
+[14.535s] -- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail
+[14.535s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_fastrtps_c.h
+[14.536s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_fastrtps_c.h
+[14.536s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_fastrtps_c.h
+[14.537s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_fastrtps_c.h
+[14.537s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_fastrtps_c.h
+[14.538s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[14.539s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_fastrtps_c.so
+[14.539s] -- Set runtime path of "/home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[14.540s] -- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs
+[14.540s] -- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg
+[14.541s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_point.hpp
+[14.541s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_packet.hpp
+[14.541s] -- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail
+[14.542s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__type_support.hpp
+[14.542s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__struct.hpp
+[14.543s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__type_support.hpp
+[14.543s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__builder.hpp
+[14.544s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__builder.hpp
+[14.545s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__type_support.hpp
+[14.545s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__builder.hpp
+[14.545s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__traits.hpp
+[14.546s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__struct.hpp
+[14.546s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__traits.hpp
+[14.547s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__traits.hpp
+[14.547s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__builder.hpp
+[14.548s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__type_support.hpp
+[14.548s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__struct.hpp
+[14.549s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__struct.hpp
+[14.549s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__builder.hpp
+[14.550s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__type_support.hpp
+[14.551s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__struct.hpp
+[14.551s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__traits.hpp
+[14.552s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__traits.hpp
+[14.553s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_sweep.hpp
+[14.553s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[14.554s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_scan.hpp
+[14.555s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_difop.hpp
+[14.556s] -- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs
+[14.557s] -- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg
+[14.557s] -- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail
+[14.558s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_fastrtps_cpp.hpp
+[14.558s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_fastrtps_cpp.hpp
+[14.559s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_fastrtps_cpp.hpp
+[14.559s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_fastrtps_cpp.hpp
+[14.559s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_fastrtps_cpp.hpp
+[14.560s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/dds_fastrtps
+[14.561s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[14.561s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_fastrtps_cpp.so
+[14.562s] -- Set runtime path of "/home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[14.562s] -- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs
+[14.562s] -- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg
+[14.563s] -- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail
+[14.563s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__type_support.c
+[14.564s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_introspection_c.h
+[14.564s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__type_support.c
+[14.565s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__type_support.c
+[14.565s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__type_support.c
+[14.565s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_introspection_c.h
+[14.566s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__type_support.c
+[14.566s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_introspection_c.h
+[14.567s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_introspection_c.h
+[14.567s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_introspection_c.h
+[14.567s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[14.568s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_introspection_c.so
+[14.568s] -- Set runtime path of "/home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_introspection_c.so" to ""
+[14.569s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_c.so
+[14.569s] -- Set runtime path of "/home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_c.so" to ""
+[14.570s] -- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs
+[14.570s] -- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg
+[14.570s] -- Up-to-date: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail
+[14.571s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__type_support.cpp
+[14.571s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__type_support.cpp
+[14.572s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__type_support.cpp
+[14.572s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__type_support.cpp
+[14.572s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__type_support.cpp
+[14.573s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_introspection_cpp.hpp
+[14.573s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_introspection_cpp.hpp
+[14.574s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_introspection_cpp.hpp
+[14.574s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_introspection_cpp.hpp
+[14.574s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_introspection_cpp.hpp
+[14.575s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_introspection_cpp.so
+[14.575s] -- Set runtime path of "/home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[14.576s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_cpp.so
+[14.577s] -- Set runtime path of "/home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_cpp.so" to ""
+[14.577s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/environment/pythonpath.sh
+[14.577s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/environment/pythonpath.dsv
+[14.578s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs-1.2.0-py3.10.egg-info
+[14.578s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs-1.2.0-py3.10.egg-info/top_level.txt
+[14.579s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs-1.2.0-py3.10.egg-info/SOURCES.txt
+[14.579s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs-1.2.0-py3.10.egg-info/PKG-INFO
+[14.579s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs-1.2.0-py3.10.egg-info/dependency_links.txt
+[14.580s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs
+[14.580s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/liblslidar_msgs__rosidl_generator_py.so
+[14.580s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[14.581s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[14.581s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/__init__.py
+[14.582s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[14.582s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[14.582s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg
+[14.583s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_difop_s.c
+[14.583s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_scan.py
+[14.584s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_difop.py
+[14.584s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_packet_s.c
+[14.584s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/__init__.py
+[14.585s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_scan_s.c
+[14.585s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_packet.py
+[14.586s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_sweep_s.c
+[14.586s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_point.py
+[14.586s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_sweep.py
+[14.587s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_point_s.c
+[14.587s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_c.c
+[14.588s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[14.650s] Listing '/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs'...
+[14.650s] Compiling '/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/__init__.py'...
+[14.651s] Listing '/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg'...
+[14.652s] Compiling '/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/__init__.py'...
+[14.652s] Compiling '/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_difop.py'...
+[14.653s] Compiling '/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_packet.py'...
+[14.653s] Compiling '/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_point.py'...
+[14.654s] Compiling '/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_scan.py'...
+[14.655s] Compiling '/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_sweep.py'...
+[14.665s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[14.666s] -- Set runtime path of "/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+[14.666s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[14.667s] -- Set runtime path of "/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+[14.668s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[14.669s] -- Set runtime path of "/home/orangepi/uvg_car/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+[14.670s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_generator_py.so
+[14.671s] -- Set runtime path of "/home/orangepi/uvg_car/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_generator_py.so" to ""
+[14.671s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarDifop.idl
+[14.672s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPacket.idl
+[14.673s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPoint.idl
+[14.673s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarScan.idl
+[14.674s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarSweep.idl
+[14.674s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarDifop.msg
+[14.675s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPacket.msg
+[14.676s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPoint.msg
+[14.681s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarScan.msg
+[14.682s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarSweep.msg
+[14.683s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/ament_index/resource_index/package_run_dependencies/lslidar_msgs
+[14.684s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/ament_index/resource_index/parent_prefix_path/lslidar_msgs
+[14.685s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/environment/ament_prefix_path.sh
+[14.685s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/environment/ament_prefix_path.dsv
+[14.698s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/environment/path.sh
+[14.698s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/environment/path.dsv
+[14.699s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/local_setup.bash
+[14.699s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/local_setup.sh
+[14.700s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/local_setup.zsh
+[14.700s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/local_setup.dsv
+[14.701s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/package.dsv
+[14.702s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/ament_index/resource_index/packages/lslidar_msgs
+[14.702s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_cExport.cmake
+[14.703s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_cExport-noconfig.cmake
+[14.703s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[14.703s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[14.704s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_cppExport.cmake
+[14.707s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[14.707s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[14.708s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cExport.cmake
+[14.709s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[14.710s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cExport.cmake
+[14.711s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[14.713s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[14.714s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[14.715s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cppExport.cmake
+[14.716s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[14.717s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_pyExport.cmake
+[14.717s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_pyExport-noconfig.cmake
+[14.718s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/rosidl_cmake-extras.cmake
+[14.719s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[14.720s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[14.720s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[14.723s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[14.723s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[14.724s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[14.725s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgsConfig.cmake
+[14.726s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgsConfig-version.cmake
+[14.727s] -- Installing: /home/orangepi/uvg_car/install/lslidar_msgs/share/lslidar_msgs/package.xml
+[14.728s] Invoked command in '/home/orangepi/uvg_car/build/lslidar_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/uvg_car/install/wit_ros2_imu:/opt/ros/humble /usr/bin/cmake --install /home/orangepi/uvg_car/build/lslidar_msgs

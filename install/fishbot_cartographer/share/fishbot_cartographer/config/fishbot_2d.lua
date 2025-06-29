@@ -7,7 +7,7 @@ options = {
   map_frame = "map",
   tracking_frame = "base_link",
   -- base_link改为odom,发布map到odom之间的位姿态
-  published_frame = "odom",
+  published_frame = "base_link",
   odom_frame = "odom",
   -- true改为false，不用提供里程计数据
   provide_odom_frame = false,

@@ -1,8 +1,0 @@
-[ 50%] [32mBuilding CXX object CMakeFiles/oakchina_vio_package_node.dir/src/main.cpp.o[0m
-[01m[K/home/orangepi/uvg_car/src/oakchina_vio_package_ros2/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
-[01m[K/home/orangepi/uvg_car/src/oakchina_vio_package_ros2/src/main.cpp:305:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_broadcaster_[m[K’ was not declared in this scope
-  305 |                 [01;31m[Ktf_broadcaster_[m[K->sendTransform(odom_to_base);
-      |                 [01;31m[K^~~~~~~~~~~~~~~[m[K
-gmake[2]: *** [CMakeFiles/oakchina_vio_package_node.dir/build.make:76: CMakeFiles/oakchina_vio_package_node.dir/src/main.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/oakchina_vio_package_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

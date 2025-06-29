@@ -210,6 +210,19 @@ CartoTransferPose_main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CartoTransferPose_main.dir/build.make CMakeFiles/CartoTransferPose_main.dir/build
 .PHONY : CartoTransferPose_main/fast
 
+#=============================================================================
+# Target rules for targets named time_sync_node
+
+# Build rule for target.
+time_sync_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 time_sync_node
+.PHONY : time_sync_node
+
+# fast build rule for target.
+time_sync_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_sync_node.dir/build.make CMakeFiles/time_sync_node.dir/build
+.PHONY : time_sync_node/fast
+
 src/CartoTransferPose_main.o: src/CartoTransferPose_main.cc.o
 .PHONY : src/CartoTransferPose_main.o
 
@@ -234,6 +247,30 @@ src/CartoTransferPose_main.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CartoTransferPose_main.dir/build.make CMakeFiles/CartoTransferPose_main.dir/src/CartoTransferPose_main.cc.s
 .PHONY : src/CartoTransferPose_main.cc.s
 
+src/time_sync_node.o: src/time_sync_node.cc.o
+.PHONY : src/time_sync_node.o
+
+# target to build an object file
+src/time_sync_node.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_sync_node.dir/build.make CMakeFiles/time_sync_node.dir/src/time_sync_node.cc.o
+.PHONY : src/time_sync_node.cc.o
+
+src/time_sync_node.i: src/time_sync_node.cc.i
+.PHONY : src/time_sync_node.i
+
+# target to preprocess a source file
+src/time_sync_node.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_sync_node.dir/build.make CMakeFiles/time_sync_node.dir/src/time_sync_node.cc.i
+.PHONY : src/time_sync_node.cc.i
+
+src/time_sync_node.s: src/time_sync_node.cc.s
+.PHONY : src/time_sync_node.s
+
+# target to generate assembly for a file
+src/time_sync_node.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_sync_node.dir/build.make CMakeFiles/time_sync_node.dir/src/time_sync_node.cc.s
+.PHONY : src/time_sync_node.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -250,9 +287,13 @@ help:
 	@echo "... fishbot_cartographer_uninstall"
 	@echo "... uninstall"
 	@echo "... CartoTransferPose_main"
+	@echo "... time_sync_node"
 	@echo "... src/CartoTransferPose_main.o"
 	@echo "... src/CartoTransferPose_main.i"
 	@echo "... src/CartoTransferPose_main.s"
+	@echo "... src/time_sync_node.o"
+	@echo "... src/time_sync_node.i"
+	@echo "... src/time_sync_node.s"
 .PHONY : help
 
 

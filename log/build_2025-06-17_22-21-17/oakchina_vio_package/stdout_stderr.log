@@ -1,8 +1,0 @@
-[ 50%] [32mBuilding CXX object CMakeFiles/oakchina_vio_package_node.dir/src/main.cpp.o[0m
-[01m[K/home/orangepi/uvg_car/src/oakchina_vio_package_ros2/src/main.cpp:9:10:[m[K [01;31m[Kfatal error: [m[Knav_msgs/msg/imu.hpp: No such file or directory
-    9 | #include [01;31m[K<nav_msgs/msg/imu.hpp>[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/oakchina_vio_package_node.dir/build.make:76: CMakeFiles/oakchina_vio_package_node.dir/src/main.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/oakchina_vio_package_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

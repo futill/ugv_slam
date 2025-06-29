@@ -46,6 +46,13 @@ def generate_launch_description():
         output='screen'
     )
 
+    time_sync_node = Node(
+        package='fishbot_cartographer',
+        executable='time_sync_node',
+        output='screen'
+    )
+
+
     cartographer_node = Node(
         package='cartographer_ros',
         executable='cartographer_node',
@@ -91,6 +98,7 @@ def generate_launch_description():
     #ld.add_action(rviz_and_imu_node)
     ld.add_action(rviz_vio_odom)
     ld.add_action(robot_state_publisher_node)
+    #ld.add_action(time_sync_node)
     #ld.add_action(ekf_node)
     ld.add_action(cartographer_node)
     ld.add_action(occupancy_grid_node)

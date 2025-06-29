@@ -3,9 +3,9 @@
 #include <sensor_msgs/msg/imu.hpp>
 #include <sensor_msgs/msg/image.hpp>
 #include <geometry_msgs/msg/pose_stamped.hpp>
-#include <tf2/LinearMath/Quaternion.h>
+#include <nav_msgs/msg/odometry.hpp> // 添加 Odometry 消息头文件
 #include <nav_msgs/msg/path.hpp>
-#include <nav_msgs/msg/odometry.hpp>
+#include <tf2/LinearMath/Quaternion.h>
 
 #include <signal.h>
 #include <atomic>
@@ -15,7 +15,6 @@
 #include <mutex>
 #include <cstring>
 #include <sstream>
-#include "carina_a1088.h"
 #include <sys/ioctl.h>
 #include <termios.h>
 #include <thread>
@@ -23,9 +22,9 @@
 #include <cv_bridge/cv_bridge.h>
 #include <opencv2/opencv.hpp>
 
-#include <tf2_ros/transform_broadcaster.h>
-#include <geometry_msgs/msg/transform_stamped.hpp>
+#include "carina_a1088.h" // 假设这是你的视觉里程计库头文件
 
+// 全局变量和互斥锁
 std::mutex image_mtx;
 cv::Mat left_image;
 cv::Mat right_image;
@@ -53,14 +52,15 @@ unsigned char event = 0;
 
 std::atomic<bool> shutdown_requested(false);
 
+// 信号处理函数
 void signal_handle(int signal) {
     if (SIGINT == signal) {
         shutdown_requested = true;
     }
 }
 
-bool kbhit()
-{
+// 检测键盘输入
+bool kbhit() {
     termios term;
     tcgetattr(0, &term);
 
@@ -76,49 +76,32 @@ bool kbhit()
     return byteswaiting > 0;
 }
 
-bool isValidRotationMatrix(const double* R) {
-    // 检查是否包含 NaN 或 inf
-    for (int i = 0; i < 9; ++i) {
-        if (!std::isfinite(R[i])) {
-            return false;
-        }
-    }
-    // 检查行列式是否接近 1
-    double det = R[0] * (R[4] * R[8] - R[5] * R[7]) -
-                 R[1] * (R[3] * R[8] - R[5] * R[6]) +
-                 R[2] * (R[3] * R[7] - R[4] * R[6]);
-    return std::abs(det - 1.0) < 1e-6;
-}
-
+// 将旋转矩阵转换为四元数
 tf2::Quaternion rotationMatrixToQuaternion(const double* R) {
-    if (!isValidRotationMatrix(R)) {
-        RCLCPP_WARN(rclcpp::get_logger("vio"), "Invalid rotation matrix, returning identity quaternion");
-        return tf2::Quaternion(0.0, 0.0, 0.0, 1.0); // 返回单位四元数
-    }
     tf2::Quaternion q;
-    double trace = R[0] + R[4] + R[8];
+    double trace = R[0] + R[4] + R[8]; // 列优先存储
 
     if (trace > 0) {
-        double s = sqrt(trace + 1.0) * 2;
+        double s = sqrt(trace + 1.0) * 2; // 4 * qw
         q.setW(0.25 * s);
         q.setX((R[7] - R[5]) / s);
         q.setY((R[2] - R[6]) / s);
         q.setZ((R[3] - R[1]) / s);
     } else {
         if (R[0] > R[4] && R[0] > R[8]) {
-            double s = sqrt(1.0 + R[0] - R[4] - R[8]) * 2;
+            double s = sqrt(1.0 + R[0] - R[4] - R[8]) * 2; // 4 * qx
             q.setW((R[7] - R[5]) / s);
             q.setX(0.25 * s);
             q.setY((R[1] + R[3]) / s);
             q.setZ((R[2] + R[6]) / s);
         } else if (R[4] > R[8]) {
-            double s = sqrt(1.0 + R[4] - R[0] - R[8]) * 2;
+            double s = sqrt(1.0 + R[4] - R[0] - R[8]) * 2; // 4 * qy
             q.setW((R[2] - R[6]) / s);
             q.setX((R[1] + R[3]) / s);
             q.setY(0.25 * s);
             q.setZ((R[7] + R[5]) / s);
         } else {
-            double s = sqrt(1.0 + R[8] - R[0] - R[4]) * 2;
+            double s = sqrt(1.0 + R[8] - R[0] - R[4]) * 2; // 4 * qz
             q.setW((R[3] - R[1]) / s);
             q.setX((R[2] + R[6]) / s);
             q.setY((R[7] + R[5]) / s);
@@ -129,12 +112,11 @@ tf2::Quaternion rotationMatrixToQuaternion(const double* R) {
     return q;
 }
 
+// 回调函数
 void CarinaA1088PoseCallBack(float *pose, double ts) {
     std::lock_guard<std::mutex> auto_lock(pose_mtx);
     memcpy(pose_data, pose, sizeof(float) * 32);
     pose_ts = ts;
-    RCLCPP_INFO(rclcpp::get_logger("vio"), "Pose callback: tx=%.3f, ty=%.3f, tz=%.3f, R00=%.3f, R01=%.3f, R02=%.3f",
-                pose_data[12], pose_data[13], pose_data[14], pose_data[0], pose_data[4], pose_data[8]);
 }
 
 void CarinaA1088VsyncCallBack(double ts) {
@@ -238,39 +220,37 @@ int main(int argc, char **argv) {
     custom_config_path = node->get_parameter("custom_config_path").as_string();
     database_path = node->get_parameter("database_path").as_string();
 
-    std::cout << custom_config_path << std::endl;
-    std::cout << database_path << std::endl;
+    std::cout << "Config path: " << custom_config_path << std::endl;
+    std::cout << "Database path: " << database_path << std::endl;
 
+    // 创建发布者
     auto pose_pub = node->create_publisher<geometry_msgs::msg::PoseStamped>("pose", 10);
-    auto odom_pub = node->create_publisher<nav_msgs::msg::Odometry>("/odom", 10);
-    //auto imu_pub = node->create_publisher<sensor_msgs::msg::Imu>("/imu", 10);
     auto path_pub = node->create_publisher<nav_msgs::msg::Path>("path", 10);
     auto left_image_pub = node->create_publisher<sensor_msgs::msg::Image>("left_gray_image", 10);
     auto right_image_pub = node->create_publisher<sensor_msgs::msg::Image>("right_gray_image", 10);
-    
-    rclcpp::Rate loop_rate(100);
+    auto odom_pub = node->create_publisher<nav_msgs::msg::Odometry>("odom", 10); // 新增 Odometry 发布者
+    auto imu_pub = node->create_publisher<sensor_msgs::msg::Imu>("imu", 10); // 新增 IMU 发布者
+
+    rclcpp::Rate loop_rate(10);
     nav_msgs::msg::Path path;
     path.header.frame_id = "map";
 
-    std::shared_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_ = 
-        std::make_shared<tf2_ros::TransformBroadcaster>(node);
-
+    // 创建输出文件
     auto now = std::chrono::system_clock::now();
     auto now_time_t = std::chrono::system_clock::to_time_t(now);
     std::tm now_tm = *std::localtime(&now_time_t);
-    std::ostringstream timestamp;
-    timestamp << std::put_time(&now_tm, "%Y%m%d_%H%M%S");
-    
-    std::string file_path = timestamp.str() + "_VIO_6DOF_data.txt";
+    // std::ostringstream timestamp;
+    // timestamp << std::put_time(&now_tm, "%Y%m%d_%H%M%S");
+    // std::string file_path = timestamp.str() + "_VIO_6DOF_data.txt";
 
-    std::ofstream outFile;
-    outFile.open(file_path);
-    
-    if (!outFile.is_open()) {
-        std::cerr << "Unable to open file!" << std::endl;
-        return 1;
-    }
+    // std::ofstream outFile;
+    // outFile.open(file_path);
+    // if (!outFile.is_open()) {
+    //     std::cerr << "Unable to open file!" << std::endl;
+    //     return 1;
+    // }
 
+    // 读取配置文件
     std::string custom_config;
     std::ifstream configFile(custom_config_path, std::ios::in);
     if (configFile.is_open()) {
@@ -280,6 +260,7 @@ int main(int argc, char **argv) {
         custom_config = buffer.str();
     }
 
+    // 初始化和启动 Carina A1088
     carina_a1088_init(const_cast<char *>(custom_config.c_str()), const_cast<char*>(database_path.c_str()));
     carina_a1088_start(
         CarinaA1088PoseCallBack,
@@ -294,109 +275,125 @@ int main(int argc, char **argv) {
     while (rclcpp::ok() && !shutdown_requested) {
         sensor_msgs::msg::Imu imu_msg;
         geometry_msgs::msg::PoseStamped pose_stamped;
+        nav_msgs::msg::Odometry odom_msg; // 新增 Odometry 消息
+        tf2::Quaternion quat;
         sensor_msgs::msg::Image::SharedPtr left_msg, right_msg;
 
-        // 发布 /odom 和 tf
+        // 处理位姿数据
         {
             std::lock_guard<std::mutex> auto_lock(pose_mtx);
             if (pose_ts > 0) {
-                nav_msgs::msg::Odometry odom_msg;
-                odom_msg.header.stamp = node->now();
-                odom_msg.header.frame_id = "odom";
-                odom_msg.child_frame_id = "base_link";
-
-                odom_msg.pose.pose.position.x = pose_data[12];
-                odom_msg.pose.pose.position.y = pose_data[13];
-                odom_msg.pose.pose.position.z = pose_data[14];
+                // outFile << "position: " << pose_data[12] << "," << pose_data[13] << "," << pose_data[14] << "\n";
 
                 double R[9] = {
                     pose_data[0], pose_data[4], pose_data[8],
                     pose_data[1], pose_data[5], pose_data[9],
                     pose_data[2], pose_data[6], pose_data[10]
                 };
-                auto quat = rotationMatrixToQuaternion(R);
 
+                // outFile << "rotation matrix: ";
+                // for (size_t i = 0; i < 9; i++) {
+                //     outFile << R[i] << (i == 8 ? "" : ",");
+                // }
+                // outFile << "\n";
+
+                quat = rotationMatrixToQuaternion(R);
+                pose_stamped.header.stamp = node->now();
+                pose_stamped.header.frame_id = "map";
+                pose_stamped.pose.position.y = -pose_data[12];
+                pose_stamped.pose.position.x = pose_data[13];
+                pose_stamped.pose.position.z = pose_data[14];
+                pose_stamped.pose.orientation.x = quat.x();
+                pose_stamped.pose.orientation.y = quat.y();
+                pose_stamped.pose.orientation.z = quat.z();
+                pose_stamped.pose.orientation.w = quat.w();
+
+                // outFile << "orientation: " << quat.x() << "," << quat.y() << "," << quat.z() << "," << quat.w() << "\n\n";
+
+                // 填充 Odometry 消息
+                odom_msg.header.stamp = node->now();
+                odom_msg.header.frame_id = "map"; // 父坐标系
+                odom_msg.child_frame_id = "base_link"; // 子坐标系
+                odom_msg.pose.pose.position.y = -pose_data[12];
+                odom_msg.pose.pose.position.x = pose_data[13];
+                odom_msg.pose.pose.position.z = pose_data[14];
                 odom_msg.pose.pose.orientation.x = quat.x();
                 odom_msg.pose.pose.orientation.y = quat.y();
                 odom_msg.pose.pose.orientation.z = quat.z();
                 odom_msg.pose.pose.orientation.w = quat.w();
 
-                // 添加协方差
-                for (int i = 0; i < 36; ++i) {
-                    odom_msg.pose.covariance[i] = (i % 7 == 0) ? 0.01 : 0.0;
-                }
+                // 设置协方差矩阵（示例值，需根据实际 VO 精度调整）
+                // odom_msg.pose.covariance = {
+                //     0.01, 0.0, 0.0, 0.0, 0.0, 0.0,
+                //     0.0, 0.01, 0.0, 0.0, 0.0, 0.0,
+                //     0.0, 0.0, 0.01, 0.0, 0.0, 0.0,
+                //     0.0, 0.0, 0.0, 0.01, 0.0, 0.0,
+                //     0.0, 0.0, 0.0, 0.0, 0.01, 0.0,
+                //     0.0, 0.0, 0.0, 0.0, 0.0, 0.01
+                // };
 
-                odom_pub->publish(odom_msg);
-
-                geometry_msgs::msg::TransformStamped odom_to_base;
-                odom_to_base.header.stamp = node->now();
-                odom_to_base.header.frame_id = "odom";
-                odom_to_base.child_frame_id = "base_link";
-
-                odom_to_base.transform.translation.x = pose_data[12];
-                odom_to_base.transform.translation.y = pose_data[13];
-                odom_to_base.transform.translation.z = pose_data[14];
-
-                odom_to_base.transform.rotation.x = quat.x();
-                odom_to_base.transform.rotation.y = quat.y();
-                odom_to_base.transform.rotation.z = quat.z();
-                odom_to_base.transform.rotation.w = quat.w();
-
-                tf_broadcaster_->sendTransform(odom_to_base);
-
+                path.poses.push_back(pose_stamped);
+                path.header.stamp = node->now();
+                path.header.frame_id = "map";
                 pose_ts = -1;
+
+                // 发布 Odometry 消息
+                odom_pub->publish(odom_msg);
             }
         }
 
-        // 发布 IMU 数据
+        // 处理 IMU 数据
+        {
+            std::lock_guard<std::mutex> auto_lock(imu_mtx);
+            if (imu_ts > 0) {
+                imu_msg.header.stamp = node->now();
+                imu_msg.header.frame_id = "base_link"; // IMU 坐标系
+                imu_msg.angular_velocity.x = imu_data[3]; // 角速度
+                imu_msg.angular_velocity.y = imu_data[4];
+                imu_msg.angular_velocity.z = imu_data[5];
+                imu_msg.linear_acceleration.x = imu_data[0]; // 线性加速度
+                imu_msg.linear_acceleration.y = imu_data[1];
+                imu_msg.linear_acceleration.z = imu_data[2];
+
+                // 设置协方差矩阵（示例值，需根据实际 IMU 精度调整）
+                imu_msg.angular_velocity_covariance = {
+                    0.01, 0.0, 0.0,
+                    0.0, 0.01, 0.0,
+                    0.0, 0.0, 0.01
+                };
+                imu_msg.linear_acceleration_covariance = {
+                    0.01, 0.0, 0.0,
+                    0.0, 0.01, 0.0,
+                    0.0, 0.0, 0.01
+                };
+
+                // imu_pub->publish(imu_msg);
+                imu_ts = -1;
+            }
+        }
+
+        // 处理图像数据
         // {
-        //     std::lock_guard<std::mutex> auto_lock(imu_mtx);
-        //     if (imu_ts > 0 && imu_data.size() == 6) {
-        //         imu_msg.header.stamp = node->now();
-        //         imu_msg.header.frame_id = "imu_link";
-
-        //         imu_msg.angular_velocity.x = imu_data[0];
-        //         imu_msg.angular_velocity.y = imu_data[1];
-        //         imu_msg.angular_velocity.z = imu_data[2];
-
-        //         imu_msg.linear_acceleration.x = imu_data[3];
-        //         imu_msg.linear_acceleration.y = imu_data[4];
-        //         imu_msg.linear_acceleration.z = imu_data[5];
-
-        //         imu_msg.orientation.x = 0.0;
-        //         imu_msg.orientation.y = 0.0;
-        //         imu_msg.orientation.z = 0.0;
-        //         imu_msg.orientation.w = 1.0;
-
-        //         imu_pub->publish(imu_msg);
-
-        //         imu_ts = -1;
+        //     std::lock_guard<std::mutex> auto_lock(image_mtx);
+        //     if (image_ts > 0) {
+        //         std::cout << "image_ts: " << image_ts << std::endl;
+        //         auto header = std_msgs::msg::Header();
+        //         header.stamp = node->now();
+        //         header.frame_id = "camera_link"; // 相机坐标系
+        //         left_msg = cv_bridge::CvImage(header, "mono8", left_image).toImageMsg();
+        //         right_msg = cv_bridge::CvImage(header, "mono8", right_image).toImageMsg();
+        //         left_image_pub->publish(*left_msg);
+        //         right_image_pub->publish(*right_msg);
+        //         image_ts = -1;
         //     }
         // }
-
-        // 发布相机图像
-        {
-            std::lock_guard<std::mutex> auto_lock(image_mtx);
-            if (image_ts > 0) {
-                std::cout << "image_ts ts: " << image_ts << std::endl;
-                auto header = std_msgs::msg::Header();
-                header.stamp = node->now();
-                header.frame_id = "map";
-                left_msg = cv_bridge::CvImage(header, "mono8", left_image).toImageMsg();
-                right_msg = cv_bridge::CvImage(header, "mono8", right_image).toImageMsg();
-                left_image_pub->publish(*left_msg);
-                right_image_pub->publish(*right_msg);
-                image_ts = -1;
-            }
-        }
 
         pose_pub->publish(pose_stamped);
         path_pub->publish(path);
         rclcpp::spin_some(node);
         loop_rate.sleep();
 
-        if (kbhit())
-        {
+        if (kbhit()) {
             c = fgetc(stdin);
             std::cout << std::endl;
             if (c == 'q')
@@ -404,7 +401,7 @@ int main(int argc, char **argv) {
         }
     }
 
-    outFile.close();
+    // outFile.close();
 
     carina_a1088_pause();
     carina_a1088_stop();

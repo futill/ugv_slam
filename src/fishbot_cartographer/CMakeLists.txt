@@ -12,10 +12,25 @@ find_package(std_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)      # 添加 sensor_msgs 依赖
+find_package(nav_msgs REQUIRED)         # 添加 nav_msgs 依赖
+find_package(diagnostic_msgs REQUIRED)  # 添加 diagnostic_msgs 依赖
+find_package(message_filters REQUIRED)  # 添加 message_filters 依赖
 
 add_executable(CartoTransferPose_main src/CartoTransferPose_main.cc)
+add_executable(time_sync_node src/time_sync_node.cc)
 
-ament_target_dependencies(CartoTransferPose_main
+ament_target_dependencies(
+  time_sync_node
+  rclcpp
+  sensor_msgs
+  nav_msgs
+  diagnostic_msgs
+  message_filters
+)
+
+ament_target_dependencies(
+  CartoTransferPose_main
   rclcpp
   std_msgs
   tf2
@@ -41,7 +56,7 @@ install(
 )
 
 install(
-  TARGETS CartoTransferPose_main
+  TARGETS CartoTransferPose_main time_sync_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

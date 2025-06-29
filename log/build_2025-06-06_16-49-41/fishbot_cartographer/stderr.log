@@ -1,7 +1,0 @@
-[01m[K/home/orangepi/uvg_car/src/fishbot_cartographer/src/CartoTransferPose_main.cc:[m[K In member function ‘[01m[Kvoid TfPosePublisher::timer_callback()[m[K’:
-[01m[K/home/orangepi/uvg_car/src/fishbot_cartographer/src/CartoTransferPose_main.cc:53:23:[m[K [01;31m[Kerror: [m[K‘[01m[KgetYaw[m[K’ is not a member of ‘[01m[Ktf2[m[K’
-   53 |     double yaw = tf2::[01;31m[KgetYaw[m[K(q);
-      |                       [01;31m[K^~~~~~[m[K
-gmake[2]: *** [CMakeFiles/CartoTransferPose_main.dir/build.make:76: CMakeFiles/CartoTransferPose_main.dir/src/CartoTransferPose_main.cc.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/CartoTransferPose_main.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

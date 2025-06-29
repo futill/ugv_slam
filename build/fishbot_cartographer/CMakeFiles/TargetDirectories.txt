@@ -1,6 +1,7 @@
 /home/orangepi/uvg_car/build/fishbot_cartographer/CMakeFiles/uninstall.dir
 /home/orangepi/uvg_car/build/fishbot_cartographer/CMakeFiles/fishbot_cartographer_uninstall.dir
 /home/orangepi/uvg_car/build/fishbot_cartographer/CMakeFiles/CartoTransferPose_main.dir
+/home/orangepi/uvg_car/build/fishbot_cartographer/CMakeFiles/time_sync_node.dir
 /home/orangepi/uvg_car/build/fishbot_cartographer/CMakeFiles/test.dir
 /home/orangepi/uvg_car/build/fishbot_cartographer/CMakeFiles/edit_cache.dir
 /home/orangepi/uvg_car/build/fishbot_cartographer/CMakeFiles/rebuild_cache.dir
