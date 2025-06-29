@@ -1,3 +1,0 @@
-[console_scripts]
-wit_ros2_imu = wit_ros2_imu.wit_ros2_imu:main
-

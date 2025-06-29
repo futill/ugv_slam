@@ -1,2 +1,0 @@
-gmake[2]: Warning: File '/home/orangepi/uvg_car/src/oakchina_vio_package_ros2/src/main.cpp' has modification time 422 s in the future
-gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
