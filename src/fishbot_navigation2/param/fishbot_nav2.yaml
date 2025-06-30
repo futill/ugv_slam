@@ -1,36 +1,9 @@
-# AMCL（自适应蒙特卡洛定位）参数
-amcl:
-  ros__parameters:
-    use_sim_time: true               # 使用仿真时间（例如 Gazebo）
-    alpha1: 0.2                      # 平移噪声参数（旋转后）
-    alpha2: 0.2                      # 旋转噪声参数（平移后）
-    alpha3: 0.2                      # 平移噪声参数（平移后）
-    alpha4: 0.2                      # 旋转噪声参数（旋转后）
-    alpha5: 0.2                      # 平移旋转混合误差
-    base_frame_id: "base_link"      # 机器人的基准坐标系
-    beam_skip_distance: 0.5         # 跳过与其他较近射线重叠的最小距离
-    do_beamskip: true               # 启用射线跳过功能以加速激光匹配
-    global_frame_id: "map"          # 全局坐标系
-    laser_max_range: 12.0           # 激光最大测量距离
-    max_beams: 60                   # 使用的激光束数量
-    min_particles: 500              # 粒子滤波器中最小粒子数
-    max_particles: 2000             # 最大粒子数
-    odom_frame_id: "base_link"           # 里程计坐标系
-    pf_err: 0.05                    # 粒子滤波器误差容忍度
-    pf_z: 0.99                      # 粒子滤波器更新频率
-    resample_interval: 1           # 重采样频率
-    robot_model_type: "diff"       # 机器人类型（差速驱动）
-    save_pose_rate: 0.5            # 保存位姿的频率（Hz）
-    scan_topic: "scan"             # 激光话题
-    transform_tolerance: 1.0       # 坐标变换的容差（秒）
-    update_min_a: 0.2              # 最小旋转更新阈值（弧度）
-    update_min_d: 0.25             # 最小平移更新阈值（米）
 
 # 地图服务器参数（静态地图加载）
 map_server:
   ros__parameters:
     use_sim_time: true
-    yaml_filename: "map/fishbot_map.yaml"   # 地图配置文件路径
+    yaml_filename: "map/map.yaml"   # 地图配置文件路径
 
 # 地图保存服务
 map_saver:

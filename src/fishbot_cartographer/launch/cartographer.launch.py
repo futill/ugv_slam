@@ -9,12 +9,10 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     pkg_share = FindPackageShare(package='fishbot_cartographer').find('fishbot_cartographer')
-    wit_ros2_imu = get_package_share_directory('wit_ros2_imu')
     vio_odom = get_package_share_directory('oakchina_vio_package')
     driver_dir = get_package_share_directory('lslidar_driver')
     urdf_dir = os.path.join(pkg_share, 'urdf')
     urdf_file = os.path.join(urdf_dir, 'fishot_2d.urdf')
-    param_file = os.path.join(pkg_share, 'param', 'ekf.yaml')
     with open(urdf_file, 'r') as infp:
         robot_desc = infp.read()
 
@@ -32,9 +30,6 @@ def generate_launch_description():
     lslidar_driver_node = IncludeLaunchDescription(
             PythonLaunchDescriptionSource([driver_dir,'/launch','/lsn10_launch.py']),
         )
-    rviz_and_imu_node = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([wit_ros2_imu,'/rviz_and_imu.launch.py']),
-    )
     rviz_vio_odom = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([vio_odom,'/launch','/oakchina_vio.launch.py']),
     )
@@ -45,14 +40,6 @@ def generate_launch_description():
         parameters=[{'robot_description': robot_desc}, {'use_sim_time': True}],
         output='screen'
     )
-
-    time_sync_node = Node(
-        package='fishbot_cartographer',
-        executable='time_sync_node',
-        output='screen'
-    )
-
-
     cartographer_node = Node(
         package='cartographer_ros',
         executable='cartographer_node',
@@ -64,7 +51,6 @@ def generate_launch_description():
             '-configuration_basename', configuration_basename
         ]
     )
-
     occupancy_grid_node = Node(
         package='cartographer_ros',
         executable='cartographer_occupancy_grid_node',
@@ -84,25 +70,13 @@ def generate_launch_description():
         parameters=[{'use_sim_time': use_sim_time}],
         output='screen'
     )
-    ekf_node =  Node(
-            package='robot_localization',
-            executable='ekf_node',
-            name='ekf_filter_node',
-            output='screen',
-            parameters=[param_file],
-        )
-
 
     ld = LaunchDescription()
     ld.add_action(lslidar_driver_node)
-    #ld.add_action(rviz_and_imu_node)
     ld.add_action(rviz_vio_odom)
     ld.add_action(robot_state_publisher_node)
-    #ld.add_action(time_sync_node)
-    #ld.add_action(ekf_node)
     ld.add_action(cartographer_node)
     ld.add_action(occupancy_grid_node)
     ld.add_action(rviz_node)
     
-
     return ld

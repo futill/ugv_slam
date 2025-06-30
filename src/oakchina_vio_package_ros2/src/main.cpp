@@ -312,7 +312,7 @@ int main(int argc, char **argv) {
 
                 // 填充 Odometry 消息
                 odom_msg.header.stamp = node->now();
-                odom_msg.header.frame_id = "map"; // 父坐标系
+                odom_msg.header.frame_id = "odom"; // 父坐标系
                 odom_msg.child_frame_id = "base_link"; // 子坐标系
                 odom_msg.pose.pose.position.y = -pose_data[12];
                 odom_msg.pose.pose.position.x = pose_data[13];
