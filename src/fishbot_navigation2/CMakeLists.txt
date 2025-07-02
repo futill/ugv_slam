@@ -7,9 +7,23 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(nlohmann_json REQUIRED)
 find_package(nav2_bringup REQUIRED)
 find_package(nav2_common REQUIRED)
 find_package(navigation2 REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(serial REQUIRED)
+
+add_executable(uart_controller src/uart_controller.cpp)
+
+ament_target_dependencies(
+  uart_controller
+  rclcpp 
+  geometry_msgs 
+  nlohmann_json
+  serial
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -26,6 +40,11 @@ endif()
 install(
   DIRECTORY launch param maps urdf config
   DESTINATION share/${PROJECT_NAME}
+)
+
+install(
+  TARGETS  uart_controller
+  DESTINATION lib/${PROJECT_NAME}
 )
 
 ament_package()

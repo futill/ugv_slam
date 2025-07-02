@@ -52,6 +52,10 @@ TRAJECTORY_BUILDER_2D.use_online_correlative_scan_matching = true
 -- 1.0改成0.1,提高对运动的敏感度
 TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(0.1)
 
+-- TRAJECTORY_BUILDER.pure_localization_trimmer = {
+--   max_submaps_to_keep = 3,
+-- }
+-- POSE_GRAPH.optimize_every_n_nodes = 20
 -- 0.55改成0.65,Fast csm的最低分数，高于此分数才进行优化。
 POSE_GRAPH.constraint_builder.min_score = 0.65
 --0.6改成0.7,全局定位最小分数，低于此分数则认为目前全局定位不准确

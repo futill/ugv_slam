@@ -34,7 +34,12 @@ def generate_launch_description():
     configuration_directory = LaunchConfiguration(
         'configuration_directory', default=os.path.join(fishbot_navigation2_dir, 'config'))
     configuration_basename = LaunchConfiguration('configuration_basename', default='fishbot_2d.lua')
-
+    # 地图文件路径（你需要确认这个路径下的 .yaml 文件是否存在）
+    resolution = LaunchConfiguration('resolution', default='0.05')
+    # 地图的发布周期
+    publish_period_sec = LaunchConfiguration('publish_period_sec', default='1.0')
+    # 配置文件夹路径
+    
     #=============================3.声明启动launch文件，传入：地图路径、是否使用仿真时间以及nav2参数文件==============
     robot_state_publisher_node = Node(
         package = 'robot_state_publisher',
@@ -59,15 +64,22 @@ def generate_launch_description():
             PythonLaunchDescriptionSource([driver_dir,'/launch','/lsn10_launch.py']),
         )
     nav2_bringup_launch = IncludeLaunchDescription(
-            PythonLaunchDescriptionSource([nav2_bringup_dir,'/launch','/bringup_launch.py']),
+            PythonLaunchDescriptionSource([fishbot_navigation2_dir,'/launch','/nav2_cartographer.launch.py']),
             launch_arguments={
-                'map': map_yaml_path,
                 'use_sim_time': use_sim_time,
                 'params_file': nav2_param_path}.items(),
         )
     rviz_vio_odom = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([vio_odom,'/launch','/oakchina_vio.launch.py']),
     )
+    occupancy_grid_node = Node(
+        package='cartographer_ros',
+        executable='cartographer_occupancy_grid_node',
+        name='cartographer_occupancy_grid_node',
+        output='screen',
+        parameters=[{'use_sim_time': use_sim_time}],
+        arguments=['-resolution', resolution, '-publish_period_sec', publish_period_sec])
+
     rviz_node =  Node(
             package='rviz2',
             executable='rviz2',
@@ -77,9 +89,10 @@ def generate_launch_description():
             output='screen')
     
     return LaunchDescription([
+        robot_state_publisher_node,
         lslidar_driver_node,
         rviz_vio_odom,
-        robot_state_publisher_node,
         cartographer_node,
+        occupancy_grid_node,
         nav2_bringup_launch,
         rviz_node])

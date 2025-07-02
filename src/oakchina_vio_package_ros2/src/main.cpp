@@ -6,7 +6,11 @@
 #include <nav_msgs/msg/odometry.hpp> // 添加 Odometry 消息头文件
 #include <nav_msgs/msg/path.hpp>
 #include <tf2/LinearMath/Quaternion.h>
-
+#include <tf2_ros/transform_broadcaster.h>
+#include <geometry_msgs/msg/transform_stamped.hpp>
+#include <tf2/LinearMath/Quaternion.h>
+#include <tf2/LinearMath/Matrix3x3.h>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 #include <signal.h>
 #include <atomic>
 #include <fstream>
@@ -225,11 +229,12 @@ int main(int argc, char **argv) {
 
     // 创建发布者
     auto pose_pub = node->create_publisher<geometry_msgs::msg::PoseStamped>("pose", 10);
-    auto path_pub = node->create_publisher<nav_msgs::msg::Path>("path", 10);
+    auto path_pub = node->create_publisher<nav_msgs::msg::Path>("odom_path", 10);
     auto left_image_pub = node->create_publisher<sensor_msgs::msg::Image>("left_gray_image", 10);
     auto right_image_pub = node->create_publisher<sensor_msgs::msg::Image>("right_gray_image", 10);
     auto odom_pub = node->create_publisher<nav_msgs::msg::Odometry>("odom", 10); // 新增 Odometry 发布者
     auto imu_pub = node->create_publisher<sensor_msgs::msg::Imu>("imu", 10); // 新增 IMU 发布者
+    static tf2_ros::TransformBroadcaster tf_broadcaster(node);
 
     rclcpp::Rate loop_rate(10);
     nav_msgs::msg::Path path;
@@ -275,8 +280,10 @@ int main(int argc, char **argv) {
     while (rclcpp::ok() && !shutdown_requested) {
         sensor_msgs::msg::Imu imu_msg;
         geometry_msgs::msg::PoseStamped pose_stamped;
+        geometry_msgs::msg::TransformStamped odom_tf;
         nav_msgs::msg::Odometry odom_msg; // 新增 Odometry 消息
         tf2::Quaternion quat;
+        tf2::Quaternion fixed_correction_quat;
         sensor_msgs::msg::Image::SharedPtr left_msg, right_msg;
 
         // 处理位姿数据
@@ -297,16 +304,30 @@ int main(int argc, char **argv) {
                 // }
                 // outFile << "\n";
 
-                quat = rotationMatrixToQuaternion(R);
+                quat = rotationMatrixToQuaternion(R); 
+                fixed_correction_quat.setRPY(M_PI/4, 0, 0); 
+                tf2::Quaternion original_quat(
+                        quat.x(),  // 根据实际索引调整
+                        quat.y(), 
+                        quat.z(),
+                        quat.w()
+                    );
+                tf2::Matrix3x3 rotation_matrix(original_quat);
+                double roll, pitch, yaw;
+                rotation_matrix.getRPY(roll, pitch, yaw);
+
+                // 3. 创建水平矫正的四元数（只保留偏航角）
+                tf2::Quaternion leveled_quat;
+                leveled_quat.setRPY(0, 0, yaw);  // 将横滚和俯仰设为0
                 pose_stamped.header.stamp = node->now();
                 pose_stamped.header.frame_id = "map";
                 pose_stamped.pose.position.y = -pose_data[12];
                 pose_stamped.pose.position.x = pose_data[13];
                 pose_stamped.pose.position.z = pose_data[14];
-                pose_stamped.pose.orientation.x = quat.x();
-                pose_stamped.pose.orientation.y = quat.y();
-                pose_stamped.pose.orientation.z = quat.z();
-                pose_stamped.pose.orientation.w = quat.w();
+                pose_stamped.pose.orientation.x = leveled_quat.x();
+                pose_stamped.pose.orientation.y = leveled_quat.y();
+                pose_stamped.pose.orientation.z = leveled_quat.z();
+                pose_stamped.pose.orientation.w = leveled_quat.w();
 
                 // outFile << "orientation: " << quat.x() << "," << quat.y() << "," << quat.z() << "," << quat.w() << "\n\n";
 
@@ -317,10 +338,22 @@ int main(int argc, char **argv) {
                 odom_msg.pose.pose.position.y = -pose_data[12];
                 odom_msg.pose.pose.position.x = pose_data[13];
                 odom_msg.pose.pose.position.z = pose_data[14];
-                odom_msg.pose.pose.orientation.x = quat.x();
-                odom_msg.pose.pose.orientation.y = quat.y();
-                odom_msg.pose.pose.orientation.z = quat.z();
-                odom_msg.pose.pose.orientation.w = quat.w();
+                odom_msg.pose.pose.orientation.x = leveled_quat.x();
+                odom_msg.pose.pose.orientation.y = leveled_quat.y();
+                odom_msg.pose.pose.orientation.z = leveled_quat.z();
+                odom_msg.pose.pose.orientation.w = leveled_quat.w();
+
+                odom_tf.header.stamp = node->now();
+                odom_tf.header.frame_id = "odom";
+                odom_tf.child_frame_id = "base_link";
+                odom_tf.transform.translation.y = -pose_data[12];
+                odom_tf.transform.translation.x = pose_data[13];
+                odom_tf.transform.translation.z = pose_data[14];
+                odom_tf.transform.rotation.x = leveled_quat.x();
+                odom_tf.transform.rotation.y = leveled_quat.y();
+                odom_tf.transform.rotation.z = leveled_quat.z();
+                odom_tf.transform.rotation.w = leveled_quat.w();
+                tf_broadcaster.sendTransform(odom_tf); 
 
                 // 设置协方差矩阵（示例值，需根据实际 VO 精度调整）
                 // odom_msg.pose.covariance = {
@@ -346,8 +379,33 @@ int main(int argc, char **argv) {
         {
             std::lock_guard<std::mutex> auto_lock(imu_mtx);
             if (imu_ts > 0) {
+                double R[9] = {
+                    pose_data[0], pose_data[4], pose_data[8],
+                    pose_data[1], pose_data[5], pose_data[9],
+                    pose_data[2], pose_data[6], pose_data[10]
+                };
+                quat = rotationMatrixToQuaternion(R);
+                fixed_correction_quat.setRPY(0, -M_PI/4, 0); 
+                tf2::Quaternion original_quat(
+                        quat.x(),  // 根据实际索引调整
+                        quat.y(), 
+                        quat.z(),
+                        quat.w()
+                    );
+                tf2::Matrix3x3 rotation_matrix(original_quat);
+                double roll, pitch, yaw;
+                rotation_matrix.getRPY(roll, pitch, yaw);
+
+                // 3. 创建水平矫正的四元数（只保留偏航角）
+                tf2::Quaternion leveled_quat;
+                leveled_quat.setRPY(0, 0, yaw);  // 将横滚和俯仰设为0
                 imu_msg.header.stamp = node->now();
                 imu_msg.header.frame_id = "base_link"; // IMU 坐标系
+                imu_msg.orientation.x = leveled_quat.x();
+                imu_msg.orientation.y = leveled_quat.y();
+                imu_msg.orientation.z = leveled_quat.z();
+                imu_msg.orientation.w = leveled_quat.w();
+
                 imu_msg.angular_velocity.x = imu_data[3]; // 角速度
                 imu_msg.angular_velocity.y = imu_data[4];
                 imu_msg.angular_velocity.z = imu_data[5];
@@ -367,7 +425,7 @@ int main(int argc, char **argv) {
                     0.0, 0.0, 0.01
                 };
 
-                // imu_pub->publish(imu_msg);
+                imu_pub->publish(imu_msg);
                 imu_ts = -1;
             }
         }

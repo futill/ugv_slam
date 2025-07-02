@@ -15,7 +15,7 @@
     use_gps_ts: false                                       #雷达是否使用GPS授时
     scan_topic: /scan                                       #设置激光数据topic名称
     interface_selection: serial                             #接口选择:net 为网口,serial 为串口。
-    serial_port_: /dev/ttyACM0                                 #串口连接时的串口号
+    serial_port_: /dev/ttyACM1                                 #串口连接时的串口号
     high_reflection: false                                  #M10_P雷达需填写该值,若不确定，请联系技术支持。
     compensation: false				                              #M10系列是否使用角度补偿功能
     pubScan: true                                           #是否发布scan话题
