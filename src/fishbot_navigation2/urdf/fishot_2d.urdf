@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <robot name="cartographer_backpack_3d">
   <material name="orange">
     <color rgba="1.0 0.5 0.2 1" />
@@ -8,35 +9,53 @@
   <material name="blue">
     <color rgba="0.0 0.0 1.0 0.5" />
   </material>
-  
-  <!-- 基础坐标系 -->
+
+  <!-- Map coordinate frame -->
+  <link name="map" />
+
+  <!-- Odom coordinate frame -->
+  <link name="odom" />
+
+  <!-- Base link -->
   <link name="base_link">
     <visual>
-      <origin xyz="-7 0 0" rpy="0 0 0" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <box size="0.5 0.2 0.1" />
-      </geometry>
-      <material name="gray" />
-    </visual>
-  </link>
-  
-  <link name="laser">
-    <visual>
-      <origin xyz="-7 0 0"/>
-      <geometry>
-        <cylinder length="0.07" radius="0.05" />
+        <box size="0.1 0.1 0.1" />
       </geometry>
       <material name="gray" />
     </visual>
   </link>
 
-  <!-- 视觉里程计相对于机器人底座的外参 -->>
-  
-  <!-- 激光雷达相对于机器人底座的外参 -->
-  <joint name="laser_joint" type="fixed">
+  <!-- Laser link -->
+  <!-- <link name="laser">
+    <visual>
+      <origin xyz="0 0 0" />
+      <geometry>
+        <cylinder length="0.07" radius="0.05" />
+      </geometry>
+      <material name="gray" />
+    </visual>
+  </link> -->
+
+  <!-- Static joint: map -> odom -->
+  <joint name="map_to_odom" type="fixed">
+    <parent link="map" />
+    <child link="odom" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+
+  <!-- Static joint: odom -> base_link -->
+  <joint name="odom_to_base_link" type="fixed">
+    <parent link="odom" />
+    <child link="base_link" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+
+  <!-- Laser joint: base_link -> laser -->
+  <!-- <joint name="laser_joint" type="fixed">
     <parent link="base_link" />
     <child link="laser" />
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-  </joint>     
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint> -->
 </robot>
-  

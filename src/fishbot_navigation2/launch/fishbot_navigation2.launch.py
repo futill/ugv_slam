@@ -67,6 +67,7 @@ def generate_launch_description():
             PythonLaunchDescriptionSource([fishbot_navigation2_dir,'/launch','/nav2_cartographer.launch.py']),
             launch_arguments={
                 'use_sim_time': use_sim_time,
+                'map': map_yaml_path,
                 'params_file': nav2_param_path}.items(),
         )
     rviz_vio_odom = IncludeLaunchDescription(
@@ -92,7 +93,7 @@ def generate_launch_description():
         robot_state_publisher_node,
         lslidar_driver_node,
         rviz_vio_odom,
-        cartographer_node,
-        occupancy_grid_node,
+        #cartographer_node,
+        # occupancy_grid_node,
         nav2_bringup_launch,
         rviz_node])

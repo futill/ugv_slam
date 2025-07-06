@@ -16,6 +16,8 @@ from nav2_common.launch import RewrittenYaml
 def generate_launch_description():
     # Get the launch directory
     bringup_dir = get_package_share_directory('nav2_bringup')
+    fishbot_navigation2_dir = get_package_share_directory('fishbot_navigation2')
+    lifecycle_manager_params = os.path.join(fishbot_navigation2_dir, 'param', 'lifecycle_manager_params.yaml')
     launch_dir = os.path.join(bringup_dir, 'launch')
  
     # Create the launch configuration variables
@@ -54,7 +56,7 @@ def generate_launch_description():
  
     declare_map_yaml_cmd = DeclareLaunchArgument(
         'map',
-        default_value='',
+        default_value=os.path.join(fishbot_navigation2_dir, 'map', 'map.yaml'),
         description='Full path to map yaml file to load')
  
     declare_use_sim_time_cmd = DeclareLaunchArgument(
@@ -83,12 +85,32 @@ def generate_launch_description():
         'log_level', default_value='info',
         description='log level')
  
+    map_server_cmd = Node(
+        package='nav2_map_server',
+        executable='map_server',
+        name='map_server',
+        output='screen',
+        parameters=[{'yaml_filename': map_yaml_file},
+                    {'topic_name': '/map'},
+                    {'frame_id': 'map'}],
+        remappings=remappings)
+    
+    lifecycle_manager_cmd = Node(
+        package='nav2_lifecycle_manager',
+        executable='lifecycle_manager',
+        name='lifecycle_manager',
+        output='screen',
+        parameters=[lifecycle_manager_params],
+        remappings=remappings)
+    
     # Specify the actions
     bringup_cmd_group = GroupAction([
         PushRosNamespace(
             condition=IfCondition(use_namespace),
             namespace=namespace),
- 
+
+        map_server_cmd,
+
         Node(
             condition=IfCondition(use_composition),
             name='nav2_container',
@@ -132,6 +154,7 @@ def generate_launch_description():
     ld.add_action(declare_log_level_cmd)
  
     # Add the actions to launch all of the navigation nodes
+    ld.add_action(lifecycle_manager_cmd)
     ld.add_action(bringup_cmd_group)
  
     return ld
