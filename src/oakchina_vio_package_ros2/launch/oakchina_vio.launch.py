@@ -34,5 +34,5 @@ def generate_launch_description():
     
     return LaunchDescription([
         vio_node,
-        #rviz_node
+        rviz_node
     ])
