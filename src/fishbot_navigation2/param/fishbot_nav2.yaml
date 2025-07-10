@@ -4,7 +4,7 @@ bt_navigator:
     global_frame: map  # 全局参考坐标系
     robot_base_frame: base_link  # 机器人基坐标系
     odom_topic: /odom  # 里程计话题（已注释，使用默认值）
-    bt_loop_duration: 100  # 行为树循环周期（毫秒）
+    bt_loop_duration: 10  # 行为树循环周期（毫秒）
     default_server_timeout: 100  # 默认动作服务器超时时间（毫秒）
     wait_for_service_timeout: 1000  # 服务等待超时时间（毫秒）
     action_server_result_timeout: 900.0  # 动作服务器结果超时时间（秒）
@@ -22,70 +22,112 @@ bt_navigator:
 # 控制器服务器配置
 controller_server:
   ros__parameters:
-    # controller server parameters (see Controller Server for more info)
-    use_sim_time: True
-    controller_frequency: 20.0
-    min_x_velocity_threshold: 0.001
-    min_theta_velocity_threshold: 0.001
-    progress_checker_plugins: ["progress_checker"]  # progress_checker_plugin: "progress_checker" For Humble and older
-    goal_checker_plugins: ["goal_checker"]
-    controller_plugins: ["FollowPath"]
-
+    controller_frequency: 20.0  # 控制器更新频率（Hz）
+    min_x_velocity_threshold: 0.001  # 最小 x 方向速度阈值（m/s）
+    min_y_velocity_threshold: 0.5  # 最小 y 方向速度阈值（m/s）
+    min_theta_velocity_threshold: 0.001  # 最小角速度阈值（rad/s）
+    failure_tolerance: 0.3  # 控制器失败容忍度
+    progress_checker_plugins: ["progress_checker"]  # 进度检查插件
+    goal_checker_plugins: ["general_goal_checker"]  # 目标检查插件
+    controller_plugins: ["FollowPath"]  # 路径跟随控制器插件
+    use_realtime_priority: false  # 是否使用实时优先级
     progress_checker:
-      plugin: "nav2_controller::SimpleProgressChecker"
-      required_movement_radius: 0.5
-      movement_time_allowance: 10.0
-
-    goal_checker:
-      plugin: "nav2_controller::SimpleGoalChecker"
-      xy_goal_tolerance: 0.05 #############################
-      yaw_goal_tolerance: 0.25
-      stateful: True
-
-    # DWB controller parameters
+      plugin: "nav2_controller::SimpleProgressChecker"  # 简单进度检查插件
+      required_movement_radius: 0.5  # 移动进度所需半径（m）
+      movement_time_allowance: 10.0  # 移动时间容许量（秒）
+    general_goal_checker:
+      stateful: True  # 启用有状态目标检查
+      plugin: "nav2_controller::SimpleGoalChecker"  # 简单目标检查插件
+      xy_goal_tolerance: 0.25  # XY 目标容差（m）
+      yaw_goal_tolerance: 0.25  # 偏航目标容差（rad）
     FollowPath:
-      plugin: "dwb_core::DWBLocalPlanner"
-      debug_trajectory_details: True
-      min_vel_x: -0.15 #####0.0   负数可倒车
-      min_vel_y: 0.0 
-      max_vel_x: 0.30 #####0.26
-      max_vel_y: 0.0
-      max_vel_theta: 0.8 #############31.0
-      min_speed_xy: 0.0
-      max_speed_xy: 0.26
-      min_speed_theta: 0.0
-      acc_lim_x: 2.5
-      acc_lim_y: 0.0
-      acc_lim_theta: 3.2
-      decel_lim_x: -2.5
-      decel_lim_y: 0.0
-      decel_lim_theta: -3.2
-      #vx_samples: 20 
-      vx_samples: 5   ########自旋
-      vy_samples: 5
-      vtheta_samples: 20
+      plugin: "nav2_mppi_controller::MPPIController"  # MPPI 控制器插件
       sim_time: 1.7
-      linear_granularity: 0.05
-      angular_granularity: 0.025
-      transform_tolerance: 0.2
-      xy_goal_tolerance: 0.05 #######################
-      trans_stopped_velocity: 0.25
-      short_circuit_trajectory_evaluation: True
-      stateful: True
-      use_backward_motion: true ##############倒车
-      use_differential_drive: true ############倒车
-      critics: ["RotateToGoal", "Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
-
-      BaseObstacle.scale: 0.02
-      PathAlign.scale: 32.0
-      GoalAlign.scale: 24.0
-      PathAlign.forward_point_distance: 0.1
-      GoalAlign.forward_point_distance: 0.1
-      PathDist.scale: 32.0
-      GoalDist.scale: 24.0
-      RotateToGoal.scale: 32.0
-      RotateToGoal.slowing_factor: 5.0
-      RotateToGoal.lookahead_time: -1.0
+      time_steps: 56  # 轨迹规划时间步数
+      model_dt: 0.05  # 模型预测时间步长（秒）
+      batch_size: 2000  # 采样轨迹数量
+      ax_max: 3.0  # 最大 x 方向加速度（m/s^2）
+      ax_min: -3.0  # 最小 x 方向加速度（m/s^2）
+      ay_max: 3.0  # 最大 y 方向加速度（m/s^2）
+      az_max: 3.5  # 最大 z 方向加速度（m/s^2）
+      vx_std: 0.2  # x 方向速度标准差
+      vy_std: 0.2  # y 方向速度标准差
+      wz_std: 0.4  # 角速度标准差
+      vx_max: 0.5  # 最大 x 方向速度（m/s）
+      vx_min: -0.35  # 最小 x 方向速度（m/s）
+      vy_max: 0.5  # 最大 y 方向速度（m/s）
+      wz_max: 1.9  # 最大角速度（rad/s）
+      use_backward_motion: true
+      use_differention_drive: true
+      
+      iteration_count: 1  # 迭代次数
+      prune_distance: 1.7  # 轨迹修剪距离（m）
+      transform_tolerance: 0.1  # 坐标变换容差（秒）
+      temperature: 0.3  # 采样温度
+      gamma: 0.015  # 折扣因子
+      motion_model: "DiffDrive"  # 运动模型（差速驱动）
+      visualize: true  # 是否可视化轨迹
+      regenerate_noises: true  # 是否重新生成噪声
+      TrajectoryVisualizer:
+        trajectory_step: 5  # 轨迹可视化步长
+        time_step: 3  # 时间步长
+      AckermannConstraints:
+        min_turning_r: 0.2  # 最小转弯半径（m）
+      critics: [
+        "ConstraintCritic", "CostCritic", "GoalCritic",
+        "GoalAngleCritic", "PathAlignCritic", "PathFollowCritic",
+        "PathAngleCritic", "PreferForwardCritic"]  # 评估函数列表
+      ConstraintCritic:
+        enabled: true  # 启用约束评估
+        cost_power: 1  # 约束成本幂
+        cost_weight: 4.0  # 约束成本权重
+      GoalCritic:
+        enabled: true  # 启用目标评估
+        cost_power: 1  # 目标成本幂
+        cost_weight: 5.0  # 目标成本权重
+        threshold_to_consider: 1.4  # 考虑目标的阈值（m）
+      GoalAngleCritic:
+        enabled: true  # 启用目标角度评估
+        cost_power: 1  # 角度成本幂
+        cost_weight: 3.0  # 角度成本权重
+        threshold_to_consider: 0.5  # 考虑角度的阈值（rad）
+      PreferForwardCritic:
+        enabled: true  # 启用前向优先评估
+        cost_power: 1  # 前向成本幂
+        cost_weight: 5.0  # 前向成本权重
+        threshold_to_consider: 0.5  # 考虑前向的阈值
+      CostCritic:
+        enabled: true  # 启用成本评估
+        cost_power: 1  # 成本幂
+        cost_weight: 3.81  # 成本权重
+        critical_cost: 300.0  # 关键成本阈值
+        consider_footprint: true  # 是否考虑机器人足迹
+        collision_cost: 1000000.0  # 碰撞成本
+        near_goal_distance: 1.0  # 接近目标的距离（m）
+        trajectory_point_step: 2  # 轨迹点步长
+      PathAlignCritic:
+        enabled: true  # 启用路径对齐评估
+        cost_power: 1  # 对齐成本幂
+        cost_weight: 14.0  # 对齐成本权重
+        max_path_occupancy_ratio: 0.05  # 最大路径占用比率
+        trajectory_point_step: 4  # 轨迹点步长
+        threshold_to_consider: 0.5  # 考虑对齐的阈值
+        offset_from_furthest: 20  # 距离最远点的偏移
+        use_path_orientations: false  # 是否使用路径方向
+      PathFollowCritic:
+        enabled: true  # 启用路径跟随评估
+        cost_power: 1  # 跟随成本幂
+        cost_weight: 5.0  # 跟随成本权重
+        offset_from_furthest: 5  # 距离最远点的偏移
+        threshold_to_consider: 1.4  # 考虑跟随的阈值
+      PathAngleCritic:
+        enabled: true  # 启用路径角度评估
+        cost_power: 1  # 角度成本幂
+        cost_weight: 2.0  # 角度成本权重
+        offset_from_furthest: 4  # 距离最远点的偏移
+        threshold_to_consider: 0.5  # 考虑角度的阈值
+        max_angle_to_furthest: 1.0  # 最大角度（rad）
+        mode: 0  # 角度评估模式
 
 
 # 局部代价地图配置

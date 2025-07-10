@@ -27,7 +27,7 @@ def generate_launch_description():
     
     #=============================2.声明参数，获取配置文件路径===================================================
     # use_sim_time 这里要设置成true,因为gazebo是仿真环境，其时间是通过/clock话题获取，而不是系统时间
-    use_sim_time = LaunchConfiguration('use_sim_time', default='true') 
+    use_sim_time = LaunchConfiguration('use_sim_time', default='false') 
     map_yaml_path = LaunchConfiguration('map',default=os.path.join(fishbot_navigation2_dir,'maps','map.yaml'))
     nav2_param_path = LaunchConfiguration('params_file',default=os.path.join(fishbot_navigation2_dir,'param','fishbot_nav2.yaml'))
     rviz_config_dir = os.path.join(nav2_bringup_dir,'rviz','nav2_default_view.rviz')
@@ -47,6 +47,11 @@ def generate_launch_description():
         parameters=[
             {'robot_description': robot_desc},
             {'use_sim_time': True}],
+        output = 'screen'
+        )
+    time_sync_node = Node(
+        package = 'fishbot_cartographer',
+        executable = 'time_sync_node',
         output = 'screen'
         )
     cartographer_node = Node(
@@ -97,6 +102,7 @@ def generate_launch_description():
     
     return LaunchDescription([
         robot_state_publisher_node,
+        time_sync_node,
         lslidar_driver_node,
         rviz_vio_odom,
         cartographer_node,

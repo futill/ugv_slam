@@ -16,7 +16,7 @@ def generate_launch_description():
     with open(urdf_file, 'r') as infp:
         robot_desc = infp.read()
 
-    use_sim_time = LaunchConfiguration('use_sim_time', default='true')
+    use_sim_time = LaunchConfiguration('use_sim_time', default='false')
     configuration_directory = LaunchConfiguration(
         'configuration_directory', default=os.path.join(pkg_share, 'config'))
     configuration_basename = LaunchConfiguration('configuration_basename', default='fishbot_2d.lua')
