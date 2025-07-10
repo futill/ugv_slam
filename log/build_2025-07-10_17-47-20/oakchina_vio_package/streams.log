@@ -1,0 +1,55 @@
+[0.049s] Invoking command in '/home/orangepi/uvg_car/build/oakchina_vio_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/car_ros2/install/rknn_yolo:/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/oakchina_vio_package -- -j8 -l8
+[0.276s] [100%] Built target oakchina_vio_package_node
+[0.331s] Invoked command in '/home/orangepi/uvg_car/build/oakchina_vio_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/car_ros2/install/rknn_yolo:/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/oakchina_vio_package -- -j8 -l8
+[0.335s] Invoking command in '/home/orangepi/uvg_car/build/oakchina_vio_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/car_ros2/install/rknn_yolo:/opt/ros/humble /usr/bin/cmake --install /home/orangepi/uvg_car/build/oakchina_vio_package
+[0.370s] -- Install configuration: ""
+[0.373s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/oakchina_vio_package/oakchina_vio_package_node
+[0.379s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libGLEW.so
+[0.381s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libGLEW.so.2.1
+[0.382s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libcarina_client.so
+[0.384s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libcarina_vio.so
+[0.386s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libcarina_vio_client.so
+[0.386s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libopencv_calib3d.so
+[0.387s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libopencv_calib3d.so.4.2
+[0.389s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libopencv_core.so
+[0.390s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libopencv_core.so.4.2
+[0.391s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libopencv_features2d.so
+[0.392s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libopencv_features2d.so.4.2
+[0.392s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libopencv_flann.so
+[0.393s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libopencv_flann.so.4.2
+[0.394s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libopencv_highgui.so
+[0.394s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libopencv_highgui.so.4.2
+[0.395s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libopencv_imgcodecs.so
+[0.396s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libopencv_imgcodecs.so.4.2
+[0.398s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libopencv_imgproc.so
+[0.399s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libopencv_imgproc.so.4.2
+[0.400s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libopencv_video.so
+[0.401s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/lib/libopencv_video.so.4.2
+[0.402s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/launch
+[0.403s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/launch/oakchina_vio.launch.py
+[0.404s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/config
+[0.405s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/config/database.bin
+[0.405s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/config/custom_config.yaml
+[0.408s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/rviz
+[0.412s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/rviz/oakchina_vio.rviz
+[0.413s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/environment/library_path.sh
+[0.414s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/environment/library_path.dsv
+[0.415s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/ament_index/resource_index/package_run_dependencies/oakchina_vio_package
+[0.416s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/ament_index/resource_index/parent_prefix_path/oakchina_vio_package
+[0.417s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/environment/ament_prefix_path.sh
+[0.418s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/environment/ament_prefix_path.dsv
+[0.418s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/environment/path.sh
+[0.419s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/environment/path.dsv
+[0.420s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/local_setup.bash
+[0.422s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/local_setup.sh
+[0.423s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/local_setup.zsh
+[0.424s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/local_setup.dsv
+[0.424s] -- Installing: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/package.dsv
+[0.425s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/ament_index/resource_index/packages/oakchina_vio_package
+[0.425s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.425s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.426s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/cmake/ament_cmake_export_libraries-extras.cmake
+[0.426s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/cmake/oakchina_vio_packageConfig.cmake
+[0.427s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/cmake/oakchina_vio_packageConfig-version.cmake
+[0.427s] -- Up-to-date: /home/orangepi/uvg_car/install/oakchina_vio_package/share/oakchina_vio_package/package.xml
+[0.435s] Invoked command in '/home/orangepi/uvg_car/build/oakchina_vio_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/car_ros2/install/rknn_yolo:/opt/ros/humble /usr/bin/cmake --install /home/orangepi/uvg_car/build/oakchina_vio_package

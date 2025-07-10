@@ -1,0 +1,20 @@
+[0.046s] Invoking command in '/home/orangepi/uvg_car/build/oakchina_vio_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/car_ros2/install/rknn_yolo:/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/oakchina_vio_package -- -j8 -l8
+[0.192s] [35m[1mConsolidate compiler generated dependencies of target oakchina_vio_package_node[0m
+[0.221s] [ 50%] [32mBuilding CXX object CMakeFiles/oakchina_vio_package_node.dir/src/main.cpp.o[0m
+[7.302s] [01m[K/home/orangepi/uvg_car/src/oakchina_vio_package_ros2/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[7.302s] [01m[K/home/orangepi/uvg_car/src/oakchina_vio_package_ros2/src/main.cpp:348:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _twist_type = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kline[m[K’; did you mean ‘[01m[Klinear[m[K’?
+[7.303s]   348 |                 odom_msg.twist.twist.[01;31m[Kline[m[K.x = imu_data[2]; // 线性加速度
+[7.303s]       |                                      [01;31m[K^~~~[m[K
+[7.303s]       |                                      [32m[Klinear[m[K
+[7.303s] [01m[K/home/orangepi/uvg_car/src/oakchina_vio_package_ros2/src/main.cpp:349:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _twist_type = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kline[m[K’; did you mean ‘[01m[Klinear[m[K’?
+[7.303s]   349 |                 odom_msg.twist.twist.[01;31m[Kline[m[K.y = imu_data[0]; //
+[7.303s]       |                                      [01;31m[K^~~~[m[K
+[7.303s]       |                                      [32m[Klinear[m[K
+[7.303s] [01m[K/home/orangepi/uvg_car/src/oakchina_vio_package_ros2/src/main.cpp:350:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _twist_type = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kline[m[K’; did you mean ‘[01m[Klinear[m[K’?
+[7.303s]   350 |                 odom_msg.twist.twist.[01;31m[Kline[m[K.z = imu_data[1]; //
+[7.303s]       |                                      [01;31m[K^~~~[m[K
+[7.303s]       |                                      [32m[Klinear[m[K
+[10.358s] gmake[2]: *** [CMakeFiles/oakchina_vio_package_node.dir/build.make:76: CMakeFiles/oakchina_vio_package_node.dir/src/main.cpp.o] Error 1
+[10.359s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/oakchina_vio_package_node.dir/all] Error 2
+[10.359s] gmake: *** [Makefile:146: all] Error 2
+[10.365s] Invoked command in '/home/orangepi/uvg_car/build/oakchina_vio_package' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/car_ros2/install/rknn_yolo:/opt/ros/humble /usr/bin/cmake --build /home/orangepi/uvg_car/build/oakchina_vio_package -- -j8 -l8

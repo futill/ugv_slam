@@ -342,6 +342,12 @@ int main(int argc, char **argv) {
                 odom_msg.pose.pose.orientation.y = leveled_quat.y();
                 odom_msg.pose.pose.orientation.z = leveled_quat.z();
                 odom_msg.pose.pose.orientation.w = leveled_quat.w();
+                odom_msg.twist.twist.angular.x = imu_data[5]; //  角速度
+                odom_msg.twist.twist.angular.y = imu_data[3]; //
+                odom_msg.twist.twist.angular.z = imu_data[4]; //
+                odom_msg.twist.twist.linear.x = imu_data[2]; // 线性加速度
+                odom_msg.twist.twist.linear.y = imu_data[0]; //
+                odom_msg.twist.twist.linear.z = imu_data[1]; //
 
                 odom_tf.header.stamp = node->now();
                 odom_tf.header.frame_id = "odom";
@@ -406,24 +412,16 @@ int main(int argc, char **argv) {
                 imu_msg.orientation.z = leveled_quat.z();
                 imu_msg.orientation.w = leveled_quat.w();
 
-                imu_msg.angular_velocity.x = imu_data[3]; // 角速度
-                imu_msg.angular_velocity.y = imu_data[4];
-                imu_msg.angular_velocity.z = imu_data[5];
-                imu_msg.linear_acceleration.x = imu_data[0]; // 线性加速度
-                imu_msg.linear_acceleration.y = imu_data[1];
-                imu_msg.linear_acceleration.z = imu_data[2];
+                imu_msg.angular_velocity.x = imu_data[5]; //  角速度
+                imu_msg.angular_velocity.y = imu_data[3]; //
+                imu_msg.angular_velocity.z = imu_data[4]; //
+                imu_msg.linear_acceleration.x = imu_data[2]; // 线性加速度
+                imu_msg.linear_acceleration.y = imu_data[0]; //
+                imu_msg.linear_acceleration.z = imu_data[1]; //
 
-                // 设置协方差矩阵（示例值，需根据实际 IMU 精度调整）
-                imu_msg.angular_velocity_covariance = {
-                    0.01, 0.0, 0.0,
-                    0.0, 0.01, 0.0,
-                    0.0, 0.0, 0.01
-                };
-                imu_msg.linear_acceleration_covariance = {
-                    0.01, 0.0, 0.0,
-                    0.0, 0.01, 0.0,
-                    0.0, 0.0, 0.01
-                };
+                // std::cout << "imu ts: " << imu_ts << " data: " <<
+                //           imu_data[0] << ", " << imu_data[1] << ", " << imu_data[2] << ", " <<
+                //           imu_data[3] << ", " << imu_data[4] << ", " << imu_data[5] << std::endl;
 
                 imu_pub->publish(imu_msg);
                 imu_ts = -1;

@@ -1,0 +1,11 @@
+source;share/oakchina_vio_package/hook/cmake_prefix_path.ps1
+source;share/oakchina_vio_package/hook/cmake_prefix_path.dsv
+source;share/oakchina_vio_package/hook/cmake_prefix_path.sh
+source;share/oakchina_vio_package/hook/ld_library_path_lib.ps1
+source;share/oakchina_vio_package/hook/ld_library_path_lib.dsv
+source;share/oakchina_vio_package/hook/ld_library_path_lib.sh
+source;share/oakchina_vio_package/local_setup.bash
+source;share/oakchina_vio_package/local_setup.dsv
+source;share/oakchina_vio_package/local_setup.ps1
+source;share/oakchina_vio_package/local_setup.sh
+source;share/oakchina_vio_package/local_setup.zsh
