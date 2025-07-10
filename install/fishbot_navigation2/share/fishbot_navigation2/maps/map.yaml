@@ -1,7 +1,0 @@
-image: map.pgm #	地图图像文件路径（黑白或灰度图）
-mode: trinary
-resolution: 0.05 #每个像素代表 0.05m（即 5cm/pixel）
-origin: [-0.457, -3.45 , 0.0]  # ← 旋转后坐标系变了！origin: [-1.5, -0.5, 0.0] #origin 参数就是用来 平移地图坐标系的起点 的
-negate: 0    	#是否反转图像颜色（0 表示不反转）
-occupied_thresh: 0.65 #大于此值的像素视为障碍物
-free_thresh: 0.25  #	小于此值的像素视为空闲区域

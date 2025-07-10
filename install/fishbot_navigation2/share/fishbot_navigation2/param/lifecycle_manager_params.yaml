@@ -1,4 +1,0 @@
-lifecycle_manager:
-  ros__parameters:
-    autostart: true
-    node_names: ["map_server"]
