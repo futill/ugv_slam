@@ -19,7 +19,7 @@ NAV2_STATIC_MAP_GO
 git clone https://github.com/futill/ugv_slam.git
 cd ugv_slam /colcon build
 
-# 安装依赖（以 Node.js 项目为例）
+# 安装依赖
 sudo apt install ros-humble-navigation*
 sudo apt install ros-humble-cartographer*
 
